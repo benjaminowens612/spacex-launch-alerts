@@ -1,0 +1,16 @@
+{
+  "name": "spacex-launch-alerts",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Never miss a SpaceX launch: iPhone web app + subscribable calendar feeds with alerts.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:fixture": "node scripts/build.mjs --fixture",
+    "test": "node --test test/*.test.mjs",
+    "serve": "npx http-server docs -p 8080 -c-1"
+  }
+}

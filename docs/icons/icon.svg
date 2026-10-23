@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="1" stop-color="#1e2a4a"/>
+    </linearGradient>
+    <linearGradient id="flame" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd27a"/>
+      <stop offset="1" stop-color="#ff6a2b" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#sky)"/>
+  <g fill="#ffffff" opacity="0.7">
+    <circle cx="96" cy="110" r="4"/><circle cx="410" cy="86" r="3"/><circle cx="380" cy="190" r="2.5"/>
+    <circle cx="130" cy="250" r="2.5"/><circle cx="440" cy="300" r="3"/><circle cx="70" cy="360" r="2"/>
+  </g>
+  <path d="M236 352 h40 l-8 120 h-24z" fill="url(#flame)"/>
+  <path d="M256 66c34 30 52 72 52 120v156l26 30v34l-42-18h-72l-42 18v-34l26-30V186c0-48 18-90 52-120z" fill="#f3f5f9"/>
+  <circle cx="256" cy="180" r="20" fill="#1e2a4a"/>
+  <rect x="226" y="300" width="60" height="10" rx="5" fill="#1e2a4a" opacity="0.35"/>
+</svg>

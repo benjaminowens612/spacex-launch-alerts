@@ -1,0 +1,60 @@
+name: Update launches
+
+on:
+  schedule:
+    - cron: '*/15 * * * *' # LL2 free tier: 15 req/h; each run uses 2
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths-ignore: ['docs/data/**', 'docs/cal/**']
+
+permissions:
+  contents: write # commit changed data (also keeps the schedule from going idle)
+  pages: write
+  id-token: write
+
+concurrency:
+  group: update-launches
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - run: npm test
+
+      - name: Fetch launches and build calendars
+        run: npm run build
+
+      - name: Commit data if launches changed
+        run: |
+          git add -A docs/data docs/cal
+          # Ignore the generatedAt timestamp so we only commit real changes.
+          if git diff --cached --quiet -I '"generatedAt":'; then
+            echo "No launch changes."
+          else
+            git config user.name "launch-bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -q -m "Update launch data"
+            git pull -q --rebase origin main
+            git push -q origin HEAD:main
+          fi
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+      - id: deploy
+        uses: actions/deploy-pages@v4
