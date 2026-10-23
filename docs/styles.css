@@ -220,7 +220,7 @@ button { font: inherit; color: inherit; }
 .st.failure, .st.partial-failure { color: var(--fg); border-color: var(--fg); text-decoration: line-through; }
 /* Countdown sits just above the row divider, flush with its right end. */
 .in {
-  position: absolute; right: 0; bottom: 4px; margin-right: calc(-0.08em - 1px); /* trailing spacing + glyph side bearing */
+  position: absolute; right: 0; bottom: 6px; margin-right: calc(-0.08em - 1px); /* trailing spacing + glyph side bearing */
   font: 500 11px/1 var(--sans); letter-spacing: 0.08em; color: var(--faint); font-variant-numeric: tabular-nums; white-space: nowrap; text-transform: uppercase;
 }
 
