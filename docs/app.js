@@ -6,10 +6,14 @@
   const DONE = new Set(['Success', 'Failure', 'Partial Failure']);
   const STORE_KEY = 'sla:filter';
   const TAB_KEY = 'sla:tab';
+  const STATUS_LABEL = { 'Partial Failure': 'Partial', 'In Flight': 'In flight' };
 
   const $ = (sel) => document.querySelector(sel);
   const esc = (s) =>
     String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
+  // Keep hyphenated tokens like "15-15" or "CRS-33" from breaking across lines.
+  const nobr = (s) => esc(s).split(' ').map((w) => (w.includes('-') ? `<span class="nw">${w}</span>` : w)).join(' ');
+  const FEED_LABEL = { all: 'All launches', 'no-starlink': 'No Starlink', notable: 'Notable', starship: 'Starship', crewed: 'Crewed', starlink: 'Starlink' };
   const store = {
     get(k) { try { return localStorage.getItem(k); } catch { return null; } },
     set(k, v) { try { localStorage.setItem(k, v); } catch { /* private mode */ } },
@@ -26,8 +30,9 @@
 
   // ---------- time formatting ----------
   const timeFmt = new Intl.DateTimeFormat(undefined, { hour: 'numeric', minute: '2-digit' });
-  const dayFmt = new Intl.DateTimeFormat(undefined, { weekday: 'short', month: 'short', day: 'numeric' });
-  const monthFmt = new Intl.DateTimeFormat(undefined, { month: 'long', year: 'numeric' });
+  const longDayFmt = new Intl.DateTimeFormat(undefined, { weekday: 'long', month: 'long', day: 'numeric' });
+  const monFmt = new Intl.DateTimeFormat(undefined, { month: 'short' });
+  const dowFmt = new Intl.DateTimeFormat(undefined, { weekday: 'short' });
   const tzName = (() => {
     try {
       return new Intl.DateTimeFormat(undefined, { timeZoneName: 'short' }).formatToParts(new Date())
@@ -41,14 +46,14 @@
     if (diff === 0) return 'Today';
     if (diff === 1) return 'Tomorrow';
     if (diff === -1) return 'Yesterday';
-    return dayFmt.format(d);
+    return longDayFmt.format(d);
   }
 
   function whenText(l) {
     const d = new Date(l.net);
     if (l.precision === 'exact') return `${relDay(d)} · ${timeFmt.format(d)} ${tzName}`.trim();
-    if (l.precision === 'day') return `${relDay(d)} · time TBD`;
-    return `NET ${monthFmt.format(d)}`;
+    if (l.precision === 'day') return `${relDay(d)} · Time TBD`;
+    return `NET ${d.toLocaleString(undefined, { month: 'long', year: 'numeric' })}`;
   }
 
   function splitDuration(ms) {
@@ -57,32 +62,37 @@
   }
   const p2 = (n) => String(n).padStart(2, '0');
 
-  function countdownHtml(l) {
-    if (l.precision !== 'exact') return `<span class="unit" style="margin:0">${esc(l.precision === 'day' ? 'Time not set yet' : 'Date not set yet')}</span>`;
+  function clockHtml(l) {
+    if (l.precision !== 'exact') {
+      const label = l.precision === 'day' ? 'Time TBD' : 'Date TBD';
+      return `<div class="clock text"><div class="u"><span class="n">${esc(label.toUpperCase())}</span></div></div>`;
+    }
     const ms = Date.parse(l.net) - Date.now();
     const { d, h, m, s } = splitDuration(ms);
-    const sign = ms >= 0 ? 'T−' : 'T+';
-    const parts = d > 0
-      ? `${d}<span class="unit">d</span>${p2(h)}<span class="unit">h</span>${p2(m)}<span class="unit">m</span>`
-      : `${p2(h)}:${p2(m)}:${p2(s)}`;
-    return `<span class="unit" style="margin-left:0">${sign}</span>${parts}`;
+    const units = d > 0 ? [[d, 'Days'], [h, 'Hrs'], [m, 'Min'], [s, 'Sec']] : [[h, 'Hrs'], [m, 'Min'], [s, 'Sec']];
+    const cells = units
+      .map(([v, lbl]) => `<div class="u"><span class="n">${p2(v)}</span><span class="l">${lbl}</span></div>`)
+      .join('<span class="sep">:</span>');
+    return `<div class="clock" role="timer" aria-label="${ms >= 0 ? 'T minus' : 'T plus'} ${d} days ${h} hours ${m} minutes"><span class="t">${ms >= 0 ? 'T−' : 'T+'}</span>${cells}</div>`;
   }
 
   function shortIn(l) {
-    if (l.precision === 'vague') return '';
+    if (l.precision === 'vague' || DONE.has(l.status)) return '';
     const ms = Date.parse(l.net) - Date.now();
-    if (DONE.has(l.status)) return '';
-    if (ms < 0) return l.precision === 'exact' ? 'now' : '';
+    if (ms < 0) return l.precision === 'exact' ? 'Now' : '';
     const { d, h, m } = splitDuration(ms);
-    if (d > 0) return `in ${d}d ${h}h`;
-    if (h > 0) return `in ${h}h ${m}m`;
-    return `in ${m}m`;
+    if (d > 0) return `T− ${d}d ${h}h`;
+    if (h > 0) return `T− ${h}h ${p2(m)}m`;
+    return `T− ${m}m`;
   }
 
   // ---------- rendering ----------
-  const badge = (l) => `<span class="badge ${esc(l.status.toLowerCase().replace(/\s+/g, '-'))}" title="${esc(l.statusName)}">${esc(l.status)}</span>`;
+  const statusCls = (l) => l.status.toLowerCase().replace(/\s+/g, '-');
+  const statusTag = (l) => `<span class="st ${esc(statusCls(l))}" title="${esc(l.statusName)}">${esc(STATUS_LABEL[l.status] ?? l.status)}</span>`;
   const catLabel = (id) => data.categories.find((c) => c.id === id)?.label ?? id;
   const matches = (l) => filter === 'all' || l.categories.includes(filter);
+  const siteText = (l) => [l.padShort, l.site].filter(Boolean).join(', ');
+  const landingText = (l) => l.landing?.label ?? '—';
 
   function isUpcoming(l) {
     if (DONE.has(l.status)) return false;
@@ -92,93 +102,109 @@
 
   function watchBtn(l, cls = '') {
     if (!l.webcast) return '';
-    return `<a class="btn ${l.webcastLive ? 'live' : cls}" href="${esc(l.webcast)}" target="_blank" rel="noopener">${l.webcastLive ? '● Live now' : '▶ Watch'}</a>`;
+    return l.webcastLive
+      ? `<a class="btn solid ${cls}" href="${esc(l.webcast)}" target="_blank" rel="noopener"><span class="dot"></span>Live now</a>`
+      : `<a class="btn ${cls}" href="${esc(l.webcast)}" target="_blank" rel="noopener">Watch</a>`;
   }
-  function calBtn(l) {
-    if (l.precision === 'vague') return '';
-    return `<a class="btn" href="${esc(oneUrl(l.id))}">＋ Add to Calendar</a>`;
+  function calBtn(l, cls = '') {
+    if (l.precision === 'vague' || DONE.has(l.status)) return '';
+    return `<a class="btn ${cls}" href="${esc(oneUrl(l.id))}">Add to calendar</a>`;
   }
 
   function renderHero(next) {
     const el = $('#hero');
+    el.style.removeProperty('--hero-img');
+    el.classList.remove('has-img');
     if (!next) {
-      el.innerHTML = `<div class="card hero"><p class="muted">No upcoming launches match this filter.</p></div>`;
+      el.innerHTML = `<div class="hero-inner"><p class="overline">Next launch</p><h1>No launches scheduled</h1></div>`;
+      delete el.dataset.id;
       return;
     }
+    const img = next.imageLarge || next.image;
+    if (img) {
+      el.style.setProperty('--hero-img', `url("${img.replace(/"/g, '%22')}")`);
+      el.classList.add('has-img');
+    }
+    const label = filter === 'all' ? 'Next launch' : `Next ${catLabel(filter)} launch`;
     el.innerHTML = `
-      <article class="card hero" aria-labelledby="hero-title">
-        <div class="eyebrow">${badge(next)} <span>Next launch</span> · <span>${esc(next.categories.map(catLabel).join(' · '))}</span></div>
-        <h2 id="hero-title">${esc(next.mission)}</h2>
-        <div class="sub">${esc(next.vehicle)}${next.location ? ` · ${esc(next.location)}` : ''}</div>
-        <div class="countdown" id="hero-countdown" aria-live="off">${countdownHtml(next)}</div>
-        <div class="when">${esc(whenText(next))}</div>
-        ${next.probability != null ? `<div class="tag">Weather ${esc(next.probability)}% go</div>` : ''}
-        <div class="actions">${watchBtn(next, 'primary')}${calBtn(next)}</div>
-      </article>`;
+      <div class="hero-inner">
+        <p class="overline"><span>${esc(label)}</span>${statusTag(next)}</p>
+        <h1 id="hero-title">${nobr(next.mission)}</h1>
+        <p class="meta"><b>${esc(next.vehicle)}</b> · ${esc(siteText(next) || next.location || '')}</p>
+        <div id="hero-clock">${clockHtml(next)}</div>
+        <p class="when">${esc(whenText(next))}</p>
+        ${next.probability != null ? `<p class="sub">Weather ${esc(next.probability)}% go</p>` : ''}
+        <div class="actions">${next.webcastLive ? watchBtn(next) : watchBtn(next, 'solid')}${calBtn(next)}</div>
+      </div>`;
     el.dataset.id = next.id;
   }
 
-  function itemHtml(l) {
+  function dateCell(l) {
     const d = new Date(l.net);
-    const vague = l.precision === 'vague';
-    const date = vague
-      ? `<div class="mo">NET</div><div class="d" style="font-size:15px">${esc(d.toLocaleString(undefined, { month: 'short' }))}</div><div class="dow">${d.getFullYear()}</div>`
-      : `<div class="mo">${esc(d.toLocaleString(undefined, { month: 'short' }))}</div><div class="d">${d.getDate()}</div><div class="dow">${esc(d.toLocaleString(undefined, { weekday: 'short' }))}</div>`;
-    const timeLine = l.precision === 'exact' ? timeFmt.format(d) : l.precision === 'day' ? 'Time TBD' : 'Date TBD';
+    if (l.precision === 'vague') {
+      return `<div class="md"><small>NET </small>${esc(monFmt.format(d))} ${d.getFullYear()}</div><div class="tm">Date TBD</div>`;
+    }
+    const time = l.precision === 'exact' ? timeFmt.format(d) : 'Time TBD';
+    return `<div class="md"><small>${esc(dowFmt.format(d))} </small>${esc(monFmt.format(d))} ${d.getDate()}</div><div class="tm">${esc(time)}</div>`;
+  }
+
+  function rowHtml(l) {
     const window = l.precision === 'exact' && l.windowEnd && l.windowEnd !== l.windowStart
       ? `${timeFmt.format(new Date(l.windowStart))} – ${timeFmt.format(new Date(l.windowEnd))}`
       : l.precision === 'exact' ? 'Instantaneous' : null;
+    const sub = [l.vehicle, l.padShort, l.landing?.label].filter(Boolean).join(' · ');
+    const done = DONE.has(l.status);
     return `
-      <li class="item" id="l-${esc(l.id)}" data-id="${esc(l.id)}">
-        <details>
-          <summary>
-            <div class="date">${date}</div>
-            <div class="meta">
-              <div class="t">${esc(l.mission)}</div>
-              <div class="s">${esc([timeLine, l.vehicle, ...l.categories.map(catLabel).filter((c) => c !== l.vehicle)].join(' · '))}</div>
-            </div>
-            <div class="right">${badge(l)}<span class="in" data-in="${esc(l.id)}">${esc(shortIn(l))}</span></div>
-          </summary>
-          <div class="detail">
-            <dl>
-              <dt>When</dt><dd>${esc(whenText(l))}</dd>
-              ${window ? `<dt>Window</dt><dd>${esc(window)}</dd>` : ''}
-              <dt>Status</dt><dd>${esc(l.statusName)}</dd>
-              ${l.pad ? `<dt>Pad</dt><dd>${esc(l.pad)}${l.location ? `, ${esc(l.location)}` : ''}</dd>` : ''}
-              ${l.orbit ? `<dt>Orbit</dt><dd>${esc(l.orbit)}</dd>` : ''}
-              ${l.probability != null ? `<dt>Weather</dt><dd>${esc(l.probability)}% go</dd>` : ''}
-            </dl>
-            ${l.description ? `<p>${esc(l.description)}</p>` : ''}
-            <div class="actions">${watchBtn(l)}${DONE.has(l.status) ? '' : calBtn(l)}</div>
-          </div>
-        </details>
-      </li>`;
+      <details class="row" id="l-${esc(l.id)}" role="row">
+        <summary>
+          <div class="d" role="cell">${dateCell(l)}</div>
+          <div class="m" role="cell"><div class="name">${nobr(l.mission)}</div><div class="sub">${esc(sub)}</div></div>
+          <div class="cell wide" role="cell">${esc(l.vehicle)}</div>
+          <div class="cell wide" role="cell">${esc(siteText(l) || '—')}</div>
+          <div class="cell wide" role="cell">${esc(landingText(l))}</div>
+          <div class="st-wrap end" role="cell">${statusTag(l)}<span class="in" data-in="${esc(l.id)}">${esc(shortIn(l))}</span></div>
+        </summary>
+        <div class="detail">
+          <dl>
+            <dt>${done ? 'Launched' : 'Launch'}</dt><dd>${esc(whenText(l))}</dd>
+            ${window ? `<dt>Window</dt><dd>${esc(window)}</dd>` : ''}
+            <dt>Status</dt><dd>${esc(l.statusName)}</dd>
+            ${l.pad ? `<dt>Pad</dt><dd>${esc(l.pad)}${l.location ? `, ${esc(l.location)}` : ''}</dd>` : ''}
+            ${l.landing ? `<dt>Landing</dt><dd>${esc(l.landing.name)}</dd>` : ''}
+            ${l.orbit ? `<dt>Orbit</dt><dd>${esc(l.orbit)}</dd>` : ''}
+            ${l.probability != null && !done ? `<dt>Weather</dt><dd>${esc(l.probability)}% go</dd>` : ''}
+            <dt>Type</dt><dd>${esc(l.categories.map(catLabel).join(' · '))}</dd>
+          </dl>
+          ${l.description ? `<p>${esc(l.description)}</p>` : ''}
+          <div class="actions">${watchBtn(l, 'sm')}${calBtn(l, 'sm')}</div>
+        </div>
+      </details>`;
   }
 
-  function renderChips() {
+  function renderFilters() {
     const opts = [{ id: 'all', label: 'All' }, ...data.categories];
-    $('#chips').innerHTML = opts
-      .map((c) => `<button class="chip" data-filter="${esc(c.id)}" aria-pressed="${c.id === filter}">${esc(c.label)}</button>`)
+    $('#filters').innerHTML = opts
+      .map((c) => `<button class="filter" data-filter="${esc(c.id)}" aria-pressed="${c.id === filter}">${esc(c.label)}</button>`)
       .join('');
   }
 
-  function renderLists() {
+  function renderBoard() {
     const upcoming = data.launches.filter((l) => isUpcoming(l) && matches(l));
     const recent = data.launches.filter((l) => !isUpcoming(l) && matches(l)).reverse();
     renderHero(upcoming[0]);
-    $('#upcoming').innerHTML = upcoming.slice(1).map(itemHtml).join('') ||
-      `<li class="empty">${upcoming.length ? 'Nothing else scheduled yet.' : 'Nothing scheduled.'}</li>`;
-    $('#recent').innerHTML = recent.map(itemHtml).join('');
-    $('#recent-title').hidden = recent.length === 0;
+    $('#upcoming-count').textContent = `${upcoming.length} mission${upcoming.length === 1 ? '' : 's'}`;
+    $('#upcoming').innerHTML = upcoming.map(rowHtml).join('') || `<p class="empty">Nothing scheduled</p>`;
+    $('#recent').innerHTML = recent.map(rowHtml).join('');
+    $('#recent-section').hidden = recent.length === 0;
   }
 
   function renderFeeds() {
     $('#feeds').innerHTML = data.feeds.map((f) => `
-      <li class="card feed${f.id === 'all' ? ' rec' : ''}">
-        <div class="name">${esc(f.name)}${f.id === 'all' ? '<span class="rec-tag">Recommended</span>' : ''}</div>
+      <li class="feed">
+        <div class="name">${esc(FEED_LABEL[f.id] ?? f.name)}${f.id === 'all' ? '<span class="rec">Recommended</span>' : ''}</div>
         <div class="desc">${esc(f.description)} · ${f.count} on calendar</div>
-        <a class="btn primary go-btn" href="${esc(feedWebcalUrl(f.id))}">Subscribe</a>
         <button class="copy" data-copy="${esc(feedHttpUrl(f.id))}">Copy link</button>
+        <a class="btn sm${f.id === 'all' ? ' solid' : ''}" href="${esc(feedWebcalUrl(f.id))}">Subscribe</a>
       </li>`).join('');
   }
 
@@ -189,16 +215,17 @@
   }
 
   function render() {
-    renderChips();
-    renderLists();
+    renderFilters();
+    renderBoard();
     renderFeeds();
     renderUpdated();
   }
 
   function tick() {
+    if (!data) return;
     const id = $('#hero').dataset.id;
-    const next = id && data?.launches.find((l) => l.id === id);
-    if (next) $('#hero-countdown').innerHTML = countdownHtml(next);
+    const next = id && data.launches.find((l) => l.id === id);
+    if (next) $('#hero-clock').innerHTML = clockHtml(next);
     document.querySelectorAll('[data-in]').forEach((el) => {
       const l = data.launches.find((x) => x.id === el.dataset.in);
       if (l) el.textContent = shortIn(l);
@@ -210,10 +237,14 @@
     try {
       const res = await fetch(DATA_URL, { cache: 'no-cache' });
       if (!res.ok) throw new Error(res.status);
-      data = await res.json();
+      const fresh = await res.json();
+      // Keep any open rows open across background refreshes.
+      const open = [...document.querySelectorAll('details.row[open]')].map((d) => d.id);
+      data = fresh;
       render();
-    } catch (err) {
-      if (!data) $('#hero').innerHTML = `<div class="card hero"><p>Couldn’t load launches. Check your connection and pull to refresh.</p></div>`;
+      open.forEach((id) => { const el = document.getElementById(id); if (el) el.open = true; });
+    } catch {
+      if (!data) $('#hero').innerHTML = `<div class="hero-inner"><p class="overline">Offline</p><h1>Couldn’t load launches</h1><p class="meta">Check your connection and try again</p></div>`;
     }
   }
 
@@ -238,23 +269,22 @@
     const id = decodeURIComponent(location.hash.slice(1));
     if (!id || !data) return;
     showTab('launches');
-    if ($('#hero').dataset.id === id) return $('#hero').scrollIntoView({ behavior: 'smooth' });
     let el = document.getElementById(`l-${id}`);
     if (!el && filter !== 'all') { filter = 'all'; render(); el = document.getElementById(`l-${id}`); }
     if (!el) return;
-    el.querySelector('details').open = true;
+    el.open = true;
     el.classList.add('flash');
     el.scrollIntoView({ behavior: 'smooth', block: 'center' });
     setTimeout(() => el.classList.remove('flash'), 2000);
   }
 
   document.addEventListener('click', async (e) => {
-    const chip = e.target.closest('[data-filter]');
-    if (chip) {
-      filter = chip.dataset.filter;
+    const f = e.target.closest('[data-filter]');
+    if (f) {
+      filter = f.dataset.filter;
       store.set(STORE_KEY, filter);
-      renderChips();
-      renderLists();
+      renderFilters();
+      renderBoard();
       return;
     }
     const copy = e.target.closest('[data-copy]');
@@ -268,7 +298,10 @@
       return;
     }
     const tab = e.target.closest('[role="tab"]');
-    if (tab) showTab(tab.id.replace('tab-', ''));
+    if (tab) {
+      showTab(tab.id.replace('tab-', ''));
+      window.scrollTo({ top: 0 });
+    }
   });
 
   document.addEventListener('visibilitychange', () => { if (!document.hidden) load(); });
