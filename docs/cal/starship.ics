@@ -1,0 +1,12 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//spacex-launch-alerts//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:SpaceX Starship
+NAME:SpaceX Starship
+X-WR-CALDESC:Starship flight tests
+REFRESH-INTERVAL;VALUE=DURATION:PT15M
+X-PUBLISHED-TTL:PT15M
+URL:https://benjaminowens612.github.io/spacex-launch-alerts/
+END:VCALENDAR
