@@ -1,6 +1,6 @@
-# 🚀 SpaceX Launch Alerts
+# LaunchView
 
-An iPhone-first web app and auto-updating calendar feeds so you never miss a SpaceX launch.
+LaunchView is an iPhone-first web app and auto-updating calendar feeds so you never miss a SpaceX launch.
 
 - **Calendar alerts:** subscribe once on your iPhone. Every launch with a set time appears in Calendar with alerts at **T-1 hour** and **T-10 minutes**. When a launch is scrubbed or delayed, the existing event moves instead of a duplicate appearing.
 - **Filters:** pick a feed. Options are every launch, no Starlink, notable only (Starship, crewed and Falcon Heavy), or single-category feeds.

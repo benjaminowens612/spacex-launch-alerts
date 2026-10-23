@@ -1,6 +1,6 @@
 {
-  "name": "SpaceX Launch Alerts",
-  "short_name": "Launches",
+  "name": "LaunchView",
+  "short_name": "LaunchView",
   "description": "Never miss a SpaceX launch: live countdowns and calendar alerts.",
   "start_url": "./",
   "scope": "./",
