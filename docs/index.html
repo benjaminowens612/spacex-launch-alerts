@@ -24,10 +24,16 @@
       <svg class="logo" viewBox="168 40 176 432" aria-hidden="true"><path fill="currentColor" d="M252.5 48.1Q256.6 43.4 260.6 48.1L321 132.2V161.2H293.1V303.9L333.7 399.6V461.6H293.1V468H218.9V461.6H178.3V399.6L218.9 303.9V161.2H192.2V132.2Z"/></svg>
       <span>LaunchView</span>
     </a>
-    <nav class="tabs" role="tablist" aria-label="Sections">
-      <button role="tab" id="tab-launches" aria-controls="view-launches" aria-selected="true">Launches</button>
-      <button role="tab" id="tab-subscribe" aria-controls="view-subscribe" aria-selected="false">Alerts</button>
-    </nav>
+    <div class="nav-right">
+      <nav class="tabs" role="tablist" aria-label="Sections">
+        <button role="tab" id="tab-launches" aria-controls="view-launches" aria-selected="true">Launches</button>
+        <button role="tab" id="tab-subscribe" aria-controls="view-subscribe" aria-selected="false">Alerts</button>
+      </nav>
+      <button class="install" id="install-btn" data-install-open hidden aria-label="Add LaunchView to your Home Screen">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 8v8M8 12h8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <span>Install</span>
+      </button>
+    </div>
   </header>
 
   <main>
@@ -81,6 +87,7 @@
 
       <div class="board-head"><h2>03 — Add to Home Screen</h2></div>
       <p class="lede">In Safari, tap <b>Share</b> › <b>Add to Home Screen</b>. The app opens full-screen with live countdowns and webcast links.</p>
+      <div class="lede-actions" data-install hidden><button class="btn sm" data-install-open>Show me how</button></div>
     </section>
   </main>
 
@@ -89,6 +96,35 @@
     <span>Data · <a href="https://thespacedevs.com/llapi" rel="noopener">Launch Library 2</a></span>
     <span>Not affiliated with SpaceX</span>
   </footer>
+
+  <dialog class="sheet" id="install-sheet" aria-labelledby="install-title">
+    <div class="sheet-inner">
+      <button class="sheet-close" data-close aria-label="Close">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </button>
+      <p class="overline">Install LaunchView</p>
+      <h2 id="install-title">Add to Home Screen</h2>
+      <p class="sheet-lede">Get LaunchView as an app: one tap from your Home Screen, full-screen, no browser bars.</p>
+      <ol class="howto">
+        <li>
+          <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M8 7l4-4 4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 10H6.5A1.5 1.5 0 0 0 5 11.5v8A1.5 1.5 0 0 0 6.5 21h11a1.5 1.5 0 0 0 1.5-1.5v-8a1.5 1.5 0 0 0-1.5-1.5H16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+          <div><b>Tap Share</b> <span class="only-safari">in Safari’s toolbar below.</span><span class="only-other">in your browser’s menu.</span><span class="dim">Don’t see it? Tap <b>•••</b> first.</span></div>
+        </li>
+        <li>
+          <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 8v8M8 12h8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+          <div>Tap <b>Add to Home Screen</b>.<span class="dim">Scroll down, or tap <b>View More</b>, if it’s not in the first row.</span></div>
+        </li>
+        <li>
+          <span class="ico app"><img src="icons/apple-touch-icon.png" alt=""></span>
+          <div>Tap <b>Add</b>.<span class="dim">LaunchView appears on your Home Screen.</span></div>
+        </li>
+      </ol>
+      <div class="pointer only-safari" aria-hidden="true">
+        <span>Safari toolbar</span>
+        <svg viewBox="0 0 24 24"><path d="M12 4v15M6 13l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+    </div>
+  </dialog>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script src="app.js" defer></script>

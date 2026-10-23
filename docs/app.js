@@ -278,7 +278,49 @@
     setTimeout(() => el.classList.remove('flash'), 2000);
   }
 
+  // ---------- install ----------
+  // iOS has no install API, so the button opens a how-to sheet; Chrome/Android get the real prompt.
+  const sheet = $('#install-sheet');
+  const ua = navigator.userAgent;
+  const isIOS = /iPhone|iPad|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  const isIOSSafari = isIOS && !/CriOS|FxiOS|EdgiOS|OPiOS|GSA\//.test(ua);
+  const isStandalone = () => matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
+  let installPrompt = null;
+
+  function updateInstall() {
+    const show = !isStandalone() && (Boolean(installPrompt) || isIOS);
+    $('#install-btn').hidden = !show;
+    document.querySelectorAll('[data-install]').forEach((el) => { el.hidden = !show; });
+  }
+
+  async function install() {
+    if (installPrompt) {
+      installPrompt.prompt();
+      await installPrompt.userChoice.catch(() => {});
+      installPrompt = null;
+      updateInstall();
+      return;
+    }
+    sheet.classList.toggle('safari', isIOSSafari);
+    sheet.showModal();
+  }
+
+  window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    installPrompt = e;
+    updateInstall();
+  });
+  window.addEventListener('appinstalled', () => {
+    installPrompt = null;
+    updateInstall();
+    toast('LaunchView installed');
+  });
+  // Tap outside the sheet (on the backdrop) to close it.
+  sheet.addEventListener('click', (e) => { if (e.target === sheet) sheet.close(); });
+
   document.addEventListener('click', async (e) => {
+    if (e.target.closest('[data-install-open]')) { install(); return; }
+    if (e.target.closest('[data-close]')) { sheet.close(); return; }
     const f = e.target.closest('[data-filter]');
     if (f) {
       filter = f.dataset.filter;
@@ -307,6 +349,7 @@
   document.addEventListener('visibilitychange', () => { if (!document.hidden) load(); });
   window.addEventListener('hashchange', openFromHash);
 
+  updateInstall();
   showTab(store.get(TAB_KEY) === 'subscribe' ? 'subscribe' : 'launches');
   load().then(openFromHash);
   setInterval(tick, 1000);
