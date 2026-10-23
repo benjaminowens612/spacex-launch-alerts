@@ -59,6 +59,10 @@ jobs:
             echo "::warning::Could not push data commit; the site is still deployed below."
           fi
 
+      # Keeps the free Supabase project (push notifications) from pausing for inactivity.
+      - name: Ping notifications backend
+        run: curl -fsS --max-time 20 "https://dzlbxtbdymrusxzdroya.supabase.co/functions/v1/subscribe?ping" || true
+
       - uses: actions/configure-pages@v5
 
       - uses: actions/upload-pages-artifact@v3

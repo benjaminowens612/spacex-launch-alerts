@@ -401,7 +401,7 @@
     const perm = await Notification.requestPermission();
     if (perm !== 'granted') return renderPush(perm === 'denied' ? '' : 'Notifications weren’t allowed.');
     try {
-      const reg = await navigator.serviceWorker.ready;
+      const reg = await swReady();
       const { publicKey } = await (await fetch(PUSH_FN)).json();
       const key = Uint8Array.from(atob(publicKey.replace(/-/g, '+').replace(/_/g, '/')), (c) => c.charCodeAt(0));
       pushSub = await reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: key });
@@ -431,10 +431,17 @@
     }
   }
 
+  // serviceWorker.ready never settles if registration fails, so don't wait forever.
+  const swReady = () => Promise.race([
+    navigator.serviceWorker.ready,
+    new Promise((_, reject) => setTimeout(() => reject(new Error('service worker not ready')), 5000)),
+  ]);
+
   async function initPush() {
+    renderPush();
     if (pushSupported && !(isIOS && !isStandalone())) {
       try {
-        const reg = await navigator.serviceWorker.ready;
+        const reg = await swReady();
         pushSub = await reg.pushManager.getSubscription();
         // Re-sync now and then so the server has current prefs, time zone and keys.
         if (pushSub && Notification.permission === 'granted') savePrefs().catch(() => {});
