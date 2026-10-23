@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-23T16:14:46.833Z",
+ "generatedAt": "2026-10-23T23:31:48.873Z",
  "siteUrl": "https://benjaminowens612.github.io/spacex-launch-alerts/",
  "categories": [
   {
@@ -103,9 +103,9 @@
    "categories": [
     "starlink"
    ],
-   "status": "Go",
-   "statusName": "Go for Launch",
-   "net": "2026-10-23T22:28:53Z",
+   "status": "In Flight",
+   "statusName": "Launch in Flight",
+   "net": "2026-10-23T22:48:44Z",
    "precision": "exact",
    "precisionName": "Second",
    "windowStart": "2026-10-23T21:30:00Z",
@@ -122,11 +122,11 @@
    "orbit": "Low Earth Orbit",
    "description": "A batch of 27 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
    "probability": null,
-   "webcast": "https://www.youtube.com/watch?v=zGZUw70ASg0",
+   "webcast": "https://www.youtube.com/watch?v=cyJtopOtMZA",
    "webcastLive": false,
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305192320.png",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
-   "updated": "2026-10-23T15:48:24Z"
+   "updated": "2026-10-23T23:14:56Z"
   },
   {
    "id": "e2886a96-5ce9-4f45-872f-4e25a00be837",

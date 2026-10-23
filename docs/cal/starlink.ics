@@ -11,21 +11,21 @@ X-PUBLISHED-TTL:PT15M
 URL:https://benjaminowens612.github.io/spacex-launch-alerts/
 BEGIN:VEVENT
 UID:f6af629d-39b5-4f86-bc0c-f8776444a858@spacex-launch-alerts
-DTSTAMP:20261023T154824Z
-LAST-MODIFIED:20261023T154824Z
-SEQUENCE:214933704
+DTSTAMP:20261023T231456Z
+LAST-MODIFIED:20261023T231456Z
+SEQUENCE:214960496
 SUMMARY:🚀 Falcon 9 · Starlink Group 15-15
-DTSTART:20261023T222853Z
-DTEND:20261024T022853Z
+DTSTART:20261023T224844Z
+DTEND:20261024T024844Z
 LOCATION:Space Launch Complex 4E\, Vandenberg SFB\, CA\, USA
-DESCRIPTION:Status: Go for Launch\nWindow: Fri\, 23 Oct 2026 21:30:00 UTC 
- – Sat\, 24 Oct 2026 01:30:00 UTC\nOrbit: Low Earth Orbit\nPad: Space Lau
- nch Complex 4E\, Vandenberg SFB\, CA\, USA\n\n▶ Watch live: https://www.
- youtube.com/watch?v=zGZUw70ASg0\n\nA batch of 27 satellites for the Starli
- nk mega-constellation - SpaceX's project for space-based Internet communic
- ation system.\n\nCountdown & updates: https://benjaminowens612.github.io/s
- pacex-launch-alerts/#f6af629d-39b5-4f86-bc0c-f8776444a858
-URL:https://www.youtube.com/watch?v=zGZUw70ASg0
+DESCRIPTION:Status: Launch in Flight\nWindow: Fri\, 23 Oct 2026 21:30:00 UT
+ C – Sat\, 24 Oct 2026 01:30:00 UTC\nOrbit: Low Earth Orbit\nPad: Space L
+ aunch Complex 4E\, Vandenberg SFB\, CA\, USA\n\n▶ Watch live: https://ww
+ w.youtube.com/watch?v=cyJtopOtMZA\n\nA batch of 27 satellites for the Star
+ link mega-constellation - SpaceX's project for space-based Internet commun
+ ication system.\n\nCountdown & updates: https://benjaminowens612.github.io
+ /spacex-launch-alerts/#f6af629d-39b5-4f86-bc0c-f8776444a858
+URL:https://www.youtube.com/watch?v=cyJtopOtMZA
 CATEGORIES:starlink
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
