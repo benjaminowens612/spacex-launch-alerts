@@ -1,5 +1,5 @@
 // Offline shell + last-known launch data. Calendar feeds always go to the network.
-const CACHE = 'sla-v2';
+const CACHE = 'sla-v3';
 const SHELL = ['./', 'index.html', 'styles.css', 'app.js', 'manifest.webmanifest', 'icons/icon.svg', 'icons/apple-touch-icon.png'];
 
 self.addEventListener('install', (e) => {

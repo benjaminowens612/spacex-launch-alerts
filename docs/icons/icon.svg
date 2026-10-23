@@ -1,13 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
   <rect width="512" height="512" fill="#000"/>
-  <g fill="#fff">
-    <!-- nose + body -->
-    <path d="M256 44C238 56 222 96 222 140V468H290V140C290 96 274 56 256 44Z"/>
-    <!-- forward flaps -->
-    <path d="M227 100L192 150V176H222Z"/>
-    <path d="M285 100L320 150V176H290Z"/>
-    <!-- aft flaps -->
-    <path d="M222 318L186 410V448H222Z"/>
-    <path d="M290 318L326 410V448H290Z"/>
-  </g>
+  <!-- Starship silhouette traced from reference art: nose + forward flaps, body, aft flaps, engines -->
+  <path fill="#fff" d="M252.5 48.1Q256.6 43.4 260.6 48.1L321 132.2V161.2H293.1V303.9L333.7 399.6V461.6H293.1V468H218.9V461.6H178.3V399.6L218.9 303.9V161.2H192.2V132.2Z"/>
 </svg>
