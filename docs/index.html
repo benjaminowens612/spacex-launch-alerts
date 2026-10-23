@@ -71,21 +71,25 @@
     </section>
 
     <section id="view-subscribe" class="wrap alerts" role="tabpanel" aria-labelledby="tab-subscribe" hidden>
-      <p class="overline">Calendar alerts</p>
+      <p class="overline">Alerts</p>
       <h1 class="display">Never miss<br>a launch</h1>
-      <p class="lede">Subscribe to a launch calendar on your iPhone. Every launch with a confirmed time alerts you <b>1 hour</b> and <b>10 minutes</b> before liftoff. If a launch scrubs or slips, the calendar event moves with it.</p>
+      <p class="lede">Get <b>push notifications</b> from LaunchView: countdown reminders, scrubs and delays, the webcast going live, and the result. A <b>calendar subscription</b> works as a backup.</p>
 
-      <div class="board-head"><h2>01 — Choose a calendar</h2></div>
+      <div class="board-head"><h2>01 — Push notifications</h2><span class="count" id="push-label"></span></div>
+      <div class="push" id="push" aria-live="polite"></div>
+
+      <div class="board-head"><h2>02 — Calendar backup</h2></div>
+      <p class="lede tight">Launches with a confirmed time alert you <b>1 hour</b> and <b>10 minutes</b> before liftoff. If a launch scrubs or slips, the event moves with it.</p>
       <ul class="feeds" id="feeds"></ul>
 
-      <div class="board-head"><h2>02 — Check these settings once</h2></div>
+      <div class="board-head"><h2>03 — Calendar settings (once)</h2></div>
       <ol class="steps">
         <li><span class="k">Keep alerts</span><p>When you subscribe, iOS shows a <b>Remove Alerts</b> switch. Turn it <b>off</b>, or the calendar arrives without alerts.</p><p class="dim">To change it later: Settings › Apps › Calendar › Calendar Accounts › Subscribed Calendars</p></li>
         <li><span class="k">Refresh often</span><p>Settings › Apps › Calendar › Calendar Accounts › Fetch New Data. Set <b>Fetch</b> to <b>Every 15 Minutes</b> so late scrubs reach your phone.</p></li>
         <li><span class="k">Allow notifications</span><p>Settings › Notifications › Calendar. Turn on <b>Allow Notifications</b> and <b>Time Sensitive</b>.</p></li>
       </ol>
 
-      <div class="board-head"><h2>03 — Add to Home Screen</h2></div>
+      <div class="board-head"><h2>04 — Add to Home Screen</h2></div>
       <p class="lede">In Safari, tap <b>Share</b> › <b>Add to Home Screen</b>. The app opens full-screen with live countdowns and webcast links.</p>
       <div class="lede-actions" data-install hidden><button class="btn sm" data-install-open>Show me how</button></div>
     </section>

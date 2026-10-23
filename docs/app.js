@@ -318,9 +318,155 @@
   // Tap outside the sheet (on the backdrop) to close it.
   sheet.addEventListener('click', (e) => { if (e.target === sheet) sheet.close(); });
 
+  // ---------- push notifications ----------
+  // Subscriptions live in Supabase; the `dispatch` function sends the pushes.
+  const PUSH_FN = 'https://dzlbxtbdymrusxzdroya.supabase.co/functions/v1/subscribe';
+  const PUSH_PREFS_KEY = 'lv:push-prefs';
+  const PUSH_TOKEN_KEY = 'lv:push-token';
+  const LEADS = [[1440, '24 hours'], [60, '1 hour'], [10, '10 min'], [1, '1 min']];
+  const EVENT_TOGGLES = [['changes', 'Scrubs, delays & holds'], ['webcast', 'Webcast is live'], ['results', 'Launch results']];
+  const pushSupported = 'serviceWorker' in navigator && 'PushManager' in window && 'Notification' in window;
+  const PUSH_DEFAULTS = { reminders: [1440, 60, 10], filter: 'all', changes: true, webcast: true, results: true };
+  let pushSub = null;
+  let pushPrefs = { ...PUSH_DEFAULTS };
+  try { Object.assign(pushPrefs, JSON.parse(store.get(PUSH_PREFS_KEY) || '{}')); } catch { /* keep defaults */ }
+
+  function pushToken() {
+    let t = store.get(PUSH_TOKEN_KEY);
+    if (!t) {
+      t = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(24)))).replace(/[+/=]/g, (c) => ({ '+': '-', '/': '_', '=': '' })[c]);
+      store.set(PUSH_TOKEN_KEY, t);
+    }
+    return t;
+  }
+
+  async function pushApi(action, extra = {}) {
+    const res = await fetch(PUSH_FN, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ action, token: pushToken(), subscription: pushSub.toJSON(), ...extra }),
+    });
+    const body = await res.json().catch(() => ({}));
+    if (!res.ok) throw Object.assign(new Error(body.error || `HTTP ${res.status}`), { status: res.status });
+    return body;
+  }
+
+  const savePrefs = () => pushApi('save', { prefs: pushPrefs, tz: Intl.DateTimeFormat().resolvedOptions().timeZone });
+
+  function pushState() {
+    if (!pushSupported) return isIOS && !isStandalone() ? 'install' : 'unsupported';
+    if (isIOS && !isStandalone()) return 'install';
+    if (Notification.permission === 'denied') return 'denied';
+    return pushSub ? 'on' : 'off';
+  }
+
+  function renderPush(note = '') {
+    const el = $('#push');
+    const state = pushState();
+    $('#push-label').textContent = state === 'on' ? 'On' : '';
+    const noteHtml = note ? `<p class="push-note">${esc(note)}</p>` : '';
+    if (state === 'install') {
+      el.innerHTML = `<p class="lede tight">iPhone only delivers notifications to the <b>installed app</b>. Add LaunchView to your Home Screen, open it from there, and turn notifications on.</p>
+        <div class="actions"><button class="btn sm" data-install-open>Show me how</button></div>`;
+    } else if (state === 'unsupported') {
+      el.innerHTML = `<p class="lede tight">This browser can’t receive web push notifications. Use the calendar backup below.</p>`;
+    } else if (state === 'denied') {
+      el.innerHTML = `<p class="lede tight">Notifications are blocked for LaunchView. Turn them on in <b>Settings › Notifications › LaunchView</b>, then come back here.</p>`;
+    } else if (state === 'off') {
+      el.innerHTML = `<p class="lede tight">Reminders at <b>T-24h, T-1h and T-10m</b>, plus scrubs, delays, the webcast going live and the result. You can fine-tune it after.</p>
+        <div class="actions"><button class="btn solid" data-push="on">Turn on notifications</button></div>${noteHtml}`;
+    } else {
+      const chip = (on, attrs, label) => `<button class="pchip" aria-pressed="${on}" ${attrs}>${esc(label)}</button>`;
+      el.innerHTML = `
+        <div class="pgroup"><p class="plabel">Remind me before liftoff</p>
+          <div class="pchips">${LEADS.map(([m, l]) => chip(pushPrefs.reminders.includes(m), `data-lead="${m}"`, l)).join('')}</div></div>
+        <div class="pgroup"><p class="plabel">Which launches</p>
+          <div class="pchips">${(data?.feeds ?? [{ id: 'all' }]).map((f) => chip(pushPrefs.filter === f.id, `data-pfilter="${esc(f.id)}"`, FEED_LABEL[f.id] ?? f.name)).join('')}</div></div>
+        <div class="pgroup">${EVENT_TOGGLES.map(([k, l]) => `
+          <button class="pswitch" role="switch" aria-checked="${Boolean(pushPrefs[k])}" data-ptoggle="${k}"><span>${esc(l)}</span><i aria-hidden="true"></i></button>`).join('')}</div>
+        <div class="actions"><button class="btn sm" data-push="test">Send test</button><button class="btn sm ghost" data-push="off">Turn off</button></div>${noteHtml}`;
+    }
+  }
+
+  let saveTimer;
+  function prefsChanged() {
+    store.set(PUSH_PREFS_KEY, JSON.stringify(pushPrefs));
+    renderPush();
+    clearTimeout(saveTimer);
+    saveTimer = setTimeout(() => savePrefs().then(() => toast('Saved')).catch(() => renderPush('Couldn’t save. Check your connection.')), 600);
+  }
+
+  async function pushOn() {
+    // Must be the first await in the tap handler, or iOS refuses to show the prompt.
+    const perm = await Notification.requestPermission();
+    if (perm !== 'granted') return renderPush(perm === 'denied' ? '' : 'Notifications weren’t allowed.');
+    try {
+      const reg = await navigator.serviceWorker.ready;
+      const { publicKey } = await (await fetch(PUSH_FN)).json();
+      const key = Uint8Array.from(atob(publicKey.replace(/-/g, '+').replace(/_/g, '/')), (c) => c.charCodeAt(0));
+      pushSub = await reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: key });
+      await savePrefs();
+      renderPush();
+      toast('Notifications on');
+    } catch (err) {
+      pushSub = null;
+      renderPush(`Couldn’t turn on notifications (${err.message}).`);
+    }
+  }
+
+  async function pushOff() {
+    try { await pushApi('delete'); } catch { /* already gone server-side */ }
+    await pushSub?.unsubscribe().catch(() => {});
+    pushSub = null;
+    renderPush();
+    toast('Notifications off');
+  }
+
+  async function pushTest() {
+    try {
+      await pushApi('test');
+      toast('Test sent');
+    } catch (err) {
+      renderPush(err.status === 429 ? 'Wait a minute between tests.' : `Test failed (${err.message}).`);
+    }
+  }
+
+  async function initPush() {
+    if (pushSupported && !(isIOS && !isStandalone())) {
+      try {
+        const reg = await navigator.serviceWorker.ready;
+        pushSub = await reg.pushManager.getSubscription();
+        // Re-sync now and then so the server has current prefs, time zone and keys.
+        if (pushSub && Notification.permission === 'granted') savePrefs().catch(() => {});
+      } catch { /* no SW yet */ }
+    }
+    renderPush();
+  }
+
+  function onPushClick(e) {
+    const btn = e.target.closest('[data-push],[data-lead],[data-pfilter],[data-ptoggle]');
+    if (!btn) return false;
+    if (btn.dataset.push === 'on') pushOn();
+    else if (btn.dataset.push === 'off') pushOff();
+    else if (btn.dataset.push === 'test') pushTest();
+    else if (btn.dataset.lead) {
+      const m = Number(btn.dataset.lead);
+      pushPrefs.reminders = pushPrefs.reminders.includes(m) ? pushPrefs.reminders.filter((x) => x !== m) : [...pushPrefs.reminders, m].sort((a, b) => b - a);
+      prefsChanged();
+    } else if (btn.dataset.pfilter) {
+      pushPrefs.filter = btn.dataset.pfilter;
+      prefsChanged();
+    } else if (btn.dataset.ptoggle) {
+      pushPrefs[btn.dataset.ptoggle] = !pushPrefs[btn.dataset.ptoggle];
+      prefsChanged();
+    }
+    return true;
+  }
+
   document.addEventListener('click', async (e) => {
     if (e.target.closest('[data-install-open]')) { install(); return; }
     if (e.target.closest('[data-close]')) { sheet.close(); return; }
+    if (onPushClick(e)) return;
     const f = e.target.closest('[data-filter]');
     if (f) {
       filter = f.dataset.filter;
@@ -351,7 +497,7 @@
 
   updateInstall();
   showTab(store.get(TAB_KEY) === 'subscribe' ? 'subscribe' : 'launches');
-  load().then(openFromHash);
+  load().then(() => { openFromHash(); initPush(); });
   setInterval(tick, 1000);
   setInterval(renderUpdated, 30000);
   setInterval(load, REFRESH_MS);

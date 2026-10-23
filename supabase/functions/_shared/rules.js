@@ -8,7 +8,7 @@ const CHANGE_KINDS = new Set(['delay', 'scrub', 'earlier', 'hold', 'resumed', 't
 const EVENT_HORIZON_MS = 14 * 24 * 3600 * 1000;
 const MIN = 60 * 1000;
 
-// Same feeds as scripts/build.mjs FEEDS (kept in sync by test/push-rules.test.mjs).
+// Same feeds as scripts/build.mjs FEEDS (kept in sync by test/push.test.mjs).
 const hasAny = (l, cats) => l.categories.some((c) => cats.includes(c));
 export const FILTERS = {
   all: () => true,

@@ -100,6 +100,9 @@ export async function encryptPayload(subscription, payload) {
 /**
  * Send one push. Resolves to { status, ok, gone } — `gone` means the
  * subscription no longer exists (404/410) and should be deleted.
+ * @param {{ endpoint: string, keys: { p256dh: string, auth: string } }} subscription
+ * @param {unknown} payload
+ * @param {{ keys: { publicKey: JsonWebKey, privateKey: JsonWebKey }, subject: string, ttl?: number, urgency?: string, topic?: string }} options
  */
 export async function sendPush(subscription, payload, { keys, subject, ttl = 3600, urgency = 'high', topic } = {}) {
   const body = await encryptPayload(subscription, JSON.stringify(payload));
