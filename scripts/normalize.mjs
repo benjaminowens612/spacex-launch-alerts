@@ -52,11 +52,37 @@ function pickWebcast(raw) {
   return sorted[0]?.url ?? null;
 }
 
-function pickImage(raw) {
+function pickImage(raw, large = false) {
   const img = raw?.image;
   if (!img) return null;
   if (typeof img === 'string') return img; // LL2 2.2.0 shape
-  return img.thumbnail_url || img.image_url || null;
+  return (large ? img.image_url || img.thumbnail_url : img.thumbnail_url || img.image_url) || null;
+}
+
+/** "Space Launch Complex 40" → "SLC-40", "Launch Complex 39A" → "LC-39A". */
+export function shortPad(name) {
+  if (!name || /^unknown/i.test(name.trim())) return null;
+  const m = /^(Space )?Launch Complex (\w+)$/i.exec(name.trim());
+  if (m) return `${m[1] ? 'SLC' : 'LC'}-${m[2].toUpperCase()}`;
+  return name.replace(/^Orbital Launch Mount\b/i, 'OLM').replace(/^Orbital Launch Pad\b/i, 'OLP');
+}
+
+/** "Cape Canaveral SFS, FL, USA" → "Cape Canaveral", "SpaceX Starbase, TX, USA" → "Starbase". */
+export function shortSite(location) {
+  if (!location) return null;
+  return location.split(',')[0].replace(/\s+(SFS|SFB|AFS|AFB)$/i, '').replace(/^SpaceX\s+/i, '').trim();
+}
+
+/** First-stage recovery: droneship/landing-zone abbrev, "Expended", or null if unknown. */
+export function pickLanding(raw) {
+  const stage = raw?.rocket?.launcher_stage?.[0];
+  const landing = stage?.landing;
+  if (!landing) return null;
+  const loc = landing.landing_location ?? landing.location;
+  if (landing.attempt === false) return { label: 'Expended', name: 'No landing attempt', type: null };
+  const label = loc?.abbrev || loc?.name;
+  if (!label) return null;
+  return { label, name: loc?.name ?? label, type: landing.type?.abbrev ?? null };
 }
 
 export function normalize(raw) {
@@ -77,13 +103,17 @@ export function normalize(raw) {
     windowStart: raw.window_start ?? raw.net,
     windowEnd: raw.window_end ?? raw.net,
     pad: raw.pad?.name ?? null,
+    padShort: shortPad(raw.pad?.name),
     location: raw.pad?.location?.name ?? null,
+    site: shortSite(raw.pad?.location?.name),
+    landing: pickLanding(raw),
     orbit: raw.mission?.orbit?.name ?? null,
     description: raw.mission?.description ?? null,
     probability: raw.probability ?? null,
     webcast: pickWebcast(raw),
     webcastLive: Boolean(raw.webcast_live),
     image: pickImage(raw),
+    imageLarge: pickImage(raw, true),
     updated: raw.last_updated ?? raw.net,
   };
 }

@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { buildLaunchList, categorize, precisionOf } from '../scripts/normalize.mjs';
+import { buildLaunchList, categorize, precisionOf, shortPad, shortSite } from '../scripts/normalize.mjs';
 import { makeSource } from './fixtures/ll2.mjs';
 
 const NOW = new Date('2026-10-23T12:00:00Z');
@@ -41,6 +41,28 @@ test('picks webcast and thumbnail', () => {
   assert.equal(crew.webcast, 'https://www.youtube.com/watch?v=crew12');
   assert.equal(crew.image, 'https://example.com/thumb.jpg');
   assert.equal(crew.vehicle, 'Falcon 9');
+});
+
+test('short pad and site names for the mission board', () => {
+  assert.equal(shortPad('Space Launch Complex 40'), 'SLC-40');
+  assert.equal(shortPad('Space Launch Complex 4E'), 'SLC-4E');
+  assert.equal(shortPad('Launch Complex 39A'), 'LC-39A');
+  assert.equal(shortPad('Orbital Launch Mount A'), 'OLM A');
+  assert.equal(shortPad('Unknown Pad'), null);
+  assert.equal(shortSite('Cape Canaveral SFS, FL, USA'), 'Cape Canaveral');
+  assert.equal(shortSite('Vandenberg SFB, CA, USA'), 'Vandenberg');
+  assert.equal(shortSite('SpaceX Starbase, TX, USA'), 'Starbase');
+  const crew = byMission('Crew-12');
+  assert.equal(crew.padShort, 'LC-39A');
+  assert.equal(crew.site, 'Kennedy Space Center');
+});
+
+test('first-stage landing', () => {
+  assert.equal(byMission('Starlink Group 10-12').landing.label, 'ASOG');
+  assert.equal(byMission('Crew-12').landing.label, 'LZ-1');
+  assert.equal(byMission('USSF-75').landing.label, 'Expended');
+  assert.equal(byMission('Flight 12').landing, null);
+  assert.equal(byMission('Crew-12').imageLarge, 'https://example.com/full.jpg');
 });
 
 test('upcoming record wins over a stale previous duplicate', () => {

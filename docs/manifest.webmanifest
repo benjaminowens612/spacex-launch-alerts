@@ -1,12 +1,12 @@
 {
-  "name": "SpaceX Launch Alerts",
-  "short_name": "Launches",
+  "name": "LaunchView",
+  "short_name": "LaunchView",
   "description": "Never miss a SpaceX launch: live countdowns and calendar alerts.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "background_color": "#000000",
-  "theme_color": "#0b0d12",
+  "theme_color": "#000000",
   "icons": [
     { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml" },
     { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },

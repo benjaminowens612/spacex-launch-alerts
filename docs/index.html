@@ -3,66 +3,92 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Launch Alerts</title>
+  <title>LaunchView</title>
   <meta name="description" content="Never miss a SpaceX launch: live countdowns and calendar alerts.">
-  <meta name="theme-color" content="#0b0d12" media="(prefers-color-scheme: dark)">
-  <meta name="theme-color" content="#f5f6f8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#000000">
+  <meta name="color-scheme" content="dark">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="Launches">
+  <meta name="apple-mobile-web-app-title" content="LaunchView">
   <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
   <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/barlow-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/barlow-condensed-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="top">
-    <div class="brand">
+  <header class="nav">
+    <a class="brand" href="./" aria-label="LaunchView home">
       <svg class="logo" viewBox="168 40 176 432" aria-hidden="true"><path fill="currentColor" d="M252.5 48.1Q256.6 43.4 260.6 48.1L321 132.2V161.2H293.1V303.9L333.7 399.6V461.6H293.1V468H218.9V461.6H178.3V399.6L218.9 303.9V161.2H192.2V132.2Z"/></svg>
-      <h1>Launch Alerts</h1>
-    </div>
-    <p class="updated" id="updated" aria-live="polite"></p>
+      <span>LaunchView</span>
+    </a>
+    <nav class="tabs" role="tablist" aria-label="Sections">
+      <button role="tab" id="tab-launches" aria-controls="view-launches" aria-selected="true">Launches</button>
+      <button role="tab" id="tab-subscribe" aria-controls="view-subscribe" aria-selected="false">Alerts</button>
+    </nav>
   </header>
-
-  <nav class="tabs" role="tablist">
-    <button role="tab" id="tab-launches" aria-controls="view-launches" aria-selected="true">Launches</button>
-    <button role="tab" id="tab-subscribe" aria-controls="view-subscribe" aria-selected="false">Get alerts</button>
-  </nav>
 
   <main>
     <section id="view-launches" role="tabpanel" aria-labelledby="tab-launches">
-      <div id="hero"></div>
-      <div class="chips" id="chips" role="group" aria-label="Filter launches"></div>
-      <h2 class="section-title">Upcoming</h2>
-      <ol class="list" id="upcoming"></ol>
-      <h2 class="section-title" id="recent-title" hidden>Last 7 days</h2>
-      <ol class="list" id="recent"></ol>
+      <section class="hero" id="hero" aria-live="off"></section>
+
+      <section class="board wrap" aria-labelledby="upcoming-title">
+        <div class="board-head">
+          <h2 id="upcoming-title">Upcoming</h2>
+          <span class="count" id="upcoming-count"></span>
+        </div>
+        <div class="filters" id="filters" role="group" aria-label="Filter missions"></div>
+        <div class="table" role="table" aria-labelledby="upcoming-title">
+          <div class="thead" role="row">
+            <span role="columnheader">Date</span>
+            <span role="columnheader">Mission</span>
+            <span role="columnheader" class="wide">Vehicle</span>
+            <span role="columnheader" class="wide">Launch site</span>
+            <span role="columnheader" class="wide">Landing</span>
+            <span role="columnheader" class="end">Status</span>
+          </div>
+          <div id="upcoming" role="rowgroup"></div>
+        </div>
+      </section>
+
+      <section class="board wrap" id="recent-section" aria-labelledby="recent-title" hidden>
+        <div class="board-head">
+          <h2 id="recent-title">Completed</h2>
+          <span class="count">Last 7 days</span>
+        </div>
+        <div class="table" role="table" aria-labelledby="recent-title">
+          <div id="recent" role="rowgroup"></div>
+        </div>
+      </section>
     </section>
 
-    <section id="view-subscribe" role="tabpanel" aria-labelledby="tab-subscribe" hidden>
-      <div class="card intro">
-        <h2>Alerts in your iPhone Calendar</h2>
-        <p>Subscribe to a launch calendar. Each launch with a set time gets two alerts, at <b>1 hour</b> and <b>10 minutes</b> before liftoff. Scrubs and delays move the event automatically.</p>
-      </div>
+    <section id="view-subscribe" class="wrap alerts" role="tabpanel" aria-labelledby="tab-subscribe" hidden>
+      <p class="overline">Calendar alerts</p>
+      <h1 class="display">Never miss<br>a launch</h1>
+      <p class="lede">Subscribe to a launch calendar on your iPhone. Every launch with a confirmed time alerts you <b>1 hour</b> and <b>10 minutes</b> before liftoff. If a launch scrubs or slips, the calendar event moves with it.</p>
 
-      <h2 class="section-title">1 · Pick a calendar</h2>
+      <div class="board-head"><h2>01 — Choose a calendar</h2></div>
       <ul class="feeds" id="feeds"></ul>
 
-      <h2 class="section-title">2 · Check these settings (once)</h2>
-      <ol class="steps card">
-        <li><b>Keep the alerts.</b> When you subscribe, iOS shows a <i>Remove Alerts</i> switch. Turn it <b>off</b>, or the calendar arrives without any alerts.<br><span class="muted">To change it later: Settings › Apps › Calendar › Calendar Accounts › Subscribed Calendars.</span></li>
-        <li><b>Refresh often.</b> Settings › Apps › Calendar › Calendar Accounts › <i>Fetch New Data</i>: set <b>Fetch</b> to <b>Every 15 Minutes</b> so late scrubs reach your phone.</li>
-        <li><b>Allow notifications.</b> Settings › Notifications › Calendar: turn on <i>Allow Notifications</i> and <i>Time Sensitive</i>.</li>
+      <div class="board-head"><h2>02 — Check these settings once</h2></div>
+      <ol class="steps">
+        <li><span class="k">Keep alerts</span><p>When you subscribe, iOS shows a <b>Remove Alerts</b> switch. Turn it <b>off</b>, or the calendar arrives without alerts.</p><p class="dim">To change it later: Settings › Apps › Calendar › Calendar Accounts › Subscribed Calendars</p></li>
+        <li><span class="k">Refresh often</span><p>Settings › Apps › Calendar › Calendar Accounts › Fetch New Data. Set <b>Fetch</b> to <b>Every 15 Minutes</b> so late scrubs reach your phone.</p></li>
+        <li><span class="k">Allow notifications</span><p>Settings › Notifications › Calendar. Turn on <b>Allow Notifications</b> and <b>Time Sensitive</b>.</p></li>
       </ol>
 
-      <h2 class="section-title">3 · Put this app on your Home Screen</h2>
-      <div class="card">
-        <p>In Safari, tap <b>Share</b> › <b>Add to Home Screen</b>. It opens full-screen with live countdowns and links to the webcasts.</p>
-      </div>
-      <p class="fineprint">Data: <a href="https://thespacedevs.com/llapi" rel="noopener">Launch Library 2</a> by The Space Devs, checked about every 15 minutes. Not affiliated with SpaceX.</p>
+      <div class="board-head"><h2>03 — Add to Home Screen</h2></div>
+      <p class="lede">In Safari, tap <b>Share</b> › <b>Add to Home Screen</b>. The app opens full-screen with live countdowns and webcast links.</p>
     </section>
   </main>
+
+  <footer class="foot wrap">
+    <span id="updated"></span>
+    <span>Data · <a href="https://thespacedevs.com/llapi" rel="noopener">Launch Library 2</a></span>
+    <span>Not affiliated with SpaceX</span>
+  </footer>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script src="app.js" defer></script>
