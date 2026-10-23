@@ -46,9 +46,27 @@ export function categorize(raw) {
   return cats;
 }
 
-function pickWebcast(raw) {
+/**
+ * How official a stream is: 0 = SpaceX's own broadcast on X, 1 = another
+ * official SpaceX stream (spacex.com, SpaceX's YouTube), 2 = anyone else.
+ */
+export function webcastRank(v) {
+  let host = '';
+  try { host = new URL(v.url).hostname.replace(/^www\./, ''); } catch { return 3; }
+  const publisher = String(v.publisher?.name ?? v.publisher ?? v.source ?? '').trim();
+  const byOther = publisher !== '' && !/spacex/i.test(publisher);
+  const onX = host === 'x.com' || host === 'twitter.com';
+  if (onX && !byOther && (/\/spacex\b/i.test(v.url) || /\/i\/broadcasts\//.test(v.url))) return 0;
+  if (host.endsWith('spacex.com') || /spacex/i.test(publisher)) return 1;
+  return 2;
+}
+
+/** Prefer SpaceX's official stream (X first); otherwise LL2's own priority order. */
+export function pickWebcast(raw) {
   const vids = raw?.vid_urls ?? raw?.vidURLs ?? raw?.mission?.vid_urls ?? [];
-  const sorted = [...vids].filter((v) => v?.url).sort((a, b) => (a.priority ?? 99) - (b.priority ?? 99));
+  const sorted = [...vids]
+    .filter((v) => v?.url)
+    .sort((a, b) => webcastRank(a) - webcastRank(b) || (a.priority ?? 99) - (b.priority ?? 99));
   return sorted[0]?.url ?? null;
 }
 

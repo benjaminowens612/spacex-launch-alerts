@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { buildLaunchList, categorize, precisionOf, shortPad, shortSite } from '../scripts/normalize.mjs';
+import { buildLaunchList, categorize, pickWebcast, precisionOf, shortPad, shortSite } from '../scripts/normalize.mjs';
 import { makeSource } from './fixtures/ll2.mjs';
 
 const NOW = new Date('2026-10-23T12:00:00Z');
@@ -71,4 +71,18 @@ test('upcoming record wins over a stale previous duplicate', () => {
   stale.status = { abbrev: 'TBD', name: 'To Be Determined' };
   const merged = buildLaunchList({ upcoming: src.upcoming, previous: [stale] }, NOW);
   assert.equal(merged.find((l) => l.id === stale.id).status, 'Go');
+});
+
+test('prefers SpaceX’s official stream on X over higher-ranked third-party streams', () => {
+  const pick = (vid_urls) => pickWebcast({ vid_urls });
+  const yt3p = { priority: 1, url: 'https://www.youtube.com/watch?v=abc', publisher: { name: 'NASASpaceflight' } };
+  const ytSpaceX = { priority: 5, url: 'https://www.youtube.com/watch?v=sx', publisher: { name: 'SpaceX' } };
+  const xSpaceX = { priority: 20, url: 'https://x.com/i/broadcasts/1mGPaZgYgLDJN', publisher: { name: 'SpaceX' } };
+  const xOther = { priority: 2, url: 'https://x.com/i/broadcasts/zzz', publisher: { name: 'Spaceflight Now' } };
+  assert.equal(pick([yt3p, ytSpaceX, xSpaceX]), xSpaceX.url, 'SpaceX on X wins');
+  assert.equal(pick([yt3p, xOther, xSpaceX]), xSpaceX.url, 'other publishers on X do not count as official');
+  assert.equal(pick([yt3p, ytSpaceX]), ytSpaceX.url, 'then any official SpaceX stream');
+  assert.equal(pick([xOther, yt3p]), yt3p.url, 'otherwise LL2 priority order');
+  assert.equal(pick([{ priority: 9, url: 'https://x.com/SpaceX' }, yt3p]), 'https://x.com/SpaceX', 'x.com/SpaceX with no publisher counts');
+  assert.equal(pick([]), null);
 });
