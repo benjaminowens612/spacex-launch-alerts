@@ -56,7 +56,8 @@ App ─► Edge Function `subscribe` (save or update a subscription, test, unsub
 - **Code:** in `supabase/`. The migrations hold the schema and the cron job. `functions/_shared` holds the push encryption and the alert rules, which `npm test` also covers.
 - **Data source:** `dispatch` only reads the data this site already publishes, so there are no extra Launch Library requests.
 - **Access:** every table has row-level security turned on and no public access. The push signing keys and the dispatch secret are generated inside the database and never leave the backend.
-- **Timing:** reminders are checked every minute. Change alerts follow the site's data refresh, so they can arrive about 15–25 minutes after Launch Library updates.
+- **Timing:** reminders are checked every minute. When a launch is within 3 hours, `dispatch` also checks it directly with Launch Library every 5 minutes, so holds and delays near liftoff arrive within about 5 minutes, even if GitHub's scheduler is running late. Further out, change alerts follow the site's data refresh.
+- **No stale alerts:** once the launch time has passed or the rocket is flying, schedule-change alerts are dropped. Results are only sent within 3 hours of liftoff, and nothing more than 30 minutes old is sent.
 
 ## iPhone setup
 
