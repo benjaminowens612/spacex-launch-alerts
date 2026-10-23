@@ -60,7 +60,7 @@ App ─► Edge Function `subscribe` (save or update a subscription, test, unsub
 
 ## iPhone setup
 
-1. Open the site in Safari and go to **Get alerts**. Tap **Subscribe** next to a calendar.
+1. Open the site in Safari and go to **Alerts**. Under **Calendar backup**, tap **Subscribe** next to a calendar.
 2. In the iOS dialog, turn **Remove Alerts** off. If you leave it on, the events arrive without alerts.
 3. Go to Settings › Apps › Calendar › Calendar Accounts › **Fetch New Data**, and set Fetch to **Every 15 Minutes**.
 4. Go to Settings › Notifications › Calendar and turn on **Allow Notifications** and **Time Sensitive**.
