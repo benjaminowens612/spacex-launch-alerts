@@ -25,9 +25,13 @@ jobs:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
+      # Always build on the tip of main, even when re-running an older run,
+      # so the data commit below never conflicts with a newer one.
+      - uses: actions/checkout@v5
+        with:
+          ref: main
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
           node-version: 22
 
@@ -46,8 +50,13 @@ jobs:
             git config user.name "launch-bot"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git commit -q -m "Update launch data"
-            git pull -q --rebase origin main
-            git push -q origin HEAD:main
+            # Data files are fully regenerated, so on a race keep this run's copy.
+            for i in 1 2 3; do
+              if git pull -q --rebase -X theirs origin main && git push -q origin HEAD:main; then exit 0; fi
+              git rebase --abort 2>/dev/null || true
+              sleep $((i * 5))
+            done
+            echo "::warning::Could not push data commit; the site is still deployed below."
           fi
 
       - uses: actions/configure-pages@v5
