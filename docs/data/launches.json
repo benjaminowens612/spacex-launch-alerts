@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-24T21:34:22.016Z",
+ "generatedAt": "2026-10-24T23:40:35.753Z",
  "siteUrl": "https://benjaminowens612.github.io/spacex-launch-alerts/",
  "categories": [
   {
@@ -28,13 +28,13 @@
    "id": "all",
    "name": "SpaceX Launches",
    "description": "Every SpaceX launch",
-   "count": 61
+   "count": 62
   },
   {
    "id": "no-starlink",
    "name": "SpaceX (no Starlink)",
    "description": "Everything except routine Starlink missions",
-   "count": 57
+   "count": 58
   },
   {
    "id": "notable",
@@ -1923,6 +1923,35 @@
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305193628.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
    "updated": "2026-01-11T10:40:29Z"
+  },
+  {
+   "id": "02e34864-4363-4056-b884-9d4a7a9cd5e8",
+   "name": "Falcon 9 Block 5 | Trinity",
+   "mission": "Trinity",
+   "vehicle": "Falcon 9",
+   "categories": [
+    "other"
+   ],
+   "status": "TBD",
+   "statusName": "To Be Determined",
+   "net": "2027-06-30T00:00:00Z",
+   "precision": "vague",
+   "precisionName": "Quarter 2",
+   "windowStart": "2027-06-30T00:00:00Z",
+   "windowEnd": "2027-06-30T00:00:00Z",
+   "pad": "Unknown Pad",
+   "padShort": null,
+   "location": "Cape Canaveral SFS, FL, USA",
+   "site": "Cape Canaveral",
+   "landing": null,
+   "orbit": "Geostationary Transfer Orbit",
+   "description": "Trinity is a three-spacecraft mission from US satellite manufacturer K2 Space, with each satellite deploying to a different orbital regime to prove out K2 Space’s multi-orbit satellite platform. 2 satellites will be dropped off in LEO, 1 remaining in LEO for a period before raising itself to MEO, while the other will immediately begin climbing to MEO and will aim to complete orbit raising within 90 days. The 3rd satellite will be launched directly into a geostationary transfer orbit.",
+   "probability": null,
+   "webcast": null,
+   "webcastLive": false,
+   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305193628.jpeg",
+   "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
+   "updated": "2026-09-11T11:50:40Z"
   }
  ]
 }
