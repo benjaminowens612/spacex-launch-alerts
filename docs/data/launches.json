@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-23T23:31:48.873Z",
+ "generatedAt": "2026-10-24T00:04:40.049Z",
  "siteUrl": "https://benjaminowens612.github.io/spacex-launch-alerts/",
  "categories": [
   {
@@ -89,7 +89,7 @@
    "orbit": "Low Earth Orbit",
    "description": "Dedicated rideshare flight to a mid-inclination orbit with dozens of small microsatellites and nanosatellites for commercial and government customers.\r\n\r\nThis launch also carries the second demonstration mission for SpaceX’s Project Starfall, which aims to mass-produce reentry capsules designed to autonomously transport valuable customer experiments and other payloads safely back from space to Earth, including for in-orbit manufacturing. \r\n\r\nStarfall is a cylindrical shaped capsule approximately 0.75 meters tall with a diameter of 3.1 meters, weighing approximately 2100 kilograms, and capable of carrying 1000 kilograms of payload. It is designed to be carried on Starship flights.",
    "probability": 95,
-   "webcast": "https://www.youtube.com/watch?v=UJmcwHwxip0",
+   "webcast": "https://x.com/i/broadcasts/1nxeLMddZlEJX",
    "webcastLive": false,
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_thumbnail_20251102082912.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20251102082912.jpg",
@@ -103,8 +103,8 @@
    "categories": [
     "starlink"
    ],
-   "status": "In Flight",
-   "statusName": "Launch in Flight",
+   "status": "Success",
+   "statusName": "Launch Successful",
    "net": "2026-10-23T22:48:44Z",
    "precision": "exact",
    "precisionName": "Second",
@@ -122,11 +122,11 @@
    "orbit": "Low Earth Orbit",
    "description": "A batch of 27 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
    "probability": null,
-   "webcast": "https://www.youtube.com/watch?v=cyJtopOtMZA",
+   "webcast": "https://x.com/i/broadcasts/1qKDzWkEraoJV",
    "webcastLive": false,
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305192320.png",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
-   "updated": "2026-10-23T23:14:56Z"
+   "updated": "2026-10-23T23:55:57Z"
   },
   {
    "id": "e2886a96-5ce9-4f45-872f-4e25a00be837",

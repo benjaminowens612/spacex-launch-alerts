@@ -21,53 +21,43 @@ LOCATION:Space Launch Complex 40\, Cape Canaveral SFS\, FL\, USA
 DESCRIPTION:Status: Launch Successful\nWindow: Tue\, 20 Oct 2026 10:30:00 U
  TC – Tue\, 20 Oct 2026 11:30:00 UTC\nWeather: 95% GO\nOrbit: Low Earth O
  rbit\nPad: Space Launch Complex 40\, Cape Canaveral SFS\, FL\, USA\n\n▶ 
- Watch live: https://www.youtube.com/watch?v=UJmcwHwxip0\n\nDedicated rides
- hare flight to a mid-inclination orbit with dozens of small microsatellite
- s and nanosatellites for commercial and government customers.\n\nThis laun
- ch also carries the second demonstration mission for SpaceX’s Project St
- arfall\, which aims to mass-produce reentry capsules designed to autonomou
- sly transport valuable customer experiments and other payloads safely back
-  from space to Earth\, including for in-orbit manufacturing. \n\nStarfall 
- is a cylindrical shaped capsule approximately 0.75 meters tall with a diam
- eter of 3.1 meters\, weighing approximately 2100 kilograms\, and capable o
- f carrying 1000 kilograms of payload. It is designed to be carried on Star
- ship flights.\n\nCountdown & updates: https://benjaminowens612.github.io/s
- pacex-launch-alerts/#3b430f81-0ff1-4d85-8a1a-cef0de326198
-URL:https://www.youtube.com/watch?v=UJmcwHwxip0
+ Watch live: https://x.com/i/broadcasts/1nxeLMddZlEJX\n\nDedicated rideshar
+ e flight to a mid-inclination orbit with dozens of small microsatellites a
+ nd nanosatellites for commercial and government customers.\n\nThis launch 
+ also carries the second demonstration mission for SpaceX’s Project Starf
+ all\, which aims to mass-produce reentry capsules designed to autonomously
+  transport valuable customer experiments and other payloads safely back fr
+ om space to Earth\, including for in-orbit manufacturing. \n\nStarfall is 
+ a cylindrical shaped capsule approximately 0.75 meters tall with a diamete
+ r of 3.1 meters\, weighing approximately 2100 kilograms\, and capable of c
+ arrying 1000 kilograms of payload. It is designed to be carried on Starshi
+ p flights.\n\nCountdown & updates: https://benjaminowens612.github.io/spac
+ ex-launch-alerts/#3b430f81-0ff1-4d85-8a1a-cef0de326198
+URL:https://x.com/i/broadcasts/1nxeLMddZlEJX
 CATEGORIES:other
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:f6af629d-39b5-4f86-bc0c-f8776444a858@spacex-launch-alerts
-DTSTAMP:20261023T231456Z
-LAST-MODIFIED:20261023T231456Z
-SEQUENCE:214960496
-SUMMARY:🚀 Falcon 9 · Starlink Group 15-15
+DTSTAMP:20261023T235557Z
+LAST-MODIFIED:20261023T235557Z
+SEQUENCE:214962957
+SUMMARY:✅ Falcon 9 · Starlink Group 15-15
 DTSTART:20261023T224844Z
 DTEND:20261024T024844Z
 LOCATION:Space Launch Complex 4E\, Vandenberg SFB\, CA\, USA
-DESCRIPTION:Status: Launch in Flight\nWindow: Fri\, 23 Oct 2026 21:30:00 UT
- C – Sat\, 24 Oct 2026 01:30:00 UTC\nOrbit: Low Earth Orbit\nPad: Space L
- aunch Complex 4E\, Vandenberg SFB\, CA\, USA\n\n▶ Watch live: https://ww
- w.youtube.com/watch?v=cyJtopOtMZA\n\nA batch of 27 satellites for the Star
- link mega-constellation - SpaceX's project for space-based Internet commun
- ication system.\n\nCountdown & updates: https://benjaminowens612.github.io
- /spacex-launch-alerts/#f6af629d-39b5-4f86-bc0c-f8776444a858
-URL:https://www.youtube.com/watch?v=cyJtopOtMZA
+DESCRIPTION:Status: Launch Successful\nWindow: Fri\, 23 Oct 2026 21:30:00 U
+ TC – Sat\, 24 Oct 2026 01:30:00 UTC\nOrbit: Low Earth Orbit\nPad: Space 
+ Launch Complex 4E\, Vandenberg SFB\, CA\, USA\n\n▶ Watch live: https://x
+ .com/i/broadcasts/1qKDzWkEraoJV\n\nA batch of 27 satellites for the Starli
+ nk mega-constellation - SpaceX's project for space-based Internet communic
+ ation system.\n\nCountdown & updates: https://benjaminowens612.github.io/s
+ pacex-launch-alerts/#f6af629d-39b5-4f86-bc0c-f8776444a858
+URL:https://x.com/i/broadcasts/1qKDzWkEraoJV
 CATEGORIES:starlink
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:T-1h: Falcon 9 · Starlink Group 15-15
-TRIGGER:-PT60M
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:T-10m: Falcon 9 · Starlink Group 15-15
-TRIGGER:-PT10M
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:e2886a96-5ce9-4f45-872f-4e25a00be837@spacex-launch-alerts
