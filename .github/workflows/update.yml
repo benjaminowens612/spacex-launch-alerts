@@ -2,7 +2,9 @@ name: Update launches
 
 on:
   schedule:
-    - cron: '*/15 * * * *' # LL2 free tier: 15 req/h; each run uses 2
+    # Off-peak minutes: GitHub delays or drops schedules at the top of the hour.
+    # LL2 free tier: 15 req/h; each run uses 2.
+    - cron: '7,22,37,52 * * * *'
   workflow_dispatch:
   push:
     branches: [main]

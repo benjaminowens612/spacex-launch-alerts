@@ -7,6 +7,9 @@ export const DEFAULT_PREFS = { reminders: [1440, 60, 10], filter: 'all', changes
 const CHANGE_KINDS = new Set(['delay', 'scrub', 'earlier', 'hold', 'resumed', 'time-set']);
 const EVENT_HORIZON_MS = 14 * 24 * 3600 * 1000;
 const MIN = 60 * 1000;
+const RESULT_WINDOW_MS = 3 * 60 * MIN; // results only within 3h of liftoff
+const WEBCAST_WINDOW_MS = 20 * MIN; // "webcast live" only until shortly after liftoff
+export const EVENT_MAX_AGE_MS = 30 * MIN; // dispatch never sends change alerts older than this
 
 // Same feeds as scripts/build.mjs FEEDS (kept in sync by test/push.test.mjs).
 const hasAny = (l, cats) => l.categories.some((c) => cats.includes(c));
@@ -48,10 +51,14 @@ export function detectEvents(prev, next, now = Date.now()) {
   const base = { prevNet: prev.net, net: next.net, prevStatus: prev.status, status: next.status };
   const events = [];
 
+  // Stale data can arrive late (e.g. a delayed refresh): never alert about
+  // something that's already over.
   if (!DONE.has(prev.status) && DONE.has(next.status)) {
-    return [{ kind: 'result', ...base }];
+    return now <= net + RESULT_WINDOW_MS ? [{ kind: 'result', ...base }] : [];
   }
-  if (!prev.webcastLive && next.webcastLive) events.push({ kind: 'webcast', ...base });
+  if (!prev.webcastLive && next.webcastLive && now <= net + WEBCAST_WINDOW_MS) events.push({ kind: 'webcast', ...base });
+  // Once liftoff time has passed or the rocket is flying, schedule changes are moot.
+  if (next.status === 'In Flight' || now > net) return events;
   if (next.status === 'Hold' && prev.status !== 'Hold') events.push({ kind: 'hold', ...base });
   if (prev.status === 'Hold' && next.status === 'Go') events.push({ kind: 'resumed', ...base });
 

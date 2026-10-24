@@ -193,3 +193,26 @@ test('messages are formatted in the subscriber’s time zone', () => {
   assert.equal(formatMessage('webcast', l, { tz: 'UTC' }).url, 'https://youtu.be/x');
   assert.match(formatMessage('reminder', l, { tz: 'Not/AZone', lead: 60 }).body, /UTC$/, 'bad tz falls back to UTC');
 });
+
+test('never alerts about something already over (late data)', () => {
+  // The real case: a 20-minute hold, but the data only arrived 45 min after liftoff.
+  const prev = launch({ net: '2026-10-23T22:28:53Z' });
+  const next = launch({ net: '2026-10-23T22:48:44Z', status: 'In Flight' });
+  const at = Date.parse('2026-10-23T23:33:00Z');
+  assert.deepEqual(detectEvents(prev, next, at), [], 'no "delayed" after the fact');
+  assert.deepEqual(detectEvents(prev, launch({ net: '2026-10-23T22:48:44Z' }), at), [], 'new time already passed');
+  // Same change seen in time is still reported.
+  assert.deepEqual(detectEvents(prev, launch({ net: '2026-10-23T22:48:44Z' }), Date.parse('2026-10-23T22:20:00Z')).map((e) => e.kind), ['delay']);
+  // Hold seen after liftoff time: ignored.
+  assert.deepEqual(detectEvents(prev, launch({ net: prev.net, status: 'Hold' }), Date.parse('2026-10-23T22:40:00Z')), []);
+});
+
+test('results only within 3 hours, webcast-live only until 20 min after liftoff', () => {
+  const p = launch({ net: '2026-10-23T22:00:00Z' });
+  const at = (iso) => Date.parse(iso);
+  assert.deepEqual(detectEvents(p, launch({ net: p.net, status: 'Success' }), at('2026-10-24T00:30:00Z')).map((e) => e.kind), ['result']);
+  assert.deepEqual(detectEvents(p, launch({ net: p.net, status: 'Success' }), at('2026-10-24T01:30:00Z')), []);
+  assert.deepEqual(detectEvents(p, launch({ net: p.net, webcastLive: true }), at('2026-10-23T21:50:00Z')).map((e) => e.kind), ['webcast']);
+  assert.deepEqual(detectEvents(p, launch({ net: p.net, webcastLive: true }), at('2026-10-23T22:15:00Z')).map((e) => e.kind), ['webcast'], 'shortly after liftoff is fine');
+  assert.deepEqual(detectEvents(p, launch({ net: p.net, webcastLive: true }), at('2026-10-23T22:30:00Z')), []);
+});
