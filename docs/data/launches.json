@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-24T23:40:35.753Z",
+ "generatedAt": "2026-10-25T06:59:22.410Z",
  "siteUrl": "https://benjaminowens612.github.io/spacex-launch-alerts/",
  "categories": [
   {
@@ -559,9 +559,9 @@
    "updated": "2026-08-27T16:02:56Z"
   },
   {
-   "id": "fcbc4550-e69e-4458-a9e6-4a5b6b6b15a5",
-   "name": "Falcon 9 Block 5 | SDA Tranche 1 Tracking Layer E",
-   "mission": "SDA Tranche 1 Tracking Layer E",
+   "id": "a9ee8337-127d-4f17-9e3a-a07999f80099",
+   "name": "Falcon 9 Block 5 | SDA Tranche 1 Tracking Layer D",
+   "mission": "SDA Tranche 1 Tracking Layer D",
    "vehicle": "Falcon 9",
    "categories": [
     "other"
@@ -579,13 +579,13 @@
    "site": "Vandenberg",
    "landing": null,
    "orbit": "Polar Orbit",
-   "description": "Tranche 1 Tracking Layer E is one of five missions by the United States Space Force Space Development Agency (SDA) for the Proliferated Warfighter Space Architecture (PWSA) Tranche 1 Tracking Layer constellation, which will provide global indications, warning, tracking, and targeting of advanced missile threats, including hypersonic missile systems.",
+   "description": "Tranche 1 Tracking Layer D is one of five missions by the United States Space Force Space Development Agency (SDA) for the Proliferated Warfighter Space Architecture (PWSA) Tranche 1 Tracking Layer constellation, which will provide global indications, warning, tracking, and targeting of advanced missile threats, including hypersonic missile systems.",
    "probability": null,
    "webcast": null,
    "webcastLive": false,
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305193628.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
-   "updated": "2026-08-27T16:03:29Z"
+   "updated": "2026-10-25T04:56:36Z"
   },
   {
    "id": "4541ce85-0e38-42ac-a9a0-20474bb5f2cd",
