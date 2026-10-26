@@ -61,12 +61,12 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:e2886a96-5ce9-4f45-872f-4e25a00be837@spacex-launch-alerts
-DTSTAMP:20261025T132428Z
-LAST-MODIFIED:20261025T132428Z
-SEQUENCE:215097868
+DTSTAMP:20261026T210346Z
+LAST-MODIFIED:20261026T210346Z
+SEQUENCE:215211826
 SUMMARY:🚀 Falcon 9 · Starlink Group 15-16
-DTSTART:20261027T044500Z
-DTEND:20261027T084500Z
+DTSTART:20261027T054637Z
+DTEND:20261027T094637Z
 LOCATION:Space Launch Complex 4E\, Vandenberg SFB\, CA\, USA
 DESCRIPTION:Status: Go for Launch\nWindow: Tue\, 27 Oct 2026 04:45:00 UTC 
  – Tue\, 27 Oct 2026 08:45:00 UTC\nOrbit: Low Earth Orbit\nPad: Space Lau
@@ -122,6 +122,39 @@ TRIGGER:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:54d471e8-695c-4fa7-a3cf-dbd8b389e8ae@spacex-launch-alerts
+DTSTAMP:20261026T180408Z
+LAST-MODIFIED:20261026T180408Z
+SEQUENCE:215201048
+SUMMARY:🚀 Falcon 9 · USSF-432
+DTSTART:20261102T015600Z
+DTEND:20261102T055600Z
+LOCATION:Space Launch Complex 4E\, Vandenberg SFB\, CA\, USA
+DESCRIPTION:Status: Go for Launch\nWindow: Mon\, 02 Nov 2026 01:56:00 UTC 
+ – Mon\, 02 Nov 2026 05:56:00 UTC\nOrbit: Low Earth Orbit\nPad: Space Lau
+ nch Complex 4E\, Vandenberg SFB\, CA\, USA\n\n▶ Watch live: https://x.co
+ m/i/broadcasts/1kKzDPYrZNdJv\n\nA classified mission for the United States
+  Space Force. It is possibly a batch of classified LEO satellites based on
+  SpaceX’s Starshield satellite bus\, based on locations of rocket stage 
+ drop zones being exact fits with previous Starlink Group 15 launches.\n\nC
+ ountdown & updates: https://benjaminowens612.github.io/spacex-launch-alert
+ s/#54d471e8-695c-4fa7-a3cf-dbd8b389e8ae
+URL:https://x.com/i/broadcasts/1kKzDPYrZNdJv
+CATEGORIES:other
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:T-1h: Falcon 9 · USSF-432
+TRIGGER:-PT60M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:T-10m: Falcon 9 · USSF-432
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:3cdb9dee-b5cb-406c-bbd1-06a219930fb7@spacex-launch-alerts
 DTSTAMP:20261022T163924Z
 LAST-MODIFIED:20261022T163924Z
@@ -149,39 +182,6 @@ END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:T-10m: Falcon 9 · Starlink Group 15-21
-TRIGGER:-PT10M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:56ca6058-7ccc-4ec0-b1b0-fb49f3bfee49@spacex-launch-alerts
-DTSTAMP:20261020T122317Z
-LAST-MODIFIED:20261020T122317Z
-SEQUENCE:214662197
-SUMMARY:🚀 [TBC] Falcon 9 · NROL-195
-DTSTART:20261105T223400Z
-DTEND:20261106T023400Z
-LOCATION:Space Launch Complex 4E\, Vandenberg SFB\, CA\, USA
-DESCRIPTION:Status: To Be Confirmed\nWindow: Thu\, 05 Nov 2026 22:34:00 UTC
-  – Fri\, 06 Nov 2026 02:34:00 UTC\nOrbit: Low Earth Orbit\nPad: Space La
- unch Complex 4E\, Vandenberg SFB\, CA\, USA\n\nFifteenth batch of satellit
- es for a reconnaissance satellite constellation built by SpaceX and Northr
- op Grumman for the National Reconnaissance Office to provide imaging and o
- ther reconnaissance capabilities.\n\nCountdown & updates: https://benjamin
- owens612.github.io/spacex-launch-alerts/#56ca6058-7ccc-4ec0-b1b0-fb49f3bfe
- e49
-URL:https://benjaminowens612.github.io/spacex-launch-alerts/#56ca6058-7ccc-
- 4ec0-b1b0-fb49f3bfee49
-CATEGORIES:other
-STATUS:TENTATIVE
-TRANSP:TRANSPARENT
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:T-1h: Falcon 9 · NROL-195
-TRIGGER:-PT60M
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:T-10m: Falcon 9 · NROL-195
 TRIGGER:-PT10M
 END:VALARM
 END:VEVENT

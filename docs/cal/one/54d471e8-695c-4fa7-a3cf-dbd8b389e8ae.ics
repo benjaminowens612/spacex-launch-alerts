@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//spacex-launch-alerts//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+URL:https://benjaminowens612.github.io/spacex-launch-alerts/
+BEGIN:VEVENT
+UID:54d471e8-695c-4fa7-a3cf-dbd8b389e8ae@spacex-launch-alerts
+DTSTAMP:20261026T180408Z
+LAST-MODIFIED:20261026T180408Z
+SEQUENCE:215201048
+SUMMARY:🚀 Falcon 9 · USSF-432
+DTSTART:20261102T015600Z
+DTEND:20261102T055600Z
+LOCATION:Space Launch Complex 4E\, Vandenberg SFB\, CA\, USA
+DESCRIPTION:Status: Go for Launch\nWindow: Mon\, 02 Nov 2026 01:56:00 UTC 
+ – Mon\, 02 Nov 2026 05:56:00 UTC\nOrbit: Low Earth Orbit\nPad: Space Lau
+ nch Complex 4E\, Vandenberg SFB\, CA\, USA\n\n▶ Watch live: https://x.co
+ m/i/broadcasts/1kKzDPYrZNdJv\n\nA classified mission for the United States
+  Space Force. It is possibly a batch of classified LEO satellites based on
+  SpaceX’s Starshield satellite bus\, based on locations of rocket stage 
+ drop zones being exact fits with previous Starlink Group 15 launches.\n\nC
+ ountdown & updates: https://benjaminowens612.github.io/spacex-launch-alert
+ s/#54d471e8-695c-4fa7-a3cf-dbd8b389e8ae
+URL:https://x.com/i/broadcasts/1kKzDPYrZNdJv
+CATEGORIES:other
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:T-1h: Falcon 9 · USSF-432
+TRIGGER:-PT60M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:T-10m: Falcon 9 · USSF-432
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR
