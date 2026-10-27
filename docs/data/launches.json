@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-27T06:11:24.237Z",
+ "generatedAt": "2026-10-27T12:26:35.849Z",
  "siteUrl": "https://benjaminowens612.github.io/spacex-launch-alerts/",
  "categories": [
   {
@@ -28,13 +28,13 @@
    "id": "all",
    "name": "SpaceX Launches",
    "description": "Every SpaceX launch",
-   "count": 62
+   "count": 61
   },
   {
    "id": "no-starlink",
    "name": "SpaceX (no Starlink)",
    "description": "Everything except routine Starlink missions",
-   "count": 58
+   "count": 57
   },
   {
    "id": "notable",
@@ -62,39 +62,6 @@
   }
  ],
  "launches": [
-  {
-   "id": "3b430f81-0ff1-4d85-8a1a-cef0de326198",
-   "name": "Falcon 9 Block 5 | Bandwagon 5 (Dedicated Mid-Inclination Rideshare)",
-   "mission": "Bandwagon 5 (Dedicated Mid-Inclination Rideshare)",
-   "vehicle": "Falcon 9",
-   "categories": [
-    "other"
-   ],
-   "status": "Success",
-   "statusName": "Launch Successful",
-   "net": "2026-10-20T11:04:00Z",
-   "precision": "exact",
-   "precisionName": "Second",
-   "windowStart": "2026-10-20T10:30:00Z",
-   "windowEnd": "2026-10-20T11:30:00Z",
-   "pad": "Space Launch Complex 40",
-   "padShort": "SLC-40",
-   "location": "Cape Canaveral SFS, FL, USA",
-   "site": "Cape Canaveral",
-   "landing": {
-    "label": "ASOG",
-    "name": "A Shortfall of Gravitas",
-    "type": "ASDS"
-   },
-   "orbit": "Low Earth Orbit",
-   "description": "Dedicated rideshare flight to a mid-inclination orbit with dozens of small microsatellites and nanosatellites for commercial and government customers.\r\n\r\nThis launch also carries the second demonstration mission for SpaceX’s Project Starfall, which aims to mass-produce reentry capsules designed to autonomously transport valuable customer experiments and other payloads safely back from space to Earth, including for in-orbit manufacturing. \r\n\r\nStarfall is a cylindrical shaped capsule approximately 0.75 meters tall with a diameter of 3.1 meters, weighing approximately 2100 kilograms, and capable of carrying 1000 kilograms of payload. It is designed to be carried on Starship flights.",
-   "probability": 95,
-   "webcast": "https://x.com/i/broadcasts/1nxeLMddZlEJX",
-   "webcastLive": false,
-   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_thumbnail_20251102082912.jpeg",
-   "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20251102082912.jpg",
-   "updated": "2026-10-24T02:22:27Z"
-  },
   {
    "id": "f6af629d-39b5-4f86-bc0c-f8776444a858",
    "name": "Falcon 9 Block 5 | Starlink Group 15-15",
@@ -136,8 +103,8 @@
    "categories": [
     "starlink"
    ],
-   "status": "Go",
-   "statusName": "Go for Launch",
+   "status": "Success",
+   "statusName": "Launch Successful",
    "net": "2026-10-27T07:25:51Z",
    "precision": "exact",
    "precisionName": "Second",
@@ -159,7 +126,7 @@
    "webcastLive": false,
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305192320.png",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
-   "updated": "2026-10-27T05:17:27Z"
+   "updated": "2026-10-27T11:19:33Z"
   },
   {
    "id": "57ce0a39-d035-4f16-a418-bd6108f78199",

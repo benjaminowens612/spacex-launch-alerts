@@ -6,33 +6,23 @@ METHOD:PUBLISH
 URL:https://benjaminowens612.github.io/spacex-launch-alerts/
 BEGIN:VEVENT
 UID:e2886a96-5ce9-4f45-872f-4e25a00be837@spacex-launch-alerts
-DTSTAMP:20261027T051727Z
-LAST-MODIFIED:20261027T051727Z
-SEQUENCE:215241447
-SUMMARY:🚀 Falcon 9 · Starlink Group 15-16
+DTSTAMP:20261027T111933Z
+LAST-MODIFIED:20261027T111933Z
+SEQUENCE:215263173
+SUMMARY:✅ Falcon 9 · Starlink Group 15-16
 DTSTART:20261027T072551Z
 DTEND:20261027T112551Z
 LOCATION:Space Launch Complex 4E\, Vandenberg SFB\, CA\, USA
-DESCRIPTION:Status: Go for Launch\nWindow: Tue\, 27 Oct 2026 04:45:00 UTC 
- – Tue\, 27 Oct 2026 08:45:00 UTC\nOrbit: Low Earth Orbit\nPad: Space Lau
- nch Complex 4E\, Vandenberg SFB\, CA\, USA\n\n▶ Watch live: https://x.co
- m/i/broadcasts/1mGPaZgYgLDJN\n\nA batch of 27 satellites for the Starlink 
- mega-constellation - SpaceX's project for space-based Internet communicati
- on system.\n\nCountdown & updates: https://benjaminowens612.github.io/spac
- ex-launch-alerts/#e2886a96-5ce9-4f45-872f-4e25a00be837
+DESCRIPTION:Status: Launch Successful\nWindow: Tue\, 27 Oct 2026 04:45:00 U
+ TC – Tue\, 27 Oct 2026 08:45:00 UTC\nOrbit: Low Earth Orbit\nPad: Space 
+ Launch Complex 4E\, Vandenberg SFB\, CA\, USA\n\n▶ Watch live: https://x
+ .com/i/broadcasts/1mGPaZgYgLDJN\n\nA batch of 27 satellites for the Starli
+ nk mega-constellation - SpaceX's project for space-based Internet communic
+ ation system.\n\nCountdown & updates: https://benjaminowens612.github.io/s
+ pacex-launch-alerts/#e2886a96-5ce9-4f45-872f-4e25a00be837
 URL:https://x.com/i/broadcasts/1mGPaZgYgLDJN
 CATEGORIES:starlink
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:T-1h: Falcon 9 · Starlink Group 15-16
-TRIGGER:-PT60M
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:T-10m: Falcon 9 · Starlink Group 15-16
-TRIGGER:-PT10M
-END:VALARM
 END:VEVENT
 END:VCALENDAR
