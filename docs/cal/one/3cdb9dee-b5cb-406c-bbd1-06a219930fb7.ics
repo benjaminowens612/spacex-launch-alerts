@@ -6,15 +6,15 @@ METHOD:PUBLISH
 URL:https://benjaminowens612.github.io/spacex-launch-alerts/
 BEGIN:VEVENT
 UID:3cdb9dee-b5cb-406c-bbd1-06a219930fb7@spacex-launch-alerts
-DTSTAMP:20261027T193847Z
-LAST-MODIFIED:20261027T193847Z
-SEQUENCE:215293127
+DTSTAMP:20261028T192640Z
+LAST-MODIFIED:20261028T192640Z
+SEQUENCE:215378800
 SUMMARY:🚀 Falcon 9 · Starlink Group 15-21
-DTSTART:20261105T023500Z
-DTEND:20261105T063500Z
+DTSTART:20261106T022100Z
+DTEND:20261106T062100Z
 LOCATION:Space Launch Complex 4E\, Vandenberg SFB\, CA\, USA
-DESCRIPTION:Status: Go for Launch\nWindow: Thu\, 05 Nov 2026 02:35:00 UTC 
- – Thu\, 05 Nov 2026 06:35:00 UTC\nOrbit: Low Earth Orbit\nPad: Space Lau
+DESCRIPTION:Status: Go for Launch\nWindow: Fri\, 06 Nov 2026 02:21:00 UTC 
+ – Fri\, 06 Nov 2026 06:21:00 UTC\nOrbit: Low Earth Orbit\nPad: Space Lau
  nch Complex 4E\, Vandenberg SFB\, CA\, USA\n\n▶ Watch live: https://x.co
  m/i/broadcasts/1aJbdEgvmWaKX\n\nA batch of 27 satellites for the Starlink 
  mega-constellation - SpaceX's project for space-based Internet communicati

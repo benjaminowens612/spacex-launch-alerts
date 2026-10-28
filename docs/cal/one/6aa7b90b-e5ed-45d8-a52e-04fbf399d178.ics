@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//spacex-launch-alerts//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+URL:https://benjaminowens612.github.io/spacex-launch-alerts/
+BEGIN:VEVENT
+UID:6aa7b90b-e5ed-45d8-a52e-04fbf399d178@spacex-launch-alerts
+DTSTAMP:20261028T185738Z
+LAST-MODIFIED:20261028T185738Z
+SEQUENCE:215377058
+SUMMARY:🚀 [TBC] Falcon 9 · USSF-xxx ("R-5")
+DTSTART:20261110T030300Z
+DTEND:20261110T070300Z
+LOCATION:Space Launch Complex 4E\, Vandenberg SFB\, CA\, USA
+DESCRIPTION:Status: To Be Confirmed\nWindow: Tue\, 10 Nov 2026 03:03:00 UTC
+  – Tue\, 10 Nov 2026 07:03:00 UTC\nOrbit: Low Earth Orbit\nPad: Space La
+ unch Complex 4E\, Vandenberg SFB\, CA\, USA\n\nA classified mission for th
+ e United States Space Force. It is possibly a batch of classified LEO sate
+ llites based on SpaceX’s Starshield satellite bus\, based on locations o
+ f rocket stage drop zones being exact fits with previous Starlink Group 15
+  launches.\n\nCountdown & updates: https://benjaminowens612.github.io/spac
+ ex-launch-alerts/#6aa7b90b-e5ed-45d8-a52e-04fbf399d178
+URL:https://benjaminowens612.github.io/spacex-launch-alerts/#6aa7b90b-e5ed-
+ 45d8-a52e-04fbf399d178
+CATEGORIES:other
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:T-1h: Falcon 9 · USSF-xxx ("R-5")
+TRIGGER:-PT60M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:T-10m: Falcon 9 · USSF-xxx ("R-5")
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR
