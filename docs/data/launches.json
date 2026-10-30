@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-30T19:31:19.526Z",
+ "generatedAt": "2026-10-30T23:10:42.385Z",
  "siteUrl": "https://benjaminowens612.github.io/spacex-launch-alerts/",
  "categories": [
   {
@@ -28,7 +28,7 @@
    "id": "all",
    "name": "SpaceX Launches",
    "description": "Every SpaceX launch",
-   "count": 62
+   "count": 61
   },
   {
    "id": "no-starlink",
@@ -58,43 +58,10 @@
    "id": "starlink",
    "name": "SpaceX Starlink",
    "description": "Starlink missions only",
-   "count": 4
+   "count": 3
   }
  ],
  "launches": [
-  {
-   "id": "f6af629d-39b5-4f86-bc0c-f8776444a858",
-   "name": "Falcon 9 Block 5 | Starlink Group 15-15",
-   "mission": "Starlink Group 15-15",
-   "vehicle": "Falcon 9",
-   "categories": [
-    "starlink"
-   ],
-   "status": "Success",
-   "statusName": "Launch Successful",
-   "net": "2026-10-23T22:48:44Z",
-   "precision": "exact",
-   "precisionName": "Second",
-   "windowStart": "2026-10-23T21:30:00Z",
-   "windowEnd": "2026-10-24T01:30:00Z",
-   "pad": "Space Launch Complex 4E",
-   "padShort": "SLC-4E",
-   "location": "Vandenberg SFB, CA, USA",
-   "site": "Vandenberg",
-   "landing": {
-    "label": "OCISLY",
-    "name": "Of Course I Still Love You",
-    "type": "ASDS"
-   },
-   "orbit": "Low Earth Orbit",
-   "description": "A batch of 27 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
-   "probability": null,
-   "webcast": "https://x.com/i/broadcasts/1qKDzWkEraoJV",
-   "webcastLive": false,
-   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305192320.png",
-   "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
-   "updated": "2026-10-24T20:04:33Z"
-  },
   {
    "id": "e2886a96-5ce9-4f45-872f-4e25a00be837",
    "name": "Falcon 9 Block 5 | Starlink Group 15-16",
@@ -159,7 +126,7 @@
    "webcastLive": false,
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305192320.png",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
-   "updated": "2026-10-30T14:42:22Z"
+   "updated": "2026-10-30T23:07:41Z"
   },
   {
    "id": "54d471e8-695c-4fa7-a3cf-dbd8b389e8ae",
