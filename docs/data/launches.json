@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-31T02:30:55.025Z",
+ "generatedAt": "2026-10-31T08:48:49.786Z",
  "siteUrl": "https://benjaminowens612.github.io/spacex-launch-alerts/",
  "categories": [
   {
@@ -103,9 +103,9 @@
    "categories": [
     "starlink"
    ],
-   "status": "Go",
-   "statusName": "Go for Launch",
-   "net": "2026-10-31T04:02:22Z",
+   "status": "Success",
+   "statusName": "Launch Successful",
+   "net": "2026-10-31T04:04:34Z",
    "precision": "exact",
    "precisionName": "Second",
    "windowStart": "2026-10-31T03:48:00Z",
@@ -126,7 +126,7 @@
    "webcastLive": false,
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305192320.png",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
-   "updated": "2026-10-31T02:29:32Z"
+   "updated": "2026-10-31T05:09:34Z"
   },
   {
    "id": "54d471e8-695c-4fa7-a3cf-dbd8b389e8ae",
