@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-01T01:25:42.855Z",
+ "generatedAt": "2026-11-01T08:04:37.611Z",
  "siteUrl": "https://benjaminowens612.github.io/spacex-launch-alerts/",
  "categories": [
   {
@@ -28,13 +28,13 @@
    "id": "all",
    "name": "SpaceX Launches",
    "description": "Every SpaceX launch",
-   "count": 61
+   "count": 62
   },
   {
    "id": "no-starlink",
    "name": "SpaceX (no Starlink)",
    "description": "Everything except routine Starlink missions",
-   "count": 58
+   "count": 59
   },
   {
    "id": "notable",
@@ -159,7 +159,7 @@
    "webcastLive": false,
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_thumbnail_20260816171423.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg",
-   "updated": "2026-11-01T01:00:49Z"
+   "updated": "2026-11-01T06:28:40Z"
   },
   {
    "id": "3cdb9dee-b5cb-406c-bbd1-06a219930fb7",
@@ -1923,6 +1923,39 @@
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305193628.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
    "updated": "2026-09-11T11:50:40Z"
+  },
+  {
+   "id": "e30e5e42-5612-4352-a99c-3168b75160e0",
+   "name": "Falcon 9 Block 5 | Dragon CRS-2 SpX-36",
+   "mission": "Dragon CRS-2 SpX-36",
+   "vehicle": "Falcon 9",
+   "categories": [
+    "other"
+   ],
+   "status": "TBD",
+   "statusName": "To Be Determined",
+   "net": "2027-06-30T00:00:00Z",
+   "precision": "vague",
+   "precisionName": "Year Half 1",
+   "windowStart": "2027-06-30T00:00:00Z",
+   "windowEnd": "2027-06-30T00:00:00Z",
+   "pad": "Space Launch Complex 40",
+   "padShort": "SLC-40",
+   "location": "Cape Canaveral SFS, FL, USA",
+   "site": "Cape Canaveral",
+   "landing": {
+    "label": "LZ-40",
+    "name": "Landing Zone 40",
+    "type": "RTLS"
+   },
+   "orbit": "Low Earth Orbit",
+   "description": "36th commercial resupply services mission to the International Space Station operated by SpaceX. The flight will be conducted under the second Commercial Resupply Services contract with NASA.\r\n\r\nCargo Dragon 2 brings supplies and payloads, including critical materials to directly support science and research investigations that occur onboard the orbiting laboratory.",
+   "probability": null,
+   "webcast": null,
+   "webcastLive": false,
+   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305192619.jpeg",
+   "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20210520085648.jpeg",
+   "updated": "2026-10-08T17:47:17Z"
   }
  ]
 }
