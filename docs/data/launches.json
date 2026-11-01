@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-31T08:48:49.786Z",
+ "generatedAt": "2026-11-01T01:25:42.855Z",
  "siteUrl": "https://benjaminowens612.github.io/spacex-launch-alerts/",
  "categories": [
   {
@@ -159,7 +159,7 @@
    "webcastLive": false,
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_thumbnail_20260816171423.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg",
-   "updated": "2026-10-31T01:42:11Z"
+   "updated": "2026-11-01T01:00:49Z"
   },
   {
    "id": "3cdb9dee-b5cb-406c-bbd1-06a219930fb7",
@@ -404,39 +404,6 @@
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305193628.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
    "updated": "2026-10-17T08:28:47Z"
-  },
-  {
-   "id": "d3bd7fb2-fac6-49fc-ae52-cee07d2fde67",
-   "name": "Falcon Heavy | Griffin Mission One",
-   "mission": "Griffin Mission One",
-   "vehicle": "Falcon Heavy",
-   "categories": [
-    "falcon-heavy"
-   ],
-   "status": "TBD",
-   "statusName": "To Be Determined",
-   "net": "2026-12-31T00:00:00Z",
-   "precision": "vague",
-   "precisionName": "Month",
-   "windowStart": "2026-12-31T00:00:00Z",
-   "windowEnd": "2026-12-31T00:00:00Z",
-   "pad": "Launch Complex 39A",
-   "padShort": "LC-39A",
-   "location": "Kennedy Space Center, FL, USA",
-   "site": "Kennedy Space Center",
-   "landing": {
-    "label": "N/A",
-    "name": "Unknown",
-    "type": "ASDS"
-   },
-   "orbit": "Lunar Orbit",
-   "description": "Demonstration flight of the Astrobotic Griffin lander and its engines, initially contracted for the NASA VIPER (Volatiles Investigating Polar Exploration Rover) mission. The vacated payload spot will now host the FLIP (FLEX Lunar Innovation Platform) lunar rover from Astrolab.",
-   "probability": null,
-   "webcast": null,
-   "webcastLive": false,
-   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305193632.jpeg",
-   "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_heavy_image_20220129192819.jpeg",
-   "updated": "2026-10-23T06:32:28Z"
   },
   {
    "id": "11b218b1-5e40-4b9d-854e-50320299239d",
@@ -1367,6 +1334,39 @@
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305193628.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
    "updated": "2025-04-10T05:43:50Z"
+  },
+  {
+   "id": "d3bd7fb2-fac6-49fc-ae52-cee07d2fde67",
+   "name": "Falcon Heavy | Griffin Mission One",
+   "mission": "Griffin Mission One",
+   "vehicle": "Falcon Heavy",
+   "categories": [
+    "falcon-heavy"
+   ],
+   "status": "TBD",
+   "statusName": "To Be Determined",
+   "net": "2027-01-31T00:00:00Z",
+   "precision": "vague",
+   "precisionName": "Month",
+   "windowStart": "2027-01-31T00:00:00Z",
+   "windowEnd": "2027-01-31T00:00:00Z",
+   "pad": "Launch Complex 39A",
+   "padShort": "LC-39A",
+   "location": "Kennedy Space Center, FL, USA",
+   "site": "Kennedy Space Center",
+   "landing": {
+    "label": "N/A",
+    "name": "Unknown",
+    "type": "ASDS"
+   },
+   "orbit": "Lunar Orbit",
+   "description": "Demonstration flight of the Astrobotic Griffin lander and its engines, initially contracted for the NASA VIPER (Volatiles Investigating Polar Exploration Rover) mission. The vacated payload spot will now host the FLIP (FLEX Lunar Innovation Platform) lunar rover from Astrolab.",
+   "probability": null,
+   "webcast": null,
+   "webcastLive": false,
+   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305193632.jpeg",
+   "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_heavy_image_20220129192819.jpeg",
+   "updated": "2026-11-01T01:12:16Z"
   },
   {
    "id": "3624047e-9891-420b-820f-7db4a7570383",
