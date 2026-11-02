@@ -6,24 +6,24 @@ METHOD:PUBLISH
 URL:https://benjaminowens612.github.io/spacex-launch-alerts/
 BEGIN:VEVENT
 UID:d74afbc7-0de5-491c-be05-4e9c31f736ac@spacex-launch-alerts
-DTSTAMP:20261029T174430Z
-LAST-MODIFIED:20261029T174430Z
-SEQUENCE:215459070
-SUMMARY:🚀 [TBC] Falcon 9 · Cygnus CRS-2 NG-25
-DTSTART:20261129T160000Z
-DTEND:20261129T163000Z
+DTSTAMP:20261102T175456Z
+LAST-MODIFIED:20261102T175456Z
+SEQUENCE:215805296
+SUMMARY:🚀 Falcon 9 · Cygnus CRS-2 NG-25
+DTSTART:20261129T154900Z
+DTEND:20261129T161900Z
 LOCATION:Space Launch Complex 40\, Cape Canaveral SFS\, FL\, USA
-DESCRIPTION:Status: To Be Confirmed\nLaunch: Sun\, 29 Nov 2026 16:00:00 UTC
-  (instantaneous window)\nOrbit: Low Earth Orbit\nPad: Space Launch Complex
-  40\, Cape Canaveral SFS\, FL\, USA\n\nThis is the 25th flight of the Orbi
- tal ATK's uncrewed resupply spacecraft Cygnus and its 24th flight to the I
- nternational Space Station under the Commercial Resupply Services contract
-  with NASA.\n\nCountdown & updates: https://benjaminowens612.github.io/spa
- cex-launch-alerts/#d74afbc7-0de5-491c-be05-4e9c31f736ac
+DESCRIPTION:Status: Go for Launch\nLaunch: Sun\, 29 Nov 2026 15:49:00 UTC (
+ instantaneous window)\nOrbit: Low Earth Orbit\nPad: Space Launch Complex 4
+ 0\, Cape Canaveral SFS\, FL\, USA\n\nThis is the 25th flight of the Orbita
+ l ATK's uncrewed resupply spacecraft Cygnus and its 24th flight to the Int
+ ernational Space Station under the Commercial Resupply Services contract w
+ ith NASA.\n\nCountdown & updates: https://benjaminowens612.github.io/space
+ x-launch-alerts/#d74afbc7-0de5-491c-be05-4e9c31f736ac
 URL:https://benjaminowens612.github.io/spacex-launch-alerts/#d74afbc7-0de5-
  491c-be05-4e9c31f736ac
 CATEGORIES:other
-STATUS:TENTATIVE
+STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 BEGIN:VALARM
 ACTION:DISPLAY

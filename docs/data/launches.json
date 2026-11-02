@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-02T02:23:10.461Z",
+ "generatedAt": "2026-11-02T20:16:59.426Z",
  "siteUrl": "https://benjaminowens612.github.io/spacex-launch-alerts/",
  "categories": [
   {
@@ -138,11 +138,11 @@
    ],
    "status": "Go",
    "statusName": "Go for Launch",
-   "net": "2026-11-04T01:28:00Z",
+   "net": "2026-11-05T01:14:00Z",
    "precision": "exact",
    "precisionName": "Minute",
-   "windowStart": "2026-11-04T01:28:00Z",
-   "windowEnd": "2026-11-04T05:28:00Z",
+   "windowStart": "2026-11-05T01:14:00Z",
+   "windowEnd": "2026-11-05T05:14:00Z",
    "pad": "Space Launch Complex 4E",
    "padShort": "SLC-4E",
    "location": "Vandenberg SFB, CA, USA",
@@ -159,7 +159,7 @@
    "webcastLive": false,
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_thumbnail_20260816171423.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg",
-   "updated": "2026-11-01T22:44:35Z"
+   "updated": "2026-11-02T19:54:18Z"
   },
   {
    "id": "6aa7b90b-e5ed-45d8-a52e-04fbf399d178",
@@ -171,11 +171,11 @@
    ],
    "status": "TBC",
    "statusName": "To Be Confirmed",
-   "net": "2026-11-10T03:03:00Z",
+   "net": "2026-11-09T03:17:00Z",
    "precision": "exact",
    "precisionName": "Minute",
-   "windowStart": "2026-11-10T03:03:00Z",
-   "windowEnd": "2026-11-10T07:03:00Z",
+   "windowStart": "2026-11-09T03:17:00Z",
+   "windowEnd": "2026-11-09T07:17:00Z",
    "pad": "Space Launch Complex 4E",
    "padShort": "SLC-4E",
    "location": "Vandenberg SFB, CA, USA",
@@ -192,7 +192,7 @@
    "webcastLive": false,
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_thumbnail_20260816171423.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg",
-   "updated": "2026-10-28T18:57:38Z"
+   "updated": "2026-11-02T16:03:38Z"
   },
   {
    "id": "d74afbc7-0de5-491c-be05-4e9c31f736ac",
@@ -202,13 +202,13 @@
    "categories": [
     "other"
    ],
-   "status": "TBC",
-   "statusName": "To Be Confirmed",
-   "net": "2026-11-29T16:00:00Z",
+   "status": "Go",
+   "statusName": "Go for Launch",
+   "net": "2026-11-29T15:49:00Z",
    "precision": "exact",
-   "precisionName": "Hour",
-   "windowStart": "2026-11-29T16:00:00Z",
-   "windowEnd": "2026-11-29T16:00:00Z",
+   "precisionName": "Minute",
+   "windowStart": "2026-11-29T15:49:00Z",
+   "windowEnd": "2026-11-29T15:49:00Z",
    "pad": "Space Launch Complex 40",
    "padShort": "SLC-40",
    "location": "Cape Canaveral SFS, FL, USA",
@@ -221,7 +221,7 @@
    "webcastLive": false,
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305193628.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
-   "updated": "2026-10-29T17:44:30Z"
+   "updated": "2026-11-02T17:54:56Z"
   },
   {
    "id": "56ca6058-7ccc-4ec0-b1b0-fb49f3bfee49",
