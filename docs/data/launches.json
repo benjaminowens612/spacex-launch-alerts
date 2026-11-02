@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-01T23:01:46.217Z",
+ "generatedAt": "2026-11-02T02:23:10.461Z",
  "siteUrl": "https://benjaminowens612.github.io/spacex-launch-alerts/",
  "categories": [
   {
@@ -162,39 +162,6 @@
    "updated": "2026-11-01T22:44:35Z"
   },
   {
-   "id": "3cdb9dee-b5cb-406c-bbd1-06a219930fb7",
-   "name": "Falcon 9 Block 5 | Starlink Group 15-21",
-   "mission": "Starlink Group 15-21",
-   "vehicle": "Falcon 9",
-   "categories": [
-    "starlink"
-   ],
-   "status": "Go",
-   "statusName": "Go for Launch",
-   "net": "2026-11-06T02:21:00Z",
-   "precision": "exact",
-   "precisionName": "Minute",
-   "windowStart": "2026-11-06T02:21:00Z",
-   "windowEnd": "2026-11-06T06:21:00Z",
-   "pad": "Space Launch Complex 4E",
-   "padShort": "SLC-4E",
-   "location": "Vandenberg SFB, CA, USA",
-   "site": "Vandenberg",
-   "landing": {
-    "label": "OCISLY",
-    "name": "Of Course I Still Love You",
-    "type": "ASDS"
-   },
-   "orbit": "Low Earth Orbit",
-   "description": "A batch of 27 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
-   "probability": null,
-   "webcast": "https://x.com/i/broadcasts/1aJbdEgvmWaKX",
-   "webcastLive": false,
-   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305192320.png",
-   "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
-   "updated": "2026-11-01T11:02:58Z"
-  },
-  {
    "id": "6aa7b90b-e5ed-45d8-a52e-04fbf399d178",
    "name": "Falcon 9 Block 5 | USSF-xxx (\"R-5\")",
    "mission": "USSF-xxx (\"R-5\")",
@@ -317,6 +284,39 @@
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_thumbnail_20241020164114.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20241020164113.jpeg",
    "updated": "2026-10-29T06:09:06Z"
+  },
+  {
+   "id": "3cdb9dee-b5cb-406c-bbd1-06a219930fb7",
+   "name": "Falcon 9 Block 5 | Starlink Group 15-21",
+   "mission": "Starlink Group 15-21",
+   "vehicle": "Falcon 9",
+   "categories": [
+    "starlink"
+   ],
+   "status": "TBD",
+   "statusName": "To Be Determined",
+   "net": "2026-11-30T00:00:00Z",
+   "precision": "vague",
+   "precisionName": "Month",
+   "windowStart": "2026-11-30T00:00:00Z",
+   "windowEnd": "2026-11-30T00:00:00Z",
+   "pad": "Space Launch Complex 4E",
+   "padShort": "SLC-4E",
+   "location": "Vandenberg SFB, CA, USA",
+   "site": "Vandenberg",
+   "landing": {
+    "label": "OCISLY",
+    "name": "Of Course I Still Love You",
+    "type": "ASDS"
+   },
+   "orbit": "Low Earth Orbit",
+   "description": "A batch of 27 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
+   "probability": null,
+   "webcast": "https://x.com/i/broadcasts/1aJbdEgvmWaKX",
+   "webcastLive": false,
+   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305192320.png",
+   "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
+   "updated": "2026-11-02T00:59:11Z"
   },
   {
    "id": "0f867f0c-5422-4d44-93b8-d7faaae7019b",
