@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-04T23:34:51.420Z",
+ "generatedAt": "2026-11-05T19:04:27.378Z",
  "siteUrl": "https://benjaminowens612.github.io/spacex-launch-alerts/",
  "categories": [
   {
@@ -348,6 +348,68 @@
    "updated": "2026-10-28T19:46:06Z"
   },
   {
+   "id": "8bf5f61e-a7e1-41e6-aede-7b87e4beebab",
+   "name": "Falcon 9 Block 5 | CHORUS",
+   "mission": "CHORUS",
+   "vehicle": "Falcon 9",
+   "categories": [
+    "other"
+   ],
+   "status": "TBD",
+   "statusName": "To Be Determined",
+   "net": "2026-12-31T00:00:00Z",
+   "precision": "vague",
+   "precisionName": "Month",
+   "windowStart": "2026-12-31T00:00:00Z",
+   "windowEnd": "2026-12-31T00:00:00Z",
+   "pad": "Unknown Pad",
+   "padShort": null,
+   "location": "Cape Canaveral SFS, FL, USA",
+   "site": "Cape Canaveral",
+   "landing": null,
+   "orbit": "Low Earth Orbit",
+   "description": "CHORUS is MDA's next generation Earth observation constellation, consisting of 2 radar satellites (C-band SAR and X-band SAR), in a 53.5 degree 600 km altitude LEO, with the X-band trailing the C-band by 60 minutes. A collaborative multi-sensor constellation, CHORUS will bring together diverse and unique imagery and data sources and provide a new level of near real-time insight and innovative Earth observation services. Operating in a unique mid-inclination orbit, CHORUS will be able to image day or night, regardless of weather conditions, with daily access of up to 95% of the coverage area. From an industry-leading 700km-wide imaging swath down to sub-metre high resolution, CHORUS will provide the most extensive and unrivalled Earth observation radar imaging capacity available on the market in a single mission.",
+   "probability": null,
+   "webcast": null,
+   "webcastLive": false,
+   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305193628.jpeg",
+   "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
+   "updated": "2026-11-05T18:00:50Z"
+  },
+  {
+   "id": "e61d353c-db55-4a57-8184-0fab187231e6",
+   "name": "Falcon 9 Block 5 | Globalstar 2-R Mission 2 (x 9)",
+   "mission": "Globalstar 2-R Mission 2 (x 9)",
+   "vehicle": "Falcon 9",
+   "categories": [
+    "other"
+   ],
+   "status": "TBD",
+   "statusName": "To Be Determined",
+   "net": "2026-12-31T00:00:00Z",
+   "precision": "vague",
+   "precisionName": "Month",
+   "windowStart": "2026-12-31T00:00:00Z",
+   "windowEnd": "2026-12-31T00:00:00Z",
+   "pad": "Space Launch Complex 40",
+   "padShort": "SLC-40",
+   "location": "Cape Canaveral SFS, FL, USA",
+   "site": "Cape Canaveral",
+   "landing": {
+    "label": "ASOG",
+    "name": "A Shortfall of Gravitas",
+    "type": "ASDS"
+   },
+   "orbit": "Low Earth Orbit",
+   "description": "The Globalstar global mobile communications network offers global, digital real time voice, data and fax services via its Low Earth Orbit satellite constellation. The constellation operates in a 1410 km orbit inclined at 52 degrees.\r\n\r\nIn early 2022, Globalstar contracted with MDA for the construction of 17 new 2nd generation refresh satellites to replenish the existing constellation. Rocket Lab is sub-contracted to build the satellites' buses and the launch dispensers.",
+   "probability": null,
+   "webcast": null,
+   "webcastLive": false,
+   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305193628.jpeg",
+   "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
+   "updated": "2026-11-05T18:03:47Z"
+  },
+  {
    "id": "71df1dd0-d658-4762-b0bc-0fca6886aea7",
    "name": "Falcon 9 Block 5 | SDA Tranche 2 Transport Layer D",
    "mission": "SDA Tranche 2 Transport Layer D",
@@ -437,35 +499,6 @@
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/f9_on_slc-40_2_image_thumbnail_20240919072420.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/f9_on_slc-40_2_image_20240919072420.jpg",
    "updated": "2026-10-15T12:12:53Z"
-  },
-  {
-   "id": "8bf5f61e-a7e1-41e6-aede-7b87e4beebab",
-   "name": "Falcon 9 Block 5 | CHORUS",
-   "mission": "CHORUS",
-   "vehicle": "Falcon 9",
-   "categories": [
-    "other"
-   ],
-   "status": "TBD",
-   "statusName": "To Be Determined",
-   "net": "2026-12-31T00:00:00Z",
-   "precision": "vague",
-   "precisionName": "Quarter 4",
-   "windowStart": "2026-12-31T00:00:00Z",
-   "windowEnd": "2026-12-31T00:00:00Z",
-   "pad": "Unknown Pad",
-   "padShort": null,
-   "location": "Cape Canaveral SFS, FL, USA",
-   "site": "Cape Canaveral",
-   "landing": null,
-   "orbit": "Low Earth Orbit",
-   "description": "CHORUS is MDA's next generation Earth observation constellation, consisting of 2 radar satellites (C-band SAR and X-band SAR), in a 53.5 degree 600 km altitude LEO, with the X-band trailing the C-band by 60 minutes. A collaborative multi-sensor constellation, CHORUS will bring together diverse and unique imagery and data sources and provide a new level of near real-time insight and innovative Earth observation services. Operating in a unique mid-inclination orbit, CHORUS will be able to image day or night, regardless of weather conditions, with daily access of up to 95% of the coverage area. From an industry-leading 700km-wide imaging swath down to sub-metre high resolution, CHORUS will provide the most extensive and unrivalled Earth observation radar imaging capacity available on the market in a single mission.",
-   "probability": null,
-   "webcast": null,
-   "webcastLive": false,
-   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305193628.jpeg",
-   "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
-   "updated": "2025-11-14T23:31:58Z"
   },
   {
    "id": "01ca3653-126a-4c01-94fb-a9467b39cdac",
@@ -640,39 +673,6 @@
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305193628.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
    "updated": "2026-08-27T16:01:25Z"
-  },
-  {
-   "id": "e61d353c-db55-4a57-8184-0fab187231e6",
-   "name": "Falcon 9 Block 5 | Globalstar 2-R Mission 2 (x 9)",
-   "mission": "Globalstar 2-R Mission 2 (x 9)",
-   "vehicle": "Falcon 9",
-   "categories": [
-    "other"
-   ],
-   "status": "TBD",
-   "statusName": "To Be Determined",
-   "net": "2026-12-31T00:00:00Z",
-   "precision": "vague",
-   "precisionName": "Year Half 2",
-   "windowStart": "2026-12-31T00:00:00Z",
-   "windowEnd": "2026-12-31T00:00:00Z",
-   "pad": "Space Launch Complex 40",
-   "padShort": "SLC-40",
-   "location": "Cape Canaveral SFS, FL, USA",
-   "site": "Cape Canaveral",
-   "landing": {
-    "label": "ASOG",
-    "name": "A Shortfall of Gravitas",
-    "type": "ASDS"
-   },
-   "orbit": "Low Earth Orbit",
-   "description": "The Globalstar global mobile communications network offers global, digital real time voice, data and fax services via its Low Earth Orbit satellite constellation. The constellation operates in a 1410 km orbit inclined at 52 degrees.\r\n\r\nIn early 2022, Globalstar contracted with MDA for the construction of 17 new 2nd generation refresh satellites to replenish the existing constellation. Rocket Lab is sub-contracted to build the satellites' buses and the launch dispensers.",
-   "probability": null,
-   "webcast": null,
-   "webcastLive": false,
-   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305193628.jpeg",
-   "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
-   "updated": "2026-08-16T02:19:39Z"
   },
   {
    "id": "dfd444f9-ddda-4b35-8f51-cda7cd801809",
