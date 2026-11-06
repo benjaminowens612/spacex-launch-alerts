@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-05T19:04:27.378Z",
+ "generatedAt": "2026-11-06T00:09:24.140Z",
  "siteUrl": "https://benjaminowens612.github.io/spacex-launch-alerts/",
  "categories": [
   {
@@ -162,6 +162,35 @@
    "updated": "2026-11-04T20:05:21Z"
   },
   {
+   "id": "0f867f0c-5422-4d44-93b8-d7faaae7019b",
+   "name": "Starship | Flight 15",
+   "mission": "Flight 15",
+   "vehicle": "Starship",
+   "categories": [
+    "starship"
+   ],
+   "status": "TBD",
+   "statusName": "To Be Determined",
+   "net": "2026-11-13T00:00:00Z",
+   "precision": "day",
+   "precisionName": "Day",
+   "windowStart": "2026-11-13T00:00:00Z",
+   "windowEnd": "2026-11-13T00:00:00Z",
+   "pad": "Orbital Launch Pad 2",
+   "padShort": "OLP 2",
+   "location": "SpaceX Starbase, TX, USA",
+   "site": "Starbase",
+   "landing": null,
+   "orbit": "Low Earth Orbit",
+   "description": "15th test flight of the two-stage Starship launch vehicle and 4th flight of Starship V3.",
+   "probability": null,
+   "webcast": null,
+   "webcastLive": false,
+   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/starship_on_the_image_thumbnail_20260724044615.jpeg",
+   "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/starship_on_the_image_20260724044615.jpg",
+   "updated": "2026-11-05T21:52:18Z"
+  },
+  {
    "id": "76617033-4dc0-4448-b50c-e5b0d5a18539",
    "name": "Falcon 9 Block 5 | USSF-317",
    "mission": "USSF-317",
@@ -319,35 +348,6 @@
    "updated": "2026-11-03T21:40:38Z"
   },
   {
-   "id": "0f867f0c-5422-4d44-93b8-d7faaae7019b",
-   "name": "Starship | Flight 15",
-   "mission": "Flight 15",
-   "vehicle": "Starship",
-   "categories": [
-    "starship"
-   ],
-   "status": "TBD",
-   "statusName": "To Be Determined",
-   "net": "2026-11-30T00:00:00Z",
-   "precision": "vague",
-   "precisionName": "Month",
-   "windowStart": "2026-11-30T00:00:00Z",
-   "windowEnd": "2026-11-30T00:00:00Z",
-   "pad": "Orbital Launch Pad 2",
-   "padShort": "OLP 2",
-   "location": "SpaceX Starbase, TX, USA",
-   "site": "Starbase",
-   "landing": null,
-   "orbit": "Low Earth Orbit",
-   "description": "15th test flight of the two-stage Starship launch vehicle and 4th flight of Starship V3.",
-   "probability": null,
-   "webcast": null,
-   "webcastLive": false,
-   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/starship_on_the_image_thumbnail_20260724044615.jpeg",
-   "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/starship_on_the_image_20260724044615.jpg",
-   "updated": "2026-10-28T19:46:06Z"
-  },
-  {
    "id": "8bf5f61e-a7e1-41e6-aede-7b87e4beebab",
    "name": "Falcon 9 Block 5 | CHORUS",
    "mission": "CHORUS",
@@ -499,35 +499,6 @@
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/f9_on_slc-40_2_image_thumbnail_20240919072420.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/f9_on_slc-40_2_image_20240919072420.jpg",
    "updated": "2026-10-15T12:12:53Z"
-  },
-  {
-   "id": "01ca3653-126a-4c01-94fb-a9467b39cdac",
-   "name": "Falcon 9 Block 5 | Inmarsat-7 F1 (GX-7)",
-   "mission": "Inmarsat-7 F1 (GX-7)",
-   "vehicle": "Falcon 9",
-   "categories": [
-    "other"
-   ],
-   "status": "TBD",
-   "statusName": "To Be Determined",
-   "net": "2026-12-31T00:00:00Z",
-   "precision": "vague",
-   "precisionName": "Quarter 4",
-   "windowStart": "2026-12-31T00:00:00Z",
-   "windowEnd": "2026-12-31T00:00:00Z",
-   "pad": "Unknown Pad",
-   "padShort": null,
-   "location": "Cape Canaveral SFS, FL, USA",
-   "site": "Cape Canaveral",
-   "landing": null,
-   "orbit": "Geostationary Transfer Orbit",
-   "description": "Inmarsat-7 is the seventh generation of satellites for the London-based global mobile satellite communications operator Inmarsat. The three satellites of the series - GX-7, 8 & 9 - will have an improved fully reconfigurable Ka-band payload for Inmarsat's Global Xpress services. They are optimized for real-time mobility and feature thousands of dynamically-formed beams that direct capacity with laser-like precision over high-demand areas, to provide HTS (High Throughput) broadband connectivity for the mobility market.\r\n\r\nThe satellites will be based on Airbus’ new standard and fully reconfigurable satellite product line OneSat. Fully reconfigurable and featuring on board processing and active antennas, the three Ka-band spacecraft will be able to adjust their coverage, capacity and frequency.",
-   "probability": null,
-   "webcast": null,
-   "webcastLive": false,
-   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305193628.jpeg",
-   "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
-   "updated": "2026-02-04T11:37:33Z"
   },
   {
    "id": "2d0472b9-463d-49c8-afb1-7925e49a3368",
@@ -1923,6 +1894,39 @@
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305193628.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
    "updated": "2026-09-11T11:50:40Z"
+  },
+  {
+   "id": "e30e5e42-5612-4352-a99c-3168b75160e0",
+   "name": "Falcon 9 Block 5 | Dragon CRS-2 SpX-36",
+   "mission": "Dragon CRS-2 SpX-36",
+   "vehicle": "Falcon 9",
+   "categories": [
+    "other"
+   ],
+   "status": "TBD",
+   "statusName": "To Be Determined",
+   "net": "2027-06-30T00:00:00Z",
+   "precision": "vague",
+   "precisionName": "Year Half 1",
+   "windowStart": "2027-06-30T00:00:00Z",
+   "windowEnd": "2027-06-30T00:00:00Z",
+   "pad": "Space Launch Complex 40",
+   "padShort": "SLC-40",
+   "location": "Cape Canaveral SFS, FL, USA",
+   "site": "Cape Canaveral",
+   "landing": {
+    "label": "LZ-40",
+    "name": "Landing Zone 40",
+    "type": "RTLS"
+   },
+   "orbit": "Low Earth Orbit",
+   "description": "36th commercial resupply services mission to the International Space Station operated by SpaceX. The flight will be conducted under the second Commercial Resupply Services contract with NASA.\r\n\r\nCargo Dragon 2 brings supplies and payloads, including critical materials to directly support science and research investigations that occur onboard the orbiting laboratory.",
+   "probability": null,
+   "webcast": null,
+   "webcastLive": false,
+   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305192619.jpeg",
+   "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20210520085648.jpeg",
+   "updated": "2026-10-08T17:47:17Z"
   }
  ]
 }

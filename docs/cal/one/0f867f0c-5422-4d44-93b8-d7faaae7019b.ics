@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//spacex-launch-alerts//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+URL:https://benjaminowens612.github.io/spacex-launch-alerts/
+BEGIN:VEVENT
+UID:0f867f0c-5422-4d44-93b8-d7faaae7019b@spacex-launch-alerts
+DTSTAMP:20261105T215218Z
+LAST-MODIFIED:20261105T215218Z
+SEQUENCE:216078738
+SUMMARY:🚀 [TBD] Starship · Flight 15
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+LOCATION:Orbital Launch Pad 2\, SpaceX Starbase\, TX\, USA
+DESCRIPTION:Status: To Be Determined\nTime precision: Day (exact time not y
+ et announced)\nOrbit: Low Earth Orbit\nPad: Orbital Launch Pad 2\, SpaceX 
+ Starbase\, TX\, USA\n\n15th test flight of the two-stage Starship launch v
+ ehicle and 4th flight of Starship V3.\n\nCountdown & updates: https://benj
+ aminowens612.github.io/spacex-launch-alerts/#0f867f0c-5422-4d44-93b8-d7faa
+ ae7019b
+URL:https://benjaminowens612.github.io/spacex-launch-alerts/#0f867f0c-5422-
+ 4d44-93b8-d7faaae7019b
+CATEGORIES:starship
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
