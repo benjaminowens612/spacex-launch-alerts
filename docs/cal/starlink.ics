@@ -9,4 +9,50 @@ X-WR-CALDESC:Starlink missions only
 REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
 URL:https://benjaminowens612.github.io/spacex-launch-alerts/
+BEGIN:VEVENT
+UID:0f867f0c-5422-4d44-93b8-d7faaae7019b@spacex-launch-alerts
+DTSTAMP:20261107T161428Z
+LAST-MODIFIED:20261107T161428Z
+SEQUENCE:216231268
+SUMMARY:🚀 [TBC] Starship · Starlink Group 31-2 (Starship Flight 15)
+DTSTART:20261113T224500Z
+DTEND:20261114T000000Z
+LOCATION:Orbital Launch Pad 2\, SpaceX Starbase\, TX\, USA
+DESCRIPTION:Status: To Be Confirmed\nWindow: Fri\, 13 Nov 2026 22:45:00 UTC
+  – Sat\, 14 Nov 2026 00:00:00 UTC\nOrbit: Low Earth Orbit\nPad: Orbital 
+ Launch Pad 2\, SpaceX Starbase\, TX\, USA\n\n15th test flight of the two-s
+ tage Starship launch vehicle and 4th flight of Starship V3. Second Starshi
+ p flight to deploy satellites (a group of Starlink satellites known as Sta
+ rlink Group 31-2) into stable Low Earth Orbit and first ever to attempt re
+ turning the Starship 2nd stage back to the launch site.\n\nThe ship is exp
+ ected to fly at an altitude approximately 275 km above Earth and complete 
+ approximately 14 orbits around the planet for more than 22 hours\, with th
+ e ship expected to attempt returning back to Starbase\, Texas on its launc
+ h pad by pad arms catching.\n\nThe booster’s primary test objective on F
+ light 15 will be executing a successful launch\, ascent\, stage separation
+ \, boostback burn\, and landing by pad arms catching. This will also be th
+ e 1st Starship V3 booster to attempt returning to its launch site.\n\nStar
+ ship will deliver 26 Starlink V3 satellites to orbit for the second time\,
+  which aim to greatly expand the network's capacity and user speeds. Each 
+ Starlink V3 satellite will add 1 Tbps of capacity to the constellation. 3 
+ of the satellites have been modified with a suite of cameras to scan Stars
+ hip’s heatshield and transmit imagery down to operators.\n\nCountdown & 
+ updates: https://benjaminowens612.github.io/spacex-launch-alerts/#0f867f0c
+ -5422-4d44-93b8-d7faaae7019b
+URL:https://benjaminowens612.github.io/spacex-launch-alerts/#0f867f0c-5422-
+ 4d44-93b8-d7faaae7019b
+CATEGORIES:starlink,starship
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:T-1h: Starship · Starlink Group 31-2 (Starship Flight 15)
+TRIGGER:-PT60M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:T-10m: Starship · Starlink Group 31-2 (Starship Flight 15)
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
 END:VCALENDAR
