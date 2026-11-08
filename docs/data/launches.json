@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-07T18:15:50.875Z",
+ "generatedAt": "2026-11-08T01:18:47.393Z",
  "siteUrl": "https://benjaminowens612.github.io/spacex-launch-alerts/",
  "categories": [
   {
@@ -28,13 +28,13 @@
    "id": "all",
    "name": "SpaceX Launches",
    "description": "Every SpaceX launch",
-   "count": 60
+   "count": 61
   },
   {
    "id": "no-starlink",
    "name": "SpaceX (no Starlink)",
    "description": "Everything except routine Starlink missions",
-   "count": 59
+   "count": 60
   },
   {
    "id": "notable",
@@ -1899,6 +1899,35 @@
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305192619.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20210520085648.jpeg",
    "updated": "2026-10-08T17:47:17Z"
+  },
+  {
+   "id": "c75c006e-43f7-4abd-9c48-2252c2284586",
+   "name": "Falcon 9 Block 5 | USSF-149",
+   "mission": "USSF-149",
+   "vehicle": "Falcon 9",
+   "categories": [
+    "other"
+   ],
+   "status": "TBD",
+   "statusName": "To Be Determined",
+   "net": "2027-06-30T00:00:00Z",
+   "precision": "vague",
+   "precisionName": "Fiscal Year",
+   "windowStart": "2027-06-30T00:00:00Z",
+   "windowEnd": "2027-06-30T00:00:00Z",
+   "pad": "Unknown Pad",
+   "padShort": null,
+   "location": "Cape Canaveral SFS, FL, USA",
+   "site": "Cape Canaveral",
+   "landing": null,
+   "orbit": "Unknown",
+   "description": "Classified payload for the US Space Force.",
+   "probability": null,
+   "webcast": null,
+   "webcastLive": false,
+   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305193628.jpeg",
+   "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
+   "updated": "2025-10-04T03:08:35Z"
   }
  ]
 }
