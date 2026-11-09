@@ -34,23 +34,23 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:6aa7b90b-e5ed-45d8-a52e-04fbf399d178@spacex-launch-alerts
-DTSTAMP:20261104T200521Z
-LAST-MODIFIED:20261104T200521Z
-SEQUENCE:215985921
+DTSTAMP:20261109T171307Z
+LAST-MODIFIED:20261109T171307Z
+SEQUENCE:216407587
 SUMMARY:🚀 Falcon 9 · USSF-627
-DTSTART:20261110T030300Z
-DTEND:20261110T070300Z
+DTSTART:20261110T045949Z
+DTEND:20261110T085949Z
 LOCATION:Space Launch Complex 4E\, Vandenberg SFB\, CA\, USA
 DESCRIPTION:Status: Go for Launch\nWindow: Tue\, 10 Nov 2026 03:03:00 UTC 
  – Tue\, 10 Nov 2026 07:03:00 UTC\nOrbit: Low Earth Orbit\nPad: Space Lau
- nch Complex 4E\, Vandenberg SFB\, CA\, USA\n\n▶ Watch live: https://x.co
- m/i/broadcasts/2brkWyolnlBbLM\n\nA classified mission for the United State
- s Space Force. It is possibly a batch of classified LEO satellites based o
- n SpaceX’s Starshield satellite bus\, based on locations of rocket stage
-  drop zones being exact fits with previous Starlink Group 15 launches.\n\n
- Countdown & updates: https://benjaminowens612.github.io/spacex-launch-aler
- ts/#6aa7b90b-e5ed-45d8-a52e-04fbf399d178
-URL:https://x.com/i/broadcasts/2brkWyolnlBbLM
+ nch Complex 4E\, Vandenberg SFB\, CA\, USA\n\n▶ Watch live: https://www.
+ youtube.com/watch?v=1jhH0mR5ICA\n\nA classified mission for the United Sta
+ tes Space Force. It is possibly a batch of classified LEO satellites based
+  on SpaceX’s Starshield satellite bus\, based on locations of rocket sta
+ ge drop zones being exact fits with previous Starlink Group 15 launches.\n
+ \nCountdown & updates: https://benjaminowens612.github.io/spacex-launch-al
+ erts/#6aa7b90b-e5ed-45d8-a52e-04fbf399d178
+URL:https://www.youtube.com/watch?v=1jhH0mR5ICA
 CATEGORIES:other
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -175,5 +175,28 @@ ACTION:DISPLAY
 DESCRIPTION:T-10m: Falcon 9 · Cygnus CRS-2 NG-25
 TRIGGER:-PT10M
 END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d3bd7fb2-fac6-49fc-ae52-cee07d2fde67@spacex-launch-alerts
+DTSTAMP:20261109T182221Z
+LAST-MODIFIED:20261109T182221Z
+SEQUENCE:216411741
+SUMMARY:🚀 [TBD] Falcon Heavy · Griffin Mission One
+DTSTART;VALUE=DATE:20270106
+DTEND;VALUE=DATE:20270107
+LOCATION:Launch Complex 39A\, Kennedy Space Center\, FL\, USA
+DESCRIPTION:Status: To Be Determined\nTime precision: Day (exact time not y
+ et announced)\nOrbit: Lunar Orbit\nPad: Launch Complex 39A\, Kennedy Space
+  Center\, FL\, USA\n\nDemonstration flight of the Astrobotic Griffin lande
+ r and its engines\, initially contracted for the NASA VIPER (Volatiles Inv
+ estigating Polar Exploration Rover) mission. The vacated payload spot will
+  now host the FLIP (FLEX Lunar Innovation Platform) lunar rover from Astro
+ lab.\n\nCountdown & updates: https://benjaminowens612.github.io/spacex-lau
+ nch-alerts/#d3bd7fb2-fac6-49fc-ae52-cee07d2fde67
+URL:https://benjaminowens612.github.io/spacex-launch-alerts/#d3bd7fb2-fac6-
+ 49fc-ae52-cee07d2fde67
+CATEGORIES:falcon-heavy
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
 END:VEVENT
 END:VCALENDAR

@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-08T19:04:06.755Z",
+ "generatedAt": "2026-11-09T20:12:47.420Z",
  "siteUrl": "https://benjaminowens612.github.io/spacex-launch-alerts/",
  "categories": [
   {
@@ -105,9 +105,9 @@
    ],
    "status": "Go",
    "statusName": "Go for Launch",
-   "net": "2026-11-10T03:03:00Z",
+   "net": "2026-11-10T04:59:49Z",
    "precision": "exact",
-   "precisionName": "Minute",
+   "precisionName": "Second",
    "windowStart": "2026-11-10T03:03:00Z",
    "windowEnd": "2026-11-10T07:03:00Z",
    "pad": "Space Launch Complex 4E",
@@ -122,11 +122,11 @@
    "orbit": "Low Earth Orbit",
    "description": "A classified mission for the United States Space Force. It is possibly a batch of classified LEO satellites based on SpaceX’s Starshield satellite bus, based on locations of rocket stage drop zones being exact fits with previous Starlink Group 15 launches.",
    "probability": null,
-   "webcast": "https://x.com/i/broadcasts/2brkWyolnlBbLM",
+   "webcast": "https://www.youtube.com/watch?v=1jhH0mR5ICA",
    "webcastLive": false,
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_thumbnail_20260816171423.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg",
-   "updated": "2026-11-04T20:05:21Z"
+   "updated": "2026-11-09T17:13:07Z"
   },
   {
    "id": "76617033-4dc0-4448-b50c-e5b0d5a18539",
@@ -1188,6 +1188,39 @@
    "updated": "2023-11-01T20:35:10Z"
   },
   {
+   "id": "d3bd7fb2-fac6-49fc-ae52-cee07d2fde67",
+   "name": "Falcon Heavy | Griffin Mission One",
+   "mission": "Griffin Mission One",
+   "vehicle": "Falcon Heavy",
+   "categories": [
+    "falcon-heavy"
+   ],
+   "status": "TBD",
+   "statusName": "To Be Determined",
+   "net": "2027-01-06T00:00:00Z",
+   "precision": "day",
+   "precisionName": "Day",
+   "windowStart": "2027-01-06T00:00:00Z",
+   "windowEnd": "2027-01-06T00:00:00Z",
+   "pad": "Launch Complex 39A",
+   "padShort": "LC-39A",
+   "location": "Kennedy Space Center, FL, USA",
+   "site": "Kennedy Space Center",
+   "landing": {
+    "label": "N/A",
+    "name": "Unknown",
+    "type": "ASDS"
+   },
+   "orbit": "Lunar Orbit",
+   "description": "Demonstration flight of the Astrobotic Griffin lander and its engines, initially contracted for the NASA VIPER (Volatiles Investigating Polar Exploration Rover) mission. The vacated payload spot will now host the FLIP (FLEX Lunar Innovation Platform) lunar rover from Astrolab.",
+   "probability": null,
+   "webcast": null,
+   "webcastLive": false,
+   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305193632.jpeg",
+   "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_heavy_image_20220129192819.jpeg",
+   "updated": "2026-11-09T18:22:21Z"
+  },
+  {
    "id": "de3d5d91-f115-4a86-b923-203a91a08735",
    "name": "Falcon 9 Block 5 | Axiom Space Mission 5",
    "mission": "Axiom Space Mission 5",
@@ -1277,39 +1310,6 @@
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305193628.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
    "updated": "2025-04-10T05:43:50Z"
-  },
-  {
-   "id": "d3bd7fb2-fac6-49fc-ae52-cee07d2fde67",
-   "name": "Falcon Heavy | Griffin Mission One",
-   "mission": "Griffin Mission One",
-   "vehicle": "Falcon Heavy",
-   "categories": [
-    "falcon-heavy"
-   ],
-   "status": "TBD",
-   "statusName": "To Be Determined",
-   "net": "2027-01-31T00:00:00Z",
-   "precision": "vague",
-   "precisionName": "Month",
-   "windowStart": "2027-01-31T00:00:00Z",
-   "windowEnd": "2027-01-31T00:00:00Z",
-   "pad": "Launch Complex 39A",
-   "padShort": "LC-39A",
-   "location": "Kennedy Space Center, FL, USA",
-   "site": "Kennedy Space Center",
-   "landing": {
-    "label": "N/A",
-    "name": "Unknown",
-    "type": "ASDS"
-   },
-   "orbit": "Lunar Orbit",
-   "description": "Demonstration flight of the Astrobotic Griffin lander and its engines, initially contracted for the NASA VIPER (Volatiles Investigating Polar Exploration Rover) mission. The vacated payload spot will now host the FLIP (FLEX Lunar Innovation Platform) lunar rover from Astrolab.",
-   "probability": null,
-   "webcast": null,
-   "webcastLive": false,
-   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305193632.jpeg",
-   "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_heavy_image_20220129192819.jpeg",
-   "updated": "2026-11-01T01:12:16Z"
   },
   {
    "id": "3624047e-9891-420b-820f-7db4a7570383",
@@ -1577,35 +1577,6 @@
    "updated": "2026-08-20T20:12:53Z"
   },
   {
-   "id": "0d7dd3ae-0750-49be-a6ef-db40fd6ec5a5",
-   "name": "Falcon 9 Block 5 | AYAP-1",
-   "mission": "AYAP-1",
-   "vehicle": "Falcon 9",
-   "categories": [
-    "other"
-   ],
-   "status": "TBD",
-   "statusName": "To Be Determined",
-   "net": "2027-04-30T00:00:00Z",
-   "precision": "vague",
-   "precisionName": "Month",
-   "windowStart": "2027-04-30T00:00:00Z",
-   "windowEnd": "2027-04-30T00:00:00Z",
-   "pad": "Space Launch Complex 40",
-   "padShort": "SLC-40",
-   "location": "Cape Canaveral SFS, FL, USA",
-   "site": "Cape Canaveral",
-   "landing": null,
-   "orbit": "Lunar Orbit",
-   "description": "AYAP-1 is the first Turkish lunar exploration spacecraft mission. The AYAP-1 spacecraft will operate for at least 3 months (possibly extended to 6) in a 100-km circular lunar orbit above the lunar surface before concluding its mission with a controlled crash landing. It will test the 1st Turkish spacecraft hybrid propulsion system and ollect data about the Moon's water, magnetic activity and radiation.",
-   "probability": null,
-   "webcast": null,
-   "webcastLive": false,
-   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305193628.jpeg",
-   "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
-   "updated": "2026-10-10T15:21:59Z"
-  },
-  {
    "id": "d89815f1-7cc8-4dad-b3c4-5db80a9f4c01",
    "name": "Falcon 9 Block 5 | Bandwagon 6 (Dedicated Mid-Inclination Rideshare)",
    "mission": "Bandwagon 6 (Dedicated Mid-Inclination Rideshare)",
@@ -1633,6 +1604,35 @@
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_thumbnail_20251102082912.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20251102082912.jpg",
    "updated": "2026-09-30T06:31:06Z"
+  },
+  {
+   "id": "0d7dd3ae-0750-49be-a6ef-db40fd6ec5a5",
+   "name": "Falcon 9 Block 5 | Turkish Lunar Mission-1 (TLM-1)",
+   "mission": "Turkish Lunar Mission-1 (TLM-1)",
+   "vehicle": "Falcon 9",
+   "categories": [
+    "other"
+   ],
+   "status": "TBD",
+   "statusName": "To Be Determined",
+   "net": "2027-04-30T00:00:00Z",
+   "precision": "vague",
+   "precisionName": "Month",
+   "windowStart": "2027-04-30T00:00:00Z",
+   "windowEnd": "2027-04-30T00:00:00Z",
+   "pad": "Space Launch Complex 40",
+   "padShort": "SLC-40",
+   "location": "Cape Canaveral SFS, FL, USA",
+   "site": "Cape Canaveral",
+   "landing": null,
+   "orbit": "Lunar Orbit",
+   "description": "Turkish Lunar Mission-1 (TLM-1) is the first Turkish lunar exploration spacecraft mission. The TLM-1 spacecraft will operate for at least 3 months (possibly extended to 6) in a 100-km circular lunar orbit above the lunar surface before concluding its mission with a controlled crash landing. It will test the 1st Turkish spacecraft hybrid propulsion system and collect data about the Moon's water, magnetic activity and radiation.\r\n\r\nScientific payload are as follows:\r\n* Lunar Neutrals Telescope (LNT)\r\n* Lunar Narrow Field of View Radiometer (LNR)\r\n* Radiation Calorimeter\r\n* Radiation Dosimeter\r\n* High Resolution Camera\r\n* Wide Angle Video Camera\r\n* Vision Based Navigation System.",
+   "probability": null,
+   "webcast": null,
+   "webcastLive": false,
+   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305193628.jpeg",
+   "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
+   "updated": "2026-11-09T18:35:26Z"
   },
   {
    "id": "71f2a458-f872-4f82-80d7-c07f9e0a1f97",
