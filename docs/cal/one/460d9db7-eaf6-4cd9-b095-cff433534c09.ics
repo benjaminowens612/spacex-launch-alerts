@@ -6,15 +6,15 @@ METHOD:PUBLISH
 URL:https://benjaminowens612.github.io/spacex-launch-alerts/
 BEGIN:VEVENT
 UID:460d9db7-eaf6-4cd9-b095-cff433534c09@spacex-launch-alerts
-DTSTAMP:20261109T215520Z
-LAST-MODIFIED:20261109T215520Z
-SEQUENCE:216424520
+DTSTAMP:20261110T162625Z
+LAST-MODIFIED:20261110T162625Z
+SEQUENCE:216491185
 SUMMARY:🚀 Falcon 9 · USSF-266
-DTSTART:20261117T165800Z
-DTEND:20261117T205800Z
+DTSTART:20261118T164900Z
+DTEND:20261118T204900Z
 LOCATION:Space Launch Complex 4E\, Vandenberg SFB\, CA\, USA
-DESCRIPTION:Status: Go for Launch\nWindow: Tue\, 17 Nov 2026 16:58:00 UTC 
- – Tue\, 17 Nov 2026 20:58:00 UTC\nOrbit: Polar Orbit\nPad: Space Launch 
+DESCRIPTION:Status: Go for Launch\nWindow: Wed\, 18 Nov 2026 16:49:00 UTC 
+ – Wed\, 18 Nov 2026 20:49:00 UTC\nOrbit: Polar Orbit\nPad: Space Launch 
  Complex 4E\, Vandenberg SFB\, CA\, USA\n\n▶ Watch live: https://x.com/i/
  broadcasts/2JQXBjLyYOQrpX\n\nA classified mission for the United States Sp
  ace Force. It is possibly a batch of classified LEO satellites based on Sp
