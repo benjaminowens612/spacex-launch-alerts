@@ -168,6 +168,38 @@ TRIGGER:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:951a341f-236b-42fe-a667-4ab2fcf36eac@spacex-launch-alerts
+DTSTAMP:20261112T192100Z
+LAST-MODIFIED:20261112T192100Z
+SEQUENCE:216674460
+SUMMARY:🚀 Falcon 9 · NROL-136
+DTSTART:20261121T123000Z
+DTEND:20261121T130000Z
+LOCATION:Space Launch Complex 4E\, Vandenberg SFB\, CA\, USA
+DESCRIPTION:Status: Go for Launch\nWindow: Sat\, 21 Nov 2026 12:30:00 UTC 
+ – Sat\, 21 Nov 2026 13:00:00 UTC\nOrbit: Low Earth Orbit\nPad: Space Lau
+ nch Complex 4E\, Vandenberg SFB\, CA\, USA\n\n▶ Watch live: https://x.co
+ m/i/broadcasts/2yboJapzrmYNbe\n\nFifteenth batch of satellites for a recon
+ naissance satellite constellation built by SpaceX and Northrop Grumman for
+  the National Reconnaissance Office to provide imaging and other reconnais
+ sance capabilities.\n\nCountdown & updates: https://benjaminowens612.githu
+ b.io/spacex-launch-alerts/#951a341f-236b-42fe-a667-4ab2fcf36eac
+URL:https://x.com/i/broadcasts/2yboJapzrmYNbe
+CATEGORIES:other
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:T-1h: Falcon 9 · NROL-136
+TRIGGER:-PT60M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:T-10m: Falcon 9 · NROL-136
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:d74afbc7-0de5-491c-be05-4e9c31f736ac@spacex-launch-alerts
 DTSTAMP:20261104T200535Z
 LAST-MODIFIED:20261104T200535Z
