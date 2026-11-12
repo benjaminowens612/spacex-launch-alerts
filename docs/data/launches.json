@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-11T18:09:03.221Z",
+ "generatedAt": "2026-11-12T00:51:10.318Z",
  "siteUrl": "https://benjaminowens612.github.io/spacex-launch-alerts/",
  "categories": [
   {
@@ -105,7 +105,7 @@
    ],
    "status": "Go",
    "statusName": "Go for Launch",
-   "net": "2026-11-12T02:36:18Z",
+   "net": "2026-11-12T04:36:30Z",
    "precision": "exact",
    "precisionName": "Second",
    "windowStart": "2026-11-12T02:35:00Z",
@@ -126,7 +126,7 @@
    "webcastLive": false,
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_thumbnail_20260816171423.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg",
-   "updated": "2026-11-11T16:14:46Z"
+   "updated": "2026-11-11T23:51:06Z"
   },
   {
    "id": "0f867f0c-5422-4d44-93b8-d7faaae7019b",
