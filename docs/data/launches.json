@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-13T10:06:01.835Z",
+ "generatedAt": "2026-11-13T17:41:34.944Z",
  "siteUrl": "https://benjaminowens612.github.io/spacex-launch-alerts/",
  "categories": [
   {
@@ -196,39 +196,6 @@
    "updated": "2026-11-13T01:52:13Z"
   },
   {
-   "id": "460d9db7-eaf6-4cd9-b095-cff433534c09",
-   "name": "Falcon 9 Block 5 | USSF-266",
-   "mission": "USSF-266",
-   "vehicle": "Falcon 9",
-   "categories": [
-    "other"
-   ],
-   "status": "Go",
-   "statusName": "Go for Launch",
-   "net": "2026-11-18T16:49:00Z",
-   "precision": "exact",
-   "precisionName": "Minute",
-   "windowStart": "2026-11-18T16:49:00Z",
-   "windowEnd": "2026-11-18T20:49:00Z",
-   "pad": "Space Launch Complex 4E",
-   "padShort": "SLC-4E",
-   "location": "Vandenberg SFB, CA, USA",
-   "site": "Vandenberg",
-   "landing": {
-    "label": "OCISLY",
-    "name": "Of Course I Still Love You",
-    "type": "ASDS"
-   },
-   "orbit": "Polar Orbit",
-   "description": "A classified mission for the United States Space Force. It is possibly a batch of classified LEO satellites based on SpaceX’s Starshield satellite bus, based on locations of ascent rocket stage drop zones being fits with previous SDA Transport Layer launches.",
-   "probability": null,
-   "webcast": "https://x.com/i/broadcasts/2JQXBjLyYOQrpX",
-   "webcastLive": false,
-   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_thumbnail_20260816171423.jpeg",
-   "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg",
-   "updated": "2026-11-10T16:26:25Z"
-  },
-  {
    "id": "951a341f-236b-42fe-a667-4ab2fcf36eac",
    "name": "Falcon 9 Block 5 | NROL-136",
    "mission": "NROL-136",
@@ -262,6 +229,39 @@
    "updated": "2026-11-12T19:21:00Z"
   },
   {
+   "id": "460d9db7-eaf6-4cd9-b095-cff433534c09",
+   "name": "Falcon 9 Block 5 | USSF-266",
+   "mission": "USSF-266",
+   "vehicle": "Falcon 9",
+   "categories": [
+    "other"
+   ],
+   "status": "Go",
+   "statusName": "Go for Launch",
+   "net": "2026-11-23T16:04:00Z",
+   "precision": "exact",
+   "precisionName": "Minute",
+   "windowStart": "2026-11-23T16:04:00Z",
+   "windowEnd": "2026-11-23T20:04:00Z",
+   "pad": "Space Launch Complex 4E",
+   "padShort": "SLC-4E",
+   "location": "Vandenberg SFB, CA, USA",
+   "site": "Vandenberg",
+   "landing": {
+    "label": "OCISLY",
+    "name": "Of Course I Still Love You",
+    "type": "ASDS"
+   },
+   "orbit": "Polar Orbit",
+   "description": "A classified mission for the United States Space Force. It is possibly a batch of classified LEO satellites based on SpaceX’s Starshield satellite bus, based on locations of ascent rocket stage drop zones being fits with previous SDA Transport Layer launches.",
+   "probability": null,
+   "webcast": "https://x.com/i/broadcasts/2JQXBjLyYOQrpX",
+   "webcastLive": false,
+   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_thumbnail_20260816171423.jpeg",
+   "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg",
+   "updated": "2026-11-13T17:31:26Z"
+  },
+  {
    "id": "d74afbc7-0de5-491c-be05-4e9c31f736ac",
    "name": "Falcon 9 Block 5 | Cygnus CRS-2 NG-25",
    "mission": "Cygnus CRS-2 NG-25",
@@ -271,11 +271,11 @@
    ],
    "status": "Go",
    "statusName": "Go for Launch",
-   "net": "2026-11-29T15:49:00Z",
+   "net": "2026-11-29T15:47:00Z",
    "precision": "exact",
    "precisionName": "Minute",
-   "windowStart": "2026-11-29T15:49:00Z",
-   "windowEnd": "2026-11-29T15:49:00Z",
+   "windowStart": "2026-11-29T15:47:00Z",
+   "windowEnd": "2026-11-29T15:47:00Z",
    "pad": "Space Launch Complex 40",
    "padShort": "SLC-40",
    "location": "Cape Canaveral SFS, FL, USA",
@@ -288,7 +288,7 @@
    "webcastLive": false,
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305193628.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
-   "updated": "2026-11-04T20:05:35Z"
+   "updated": "2026-11-13T12:35:58Z"
   },
   {
    "id": "56ca6058-7ccc-4ec0-b1b0-fb49f3bfee49",
