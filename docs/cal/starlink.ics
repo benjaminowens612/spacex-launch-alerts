@@ -11,38 +11,38 @@ X-PUBLISHED-TTL:PT15M
 URL:https://benjaminowens612.github.io/spacex-launch-alerts/
 BEGIN:VEVENT
 UID:0f867f0c-5422-4d44-93b8-d7faaae7019b@spacex-launch-alerts
-DTSTAMP:20261110T220646Z
-LAST-MODIFIED:20261110T220646Z
-SEQUENCE:216511606
-SUMMARY:🚀 [TBC] Starship · Starlink Group 31-2 (Starship Flight 15)
-DTSTART:20261113T224500Z
-DTEND:20261114T000000Z
+DTSTAMP:20261113T224759Z
+LAST-MODIFIED:20261113T224759Z
+SEQUENCE:216773279
+SUMMARY:🚀 Starship · Starlink Group 31-2 (Starship Flight 15)
+DTSTART:20261113T224736Z
+DTEND:20261114T000236Z
 LOCATION:Orbital Launch Pad 2\, SpaceX Starbase\, TX\, USA
-DESCRIPTION:Status: To Be Confirmed\nWindow: Fri\, 13 Nov 2026 22:45:00 UTC
-  – Sat\, 14 Nov 2026 00:00:00 UTC\nOrbit: Low Earth Orbit\nPad: Orbital 
- Launch Pad 2\, SpaceX Starbase\, TX\, USA\n\n15th test flight of the two-s
- tage Starship launch vehicle and 4th flight of Starship V3. Second Starshi
- p flight to deploy satellites (a group of Starlink satellites known as Sta
- rlink Group 31-2) into stable Low Earth Orbit and first ever to attempt re
- turning the Starship 2nd stage back to the launch site.\n\nThe ship is exp
- ected to fly at an altitude approximately 275 km above Earth and complete 
- approximately 14 orbits around the planet for more than 22 hours\, with th
- e ship expected to attempt returning back to Starbase\, Texas on its launc
- h pad by pad arms catching.\n\nThe booster’s primary test objective on F
- light 15 will be executing a successful launch\, ascent\, stage separation
- \, boostback burn\, and landing by pad arms catching. This will also be th
- e 1st Starship V3 booster to attempt returning to its launch site.\n\nStar
- ship will deliver 26 Starlink V3 satellites to orbit for the second time\,
-  which aim to greatly expand the network's capacity and user speeds. Each 
- Starlink V3 satellite will add 1 Tbps of capacity to the constellation. 3 
- of the satellites have been modified with a suite of cameras to scan Stars
- hip’s heatshield and transmit imagery down to operators.\n\nCountdown & 
- updates: https://benjaminowens612.github.io/spacex-launch-alerts/#0f867f0c
- -5422-4d44-93b8-d7faaae7019b
-URL:https://benjaminowens612.github.io/spacex-launch-alerts/#0f867f0c-5422-
- 4d44-93b8-d7faaae7019b
+DESCRIPTION:Status: Launch in Flight\nWindow: Fri\, 13 Nov 2026 22:45:00 UT
+ C – Sat\, 14 Nov 2026 00:00:00 UTC\nOrbit: Low Earth Orbit\nPad: Orbital
+  Launch Pad 2\, SpaceX Starbase\, TX\, USA\n\n▶ Watch live: https://www.
+ youtube.com/watch?v=dl4O6RqbvOs\n\n15th test flight of the two-stage Stars
+ hip launch vehicle and 4th flight of Starship V3. Second Starship flight t
+ o deploy satellites (a group of Starlink satellites known as Starlink Grou
+ p 31-2) into stable Low Earth Orbit and first ever to attempt returning th
+ e Starship 2nd stage back to the launch site.\n\nThe ship is expected to f
+ ly at an altitude approximately 275 km above Earth and complete approximat
+ ely 14 orbits around the planet for more than 22 hours\, with the ship exp
+ ected to attempt returning back to Starbase\, Texas on its launch pad by p
+ ad arms catching.\n\nThe booster’s primary test objective on Flight 15 w
+ ill be executing a successful launch\, ascent\, stage separation\, boostba
+ ck burn\, and landing by pad arms catching. This will also be the 1st Star
+ ship V3 booster to attempt returning to its launch site.\n\nStarship will 
+ deliver 26 Starlink V3 satellites to orbit for the second time\, which aim
+  to greatly expand the network's capacity and user speeds. Each Starlink V
+ 3 satellite will add 1 Tbps of capacity to the constellation. 3 of the sat
+ ellites have been modified with a suite of cameras to scan Starship’s he
+ atshield and transmit imagery down to operators.\n\nCountdown & updates: h
+ ttps://benjaminowens612.github.io/spacex-launch-alerts/#0f867f0c-5422-4d44
+ -93b8-d7faaae7019b
+URL:https://www.youtube.com/watch?v=dl4O6RqbvOs
 CATEGORIES:starlink,starship
-STATUS:TENTATIVE
+STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 BEGIN:VALARM
 ACTION:DISPLAY

@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-13T17:41:34.944Z",
+ "generatedAt": "2026-11-13T22:55:51.947Z",
  "siteUrl": "https://benjaminowens612.github.io/spacex-launch-alerts/",
  "categories": [
   {
@@ -137,11 +137,11 @@
     "starlink",
     "starship"
    ],
-   "status": "TBC",
-   "statusName": "To Be Confirmed",
-   "net": "2026-11-13T22:45:00Z",
+   "status": "In Flight",
+   "statusName": "Launch in Flight",
+   "net": "2026-11-13T22:47:36Z",
    "precision": "exact",
-   "precisionName": "Minute",
+   "precisionName": "Second",
    "windowStart": "2026-11-13T22:45:00Z",
    "windowEnd": "2026-11-14T00:00:00Z",
    "pad": "Orbital Launch Pad 2",
@@ -156,11 +156,11 @@
    "orbit": "Low Earth Orbit",
    "description": "15th test flight of the two-stage Starship launch vehicle and 4th flight of Starship V3. Second Starship flight to deploy satellites (a group of Starlink satellites known as Starlink Group 31-2) into stable Low Earth Orbit and first ever to attempt returning the Starship 2nd stage back to the launch site.\r\n\r\nThe ship is expected to fly at an altitude approximately 275 km above Earth and complete approximately 14 orbits around the planet for more than 22 hours, with the ship expected to attempt returning back to Starbase, Texas on its launch pad by pad arms catching.\r\n\r\nThe booster’s primary test objective on Flight 15 will be executing a successful launch, ascent, stage separation, boostback burn, and landing by pad arms catching. This will also be the 1st Starship V3 booster to attempt returning to its launch site.\r\n\r\nStarship will deliver 26 Starlink V3 satellites to orbit for the second time, which aim to greatly expand the network's capacity and user speeds. Each Starlink V3 satellite will add 1 Tbps of capacity to the constellation. 3 of the satellites have been modified with a suite of cameras to scan Starship’s heatshield and transmit imagery down to operators.",
    "probability": null,
-   "webcast": null,
-   "webcastLive": false,
+   "webcast": "https://www.youtube.com/watch?v=dl4O6RqbvOs",
+   "webcastLive": true,
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/starship_on_the_image_thumbnail_20260724044615.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/starship_on_the_image_20260724044615.jpg",
-   "updated": "2026-11-10T22:06:46Z"
+   "updated": "2026-11-13T22:47:59Z"
   },
   {
    "id": "76617033-4dc0-4448-b50c-e5b0d5a18539",
@@ -259,7 +259,7 @@
    "webcastLive": false,
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_thumbnail_20260816171423.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg",
-   "updated": "2026-11-13T17:31:26Z"
+   "updated": "2026-11-13T17:46:32Z"
   },
   {
    "id": "d74afbc7-0de5-491c-be05-4e9c31f736ac",
