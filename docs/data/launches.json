@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-13T22:55:51.947Z",
+ "generatedAt": "2026-11-14T03:05:56.461Z",
  "siteUrl": "https://benjaminowens612.github.io/spacex-launch-alerts/",
  "categories": [
   {
@@ -28,13 +28,13 @@
    "id": "all",
    "name": "SpaceX Launches",
    "description": "Every SpaceX launch",
-   "count": 62
+   "count": 61
   },
   {
    "id": "no-starlink",
    "name": "SpaceX (no Starlink)",
    "description": "Everything except routine Starlink missions",
-   "count": 61
+   "count": 60
   },
   {
    "id": "notable",
@@ -62,39 +62,6 @@
   }
  ],
  "launches": [
-  {
-   "id": "54d471e8-695c-4fa7-a3cf-dbd8b389e8ae",
-   "name": "Falcon 9 Block 5 | USSF-432",
-   "mission": "USSF-432",
-   "vehicle": "Falcon 9",
-   "categories": [
-    "other"
-   ],
-   "status": "Success",
-   "statusName": "Launch Successful",
-   "net": "2026-11-07T00:48:42Z",
-   "precision": "exact",
-   "precisionName": "Second",
-   "windowStart": "2026-11-07T00:46:00Z",
-   "windowEnd": "2026-11-07T04:46:00Z",
-   "pad": "Space Launch Complex 4E",
-   "padShort": "SLC-4E",
-   "location": "Vandenberg SFB, CA, USA",
-   "site": "Vandenberg",
-   "landing": {
-    "label": "OCISLY",
-    "name": "Of Course I Still Love You",
-    "type": "ASDS"
-   },
-   "orbit": "Low Earth Orbit",
-   "description": "A classified mission for the United States Space Force. It is possibly a batch of classified LEO satellites based on SpaceX’s Starshield satellite bus, based on locations of rocket stage drop zones being exact fits with previous Starlink Group 15 launches.",
-   "probability": null,
-   "webcast": "https://x.com/i/broadcasts/1kKzDPYrZNdJv",
-   "webcastLive": false,
-   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_thumbnail_20260816171423.jpeg",
-   "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg",
-   "updated": "2026-11-07T04:29:55Z"
-  },
   {
    "id": "6aa7b90b-e5ed-45d8-a52e-04fbf399d178",
    "name": "Falcon 9 Block 5 | USSF-627",
@@ -137,8 +104,8 @@
     "starlink",
     "starship"
    ],
-   "status": "In Flight",
-   "statusName": "Launch in Flight",
+   "status": "Deployed",
+   "statusName": "Payload Deployed",
    "net": "2026-11-13T22:47:36Z",
    "precision": "exact",
    "precisionName": "Second",
@@ -160,7 +127,7 @@
    "webcastLive": true,
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/starship_on_the_image_thumbnail_20260724044615.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/starship_on_the_image_20260724044615.jpg",
-   "updated": "2026-11-13T22:47:59Z"
+   "updated": "2026-11-14T02:11:54Z"
   },
   {
    "id": "76617033-4dc0-4448-b50c-e5b0d5a18539",

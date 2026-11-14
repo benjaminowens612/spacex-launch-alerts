@@ -11,14 +11,14 @@ X-PUBLISHED-TTL:PT15M
 URL:https://benjaminowens612.github.io/spacex-launch-alerts/
 BEGIN:VEVENT
 UID:0f867f0c-5422-4d44-93b8-d7faaae7019b@spacex-launch-alerts
-DTSTAMP:20261113T224759Z
-LAST-MODIFIED:20261113T224759Z
-SEQUENCE:216773279
+DTSTAMP:20261114T021154Z
+LAST-MODIFIED:20261114T021154Z
+SEQUENCE:216785514
 SUMMARY:🚀 Starship · Starlink Group 31-2 (Starship Flight 15)
 DTSTART:20261113T224736Z
 DTEND:20261114T000236Z
 LOCATION:Orbital Launch Pad 2\, SpaceX Starbase\, TX\, USA
-DESCRIPTION:Status: Launch in Flight\nWindow: Fri\, 13 Nov 2026 22:45:00 UT
+DESCRIPTION:Status: Payload Deployed\nWindow: Fri\, 13 Nov 2026 22:45:00 UT
  C – Sat\, 14 Nov 2026 00:00:00 UTC\nOrbit: Low Earth Orbit\nPad: Orbital
   Launch Pad 2\, SpaceX Starbase\, TX\, USA\n\n▶ Watch live: https://www.
  youtube.com/watch?v=dl4O6RqbvOs\n\n15th test flight of the two-stage Stars
