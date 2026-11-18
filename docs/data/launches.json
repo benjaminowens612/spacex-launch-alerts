@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-17T17:41:01.125Z",
+ "generatedAt": "2026-11-18T16:34:00.867Z",
  "siteUrl": "https://benjaminowens612.github.io/spacex-launch-alerts/",
  "categories": [
   {
@@ -125,9 +125,9 @@
    "probability": null,
    "webcast": "https://www.youtube.com/watch?v=dl4O6RqbvOs",
    "webcastLive": false,
-   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/starship_on_the_image_thumbnail_20260724044615.jpeg",
-   "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/starship_on_the_image_20260724044615.jpg",
-   "updated": "2026-11-15T19:10:31Z"
+   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/starship_42_dur_image_thumbnail_20261118092531.jpeg",
+   "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/starship_42_dur_image_20261118092530.jpeg",
+   "updated": "2026-11-18T09:25:37Z"
   },
   {
    "id": "76617033-4dc0-4448-b50c-e5b0d5a18539",
@@ -160,7 +160,7 @@
    "webcastLive": false,
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_thumbnail_20260816171423.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg",
-   "updated": "2026-11-17T16:09:07Z"
+   "updated": "2026-11-18T16:09:27Z"
   },
   {
    "id": "951a341f-236b-42fe-a667-4ab2fcf36eac",
