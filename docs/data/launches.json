@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-18T16:34:00.867Z",
+ "generatedAt": "2026-11-18T23:05:48.604Z",
  "siteUrl": "https://benjaminowens612.github.io/spacex-launch-alerts/",
  "categories": [
   {
@@ -227,6 +227,39 @@
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_thumbnail_20260816171423.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg",
    "updated": "2026-11-13T17:46:32Z"
+  },
+  {
+   "id": "b0d27def-0a88-44c3-a947-1fd5b8503e2c",
+   "name": "Falcon 9 Block 5 | USSF-380",
+   "mission": "USSF-380",
+   "vehicle": "Falcon 9",
+   "categories": [
+    "other"
+   ],
+   "status": "Go",
+   "statusName": "Go for Launch",
+   "net": "2026-11-28T04:53:00Z",
+   "precision": "exact",
+   "precisionName": "Minute",
+   "windowStart": "2026-11-28T04:53:00Z",
+   "windowEnd": "2026-11-28T08:53:00Z",
+   "pad": "Space Launch Complex 4E",
+   "padShort": "SLC-4E",
+   "location": "Vandenberg SFB, CA, USA",
+   "site": "Vandenberg",
+   "landing": {
+    "label": "OCISLY",
+    "name": "Of Course I Still Love You",
+    "type": "ASDS"
+   },
+   "orbit": "Low Earth Orbit",
+   "description": "A classified mission for the United States Space Force. It is possibly a batch of classified LEO satellites based on SpaceX’s Starshield satellite bus, based on locations of rocket stage drop zones being exact fits with previous Starlink Group 15 launches.",
+   "probability": null,
+   "webcast": "https://x.com/i/broadcasts/2ybQqgpAAEJmBB",
+   "webcastLive": false,
+   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_thumbnail_20260816171423.jpeg",
+   "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg",
+   "updated": "2026-11-18T19:03:08Z"
   },
   {
    "id": "d74afbc7-0de5-491c-be05-4e9c31f736ac",
@@ -1932,35 +1965,6 @@
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305192619.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20210520085648.jpeg",
    "updated": "2026-10-08T17:47:17Z"
-  },
-  {
-   "id": "c75c006e-43f7-4abd-9c48-2252c2284586",
-   "name": "Falcon 9 Block 5 | USSF-149",
-   "mission": "USSF-149",
-   "vehicle": "Falcon 9",
-   "categories": [
-    "other"
-   ],
-   "status": "TBD",
-   "statusName": "To Be Determined",
-   "net": "2027-06-30T00:00:00Z",
-   "precision": "vague",
-   "precisionName": "Fiscal Year",
-   "windowStart": "2027-06-30T00:00:00Z",
-   "windowEnd": "2027-06-30T00:00:00Z",
-   "pad": "Unknown Pad",
-   "padShort": null,
-   "location": "Cape Canaveral SFS, FL, USA",
-   "site": "Cape Canaveral",
-   "landing": null,
-   "orbit": "Unknown",
-   "description": "Classified payload for the US Space Force.",
-   "probability": null,
-   "webcast": null,
-   "webcastLive": false,
-   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305193628.jpeg",
-   "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
-   "updated": "2025-10-04T03:08:35Z"
   }
  ]
 }
