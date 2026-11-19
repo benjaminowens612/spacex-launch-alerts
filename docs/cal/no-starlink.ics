@@ -10,29 +10,6 @@ REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
 URL:https://benjaminowens612.github.io/spacex-launch-alerts/
 BEGIN:VEVENT
-UID:6aa7b90b-e5ed-45d8-a52e-04fbf399d178@spacex-launch-alerts
-DTSTAMP:20261115T191031Z
-LAST-MODIFIED:20261115T191031Z
-SEQUENCE:216933031
-SUMMARY:✅ Falcon 9 · USSF-627
-DTSTART:20261112T043630Z
-DTEND:20261112T083630Z
-LOCATION:Space Launch Complex 4E\, Vandenberg SFB\, CA\, USA
-DESCRIPTION:Status: Launch Successful\nWindow: Thu\, 12 Nov 2026 02:35:00 U
- TC – Thu\, 12 Nov 2026 06:35:00 UTC\nOrbit: Low Earth Orbit\nPad: Space 
- Launch Complex 4E\, Vandenberg SFB\, CA\, USA\n\n▶ Watch live: https://w
- ww.youtube.com/watch?v=rq7SLpK5vlY\n\nA classified mission for the United 
- States Space Force. It is possibly a batch of classified LEO satellites ba
- sed on SpaceX’s Starshield satellite bus\, based on locations of rocket 
- stage drop zones being exact fits with previous Starlink Group 15 launches
- .\n\nCountdown & updates: https://benjaminowens612.github.io/spacex-launch
- -alerts/#6aa7b90b-e5ed-45d8-a52e-04fbf399d178
-URL:https://www.youtube.com/watch?v=rq7SLpK5vlY
-CATEGORIES:other
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:0f867f0c-5422-4d44-93b8-d7faaae7019b@spacex-launch-alerts
 DTSTAMP:20261118T092537Z
 LAST-MODIFIED:20261118T092537Z
@@ -70,23 +47,23 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:76617033-4dc0-4448-b50c-e5b0d5a18539@spacex-launch-alerts
-DTSTAMP:20261118T160927Z
-LAST-MODIFIED:20261118T160927Z
-SEQUENCE:217181367
+DTSTAMP:20261119T050814Z
+LAST-MODIFIED:20261119T050814Z
+SEQUENCE:217228094
 SUMMARY:🚀 Falcon 9 · USSF-317
-DTSTART:20261120T024600Z
-DTEND:20261120T064600Z
+DTSTART:20261120T042855Z
+DTEND:20261120T082855Z
 LOCATION:Space Launch Complex 4E\, Vandenberg SFB\, CA\, USA
 DESCRIPTION:Status: Go for Launch\nWindow: Fri\, 20 Nov 2026 02:46:00 UTC 
  – Fri\, 20 Nov 2026 06:46:00 UTC\nOrbit: Low Earth Orbit\nPad: Space Lau
- nch Complex 4E\, Vandenberg SFB\, CA\, USA\n\n▶ Watch live: https://x.co
- m/i/broadcasts/2lgkMvaRVPMdYR\n\nA classified mission for the United State
- s Space Force. It is possibly a batch of classified LEO satellites based o
- n SpaceX’s Starshield satellite bus\, based on locations of rocket stage
-  drop zones being exact fits with previous Starlink Group 15 launches.\n\n
- Countdown & updates: https://benjaminowens612.github.io/spacex-launch-aler
- ts/#76617033-4dc0-4448-b50c-e5b0d5a18539
-URL:https://x.com/i/broadcasts/2lgkMvaRVPMdYR
+ nch Complex 4E\, Vandenberg SFB\, CA\, USA\n\n▶ Watch live: https://www.
+ youtube.com/watch?v=Zi7vbfr5FPI\n\nA classified mission for the United Sta
+ tes Space Force. It is possibly a batch of classified LEO satellites based
+  on SpaceX’s Starshield satellite bus\, based on locations of rocket sta
+ ge drop zones being exact fits with previous Starlink Group 15 launches.\n
+ \nCountdown & updates: https://benjaminowens612.github.io/spacex-launch-al
+ erts/#76617033-4dc0-4448-b50c-e5b0d5a18539
+URL:https://www.youtube.com/watch?v=Zi7vbfr5FPI
 CATEGORIES:other
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -201,22 +178,24 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:d74afbc7-0de5-491c-be05-4e9c31f736ac@spacex-launch-alerts
-DTSTAMP:20261113T123558Z
-LAST-MODIFIED:20261113T123558Z
-SEQUENCE:216736558
+DTSTAMP:20261119T123408Z
+LAST-MODIFIED:20261119T123408Z
+SEQUENCE:217254848
 SUMMARY:🚀 Falcon 9 · Cygnus CRS-2 NG-25
 DTSTART:20261129T154700Z
 DTEND:20261129T161700Z
 LOCATION:Space Launch Complex 40\, Cape Canaveral SFS\, FL\, USA
 DESCRIPTION:Status: Go for Launch\nLaunch: Sun\, 29 Nov 2026 15:47:00 UTC (
  instantaneous window)\nOrbit: Low Earth Orbit\nPad: Space Launch Complex 4
- 0\, Cape Canaveral SFS\, FL\, USA\n\nThis is the 25th flight of the Orbita
- l ATK's uncrewed resupply spacecraft Cygnus and its 24th flight to the Int
- ernational Space Station under the Commercial Resupply Services contract w
- ith NASA.\n\nCountdown & updates: https://benjaminowens612.github.io/space
- x-launch-alerts/#d74afbc7-0de5-491c-be05-4e9c31f736ac
-URL:https://benjaminowens612.github.io/spacex-launch-alerts/#d74afbc7-0de5-
- 491c-be05-4e9c31f736ac
+ 0\, Cape Canaveral SFS\, FL\, USA\n\n▶ Watch live: https://plus.nasa.gov
+ /scheduled-video/nasas-northrop-grumman-commercial-resupply-services-25-la
+ unch/\n\nThis is the 25th flight of the Orbital ATK's uncrewed resupply sp
+ acecraft Cygnus and its 24th flight to the International Space Station und
+ er the Commercial Resupply Services contract with NASA.\n\nCountdown & upd
+ ates: https://benjaminowens612.github.io/spacex-launch-alerts/#d74afbc7-0d
+ e5-491c-be05-4e9c31f736ac
+URL:https://plus.nasa.gov/scheduled-video/nasas-northrop-grumman-commercial
+ -resupply-services-25-launch/
 CATEGORIES:other
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
