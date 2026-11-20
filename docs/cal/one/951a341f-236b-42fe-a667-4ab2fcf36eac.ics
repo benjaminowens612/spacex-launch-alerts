@@ -6,22 +6,22 @@ METHOD:PUBLISH
 URL:https://benjaminowens612.github.io/spacex-launch-alerts/
 BEGIN:VEVENT
 UID:951a341f-236b-42fe-a667-4ab2fcf36eac@spacex-launch-alerts
-DTSTAMP:20261114T142939Z
-LAST-MODIFIED:20261114T142939Z
-SEQUENCE:216829779
+DTSTAMP:20261120T174332Z
+LAST-MODIFIED:20261120T174332Z
+SEQUENCE:217359812
 SUMMARY:🚀 Falcon 9 · NROL-136
-DTSTART:20261121T123000Z
-DTEND:20261121T130000Z
+DTSTART:20261122T121600Z
+DTEND:20261122T124600Z
 LOCATION:Space Launch Complex 4E\, Vandenberg SFB\, CA\, USA
-DESCRIPTION:Status: Go for Launch\nWindow: Sat\, 21 Nov 2026 12:30:00 UTC 
- – Sat\, 21 Nov 2026 13:00:00 UTC\nOrbit: Low Earth Orbit\nPad: Space Lau
- nch Complex 4E\, Vandenberg SFB\, CA\, USA\n\n▶ Watch live: https://x.co
- m/i/broadcasts/2yboJapzrmYNbe\n\nFifteenth batch of satellites for a recon
- naissance satellite constellation built by SpaceX and Northrop Grumman for
-  the National Reconnaissance Office to provide imaging and other reconnais
- sance capabilities.\n\nCountdown & updates: https://benjaminowens612.githu
- b.io/spacex-launch-alerts/#951a341f-236b-42fe-a667-4ab2fcf36eac
-URL:https://x.com/i/broadcasts/2yboJapzrmYNbe
+DESCRIPTION:Status: Go for Launch\nWindow: Sun\, 22 Nov 2026 12:16:00 UTC 
+ – Sun\, 22 Nov 2026 12:46:00 UTC\nOrbit: Low Earth Orbit\nPad: Space Lau
+ nch Complex 4E\, Vandenberg SFB\, CA\, USA\n\n▶ Watch live: https://www.
+ youtube.com/watch?v=CjN4lPx7mD8\n\nFifteenth batch of satellites for a rec
+ onnaissance satellite constellation built by SpaceX and Northrop Grumman f
+ or the National Reconnaissance Office to provide imaging and other reconna
+ issance capabilities.\n\nCountdown & updates: https://benjaminowens612.git
+ hub.io/spacex-launch-alerts/#951a341f-236b-42fe-a667-4ab2fcf36eac
+URL:https://www.youtube.com/watch?v=CjN4lPx7mD8
 CATEGORIES:other
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT

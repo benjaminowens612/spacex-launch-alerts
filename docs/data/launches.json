@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-20T10:36:39.664Z",
+ "generatedAt": "2026-11-20T18:49:14.110Z",
  "siteUrl": "https://benjaminowens612.github.io/spacex-launch-alerts/",
  "categories": [
   {
@@ -106,9 +106,9 @@
    ],
    "status": "Go",
    "statusName": "Go for Launch",
-   "net": "2026-11-21T02:32:00Z",
+   "net": "2026-11-21T04:20:35Z",
    "precision": "exact",
-   "precisionName": "Minute",
+   "precisionName": "Second",
    "windowStart": "2026-11-21T02:32:00Z",
    "windowEnd": "2026-11-21T06:32:00Z",
    "pad": "Space Launch Complex 4E",
@@ -127,7 +127,7 @@
    "webcastLive": false,
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_thumbnail_20260816171423.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg",
-   "updated": "2026-11-20T07:57:14Z"
+   "updated": "2026-11-20T17:41:31Z"
   },
   {
    "id": "951a341f-236b-42fe-a667-4ab2fcf36eac",
@@ -139,11 +139,11 @@
    ],
    "status": "Go",
    "statusName": "Go for Launch",
-   "net": "2026-11-21T12:30:00Z",
+   "net": "2026-11-22T12:16:00Z",
    "precision": "exact",
    "precisionName": "Minute",
-   "windowStart": "2026-11-21T12:30:00Z",
-   "windowEnd": "2026-11-21T13:00:00Z",
+   "windowStart": "2026-11-22T12:16:00Z",
+   "windowEnd": "2026-11-22T12:46:00Z",
    "pad": "Space Launch Complex 4E",
    "padShort": "SLC-4E",
    "location": "Vandenberg SFB, CA, USA",
@@ -156,11 +156,11 @@
    "orbit": "Low Earth Orbit",
    "description": "Fifteenth batch of satellites for a reconnaissance satellite constellation built by SpaceX and Northrop Grumman for the National Reconnaissance Office to provide imaging and other reconnaissance capabilities.",
    "probability": null,
-   "webcast": "https://x.com/i/broadcasts/2yboJapzrmYNbe",
+   "webcast": "https://www.youtube.com/watch?v=CjN4lPx7mD8",
    "webcastLive": false,
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_on_slc_image_thumbnail_20241024165957.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_on_slc_image_20241024165956.jpg",
-   "updated": "2026-11-14T14:29:39Z"
+   "updated": "2026-11-20T17:43:32Z"
   },
   {
    "id": "460d9db7-eaf6-4cd9-b095-cff433534c09",
@@ -172,11 +172,11 @@
    ],
    "status": "Go",
    "statusName": "Go for Launch",
-   "net": "2026-11-23T16:04:00Z",
+   "net": "2026-11-24T15:55:00Z",
    "precision": "exact",
    "precisionName": "Minute",
-   "windowStart": "2026-11-23T16:04:00Z",
-   "windowEnd": "2026-11-23T20:04:00Z",
+   "windowStart": "2026-11-24T15:55:00Z",
+   "windowEnd": "2026-11-24T19:55:00Z",
    "pad": "Space Launch Complex 4E",
    "padShort": "SLC-4E",
    "location": "Vandenberg SFB, CA, USA",
@@ -193,7 +193,7 @@
    "webcastLive": false,
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_thumbnail_20260816171423.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg",
-   "updated": "2026-11-13T17:46:32Z"
+   "updated": "2026-11-20T18:31:34Z"
   },
   {
    "id": "b0d27def-0a88-44c3-a947-1fd5b8503e2c",
@@ -205,11 +205,11 @@
    ],
    "status": "Go",
    "statusName": "Go for Launch",
-   "net": "2026-11-28T04:53:00Z",
+   "net": "2026-11-29T04:39:00Z",
    "precision": "exact",
    "precisionName": "Minute",
-   "windowStart": "2026-11-28T04:53:00Z",
-   "windowEnd": "2026-11-28T08:53:00Z",
+   "windowStart": "2026-11-29T04:39:00Z",
+   "windowEnd": "2026-11-29T08:39:00Z",
    "pad": "Space Launch Complex 4E",
    "padShort": "SLC-4E",
    "location": "Vandenberg SFB, CA, USA",
@@ -226,7 +226,7 @@
    "webcastLive": false,
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_thumbnail_20260816171423.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg",
-   "updated": "2026-11-18T19:03:08Z"
+   "updated": "2026-11-20T18:32:41Z"
   },
   {
    "id": "d74afbc7-0de5-491c-be05-4e9c31f736ac",
@@ -238,16 +238,20 @@
    ],
    "status": "Go",
    "statusName": "Go for Launch",
-   "net": "2026-11-29T15:47:00Z",
+   "net": "2026-11-29T15:50:00Z",
    "precision": "exact",
    "precisionName": "Minute",
-   "windowStart": "2026-11-29T15:47:00Z",
-   "windowEnd": "2026-11-29T15:47:00Z",
+   "windowStart": "2026-11-29T15:50:00Z",
+   "windowEnd": "2026-11-29T15:50:00Z",
    "pad": "Space Launch Complex 40",
    "padShort": "SLC-40",
    "location": "Cape Canaveral SFS, FL, USA",
    "site": "Cape Canaveral",
-   "landing": null,
+   "landing": {
+    "label": "LZ-40",
+    "name": "Landing Zone 40",
+    "type": "RTLS"
+   },
    "orbit": "Low Earth Orbit",
    "description": "This is the 25th flight of the Orbital ATK's uncrewed resupply spacecraft Cygnus and its 24th flight to the International Space Station under the Commercial Resupply Services contract with NASA.",
    "probability": null,
@@ -255,102 +259,7 @@
    "webcastLive": false,
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305193628.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
-   "updated": "2026-11-19T12:34:08Z"
-  },
-  {
-   "id": "56ca6058-7ccc-4ec0-b1b0-fb49f3bfee49",
-   "name": "Falcon 9 Block 5 | NROL-195",
-   "mission": "NROL-195",
-   "vehicle": "Falcon 9",
-   "categories": [
-    "other"
-   ],
-   "status": "TBD",
-   "statusName": "To Be Determined",
-   "net": "2026-11-30T00:00:00Z",
-   "precision": "vague",
-   "precisionName": "Month",
-   "windowStart": "2026-11-30T00:00:00Z",
-   "windowEnd": "2026-11-30T00:00:00Z",
-   "pad": "Space Launch Complex 4E",
-   "padShort": "SLC-4E",
-   "location": "Vandenberg SFB, CA, USA",
-   "site": "Vandenberg",
-   "landing": {
-    "label": "LZ-4",
-    "name": "Landing Zone 4",
-    "type": "RTLS"
-   },
-   "orbit": "Low Earth Orbit",
-   "description": "Sixteenth batch of satellites for a reconnaissance satellite constellation built by SpaceX and Northrop Grumman for the National Reconnaissance Office to provide imaging and other reconnaissance capabilities.",
-   "probability": null,
-   "webcast": null,
-   "webcastLive": false,
-   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_on_slc_image_thumbnail_20241024165957.jpeg",
-   "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_on_slc_image_20241024165956.jpg",
-   "updated": "2026-11-12T19:09:40Z"
-  },
-  {
-   "id": "b0dc988c-ea4a-423f-81b6-6b0fbe7cc17c",
-   "name": "Falcon 9 Block 5 | OneWeb 21",
-   "mission": "OneWeb 21",
-   "vehicle": "Falcon 9",
-   "categories": [
-    "other"
-   ],
-   "status": "TBD",
-   "statusName": "To Be Determined",
-   "net": "2026-11-30T00:00:00Z",
-   "precision": "vague",
-   "precisionName": "Month",
-   "windowStart": "2026-11-30T00:00:00Z",
-   "windowEnd": "2026-11-30T00:00:00Z",
-   "pad": "Space Launch Complex 4E",
-   "padShort": "SLC-4E",
-   "location": "Vandenberg SFB, CA, USA",
-   "site": "Vandenberg",
-   "landing": null,
-   "orbit": "Polar Orbit",
-   "description": "A batch of 32 satellites for the OneWeb satellite constellation, which is intended to provide global Internet broadband service for individual consumers. The constellation is planned to have around 648 microsatellites (of which 60 are spares), around 150 kg each, operating in Ku-band from low Earth orbit.",
-   "probability": null,
-   "webcast": null,
-   "webcastLive": false,
-   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_thumbnail_20241020164114.jpeg",
-   "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20241020164113.jpeg",
-   "updated": "2026-10-29T06:09:06Z"
-  },
-  {
-   "id": "3cdb9dee-b5cb-406c-bbd1-06a219930fb7",
-   "name": "Falcon 9 Block 5 | Starlink Group 15-21",
-   "mission": "Starlink Group 15-21",
-   "vehicle": "Falcon 9",
-   "categories": [
-    "starlink"
-   ],
-   "status": "TBD",
-   "statusName": "To Be Determined",
-   "net": "2026-11-30T00:00:00Z",
-   "precision": "vague",
-   "precisionName": "Month",
-   "windowStart": "2026-11-30T00:00:00Z",
-   "windowEnd": "2026-11-30T00:00:00Z",
-   "pad": "Space Launch Complex 4E",
-   "padShort": "SLC-4E",
-   "location": "Vandenberg SFB, CA, USA",
-   "site": "Vandenberg",
-   "landing": {
-    "label": "OCISLY",
-    "name": "Of Course I Still Love You",
-    "type": "ASDS"
-   },
-   "orbit": "Low Earth Orbit",
-   "description": "A batch of 27 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
-   "probability": null,
-   "webcast": "https://x.com/i/broadcasts/1aJbdEgvmWaKX",
-   "webcastLive": false,
-   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305192320.png",
-   "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
-   "updated": "2026-11-03T21:40:38Z"
+   "updated": "2026-11-20T17:43:33Z"
   },
   {
    "id": "8bf5f61e-a7e1-41e6-aede-7b87e4beebab",
@@ -415,6 +324,68 @@
    "updated": "2026-11-05T18:03:47Z"
   },
   {
+   "id": "56ca6058-7ccc-4ec0-b1b0-fb49f3bfee49",
+   "name": "Falcon 9 Block 5 | NROL-195",
+   "mission": "NROL-195",
+   "vehicle": "Falcon 9",
+   "categories": [
+    "other"
+   ],
+   "status": "TBD",
+   "statusName": "To Be Determined",
+   "net": "2026-12-31T00:00:00Z",
+   "precision": "vague",
+   "precisionName": "Month",
+   "windowStart": "2026-12-31T00:00:00Z",
+   "windowEnd": "2026-12-31T00:00:00Z",
+   "pad": "Space Launch Complex 4E",
+   "padShort": "SLC-4E",
+   "location": "Vandenberg SFB, CA, USA",
+   "site": "Vandenberg",
+   "landing": {
+    "label": "LZ-4",
+    "name": "Landing Zone 4",
+    "type": "RTLS"
+   },
+   "orbit": "Low Earth Orbit",
+   "description": "Sixteenth batch of satellites for a reconnaissance satellite constellation built by SpaceX and Northrop Grumman for the National Reconnaissance Office to provide imaging and other reconnaissance capabilities.",
+   "probability": null,
+   "webcast": null,
+   "webcastLive": false,
+   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_on_slc_image_thumbnail_20241024165957.jpeg",
+   "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_on_slc_image_20241024165956.jpg",
+   "updated": "2026-11-20T18:32:25Z"
+  },
+  {
+   "id": "b0dc988c-ea4a-423f-81b6-6b0fbe7cc17c",
+   "name": "Falcon 9 Block 5 | OneWeb 21",
+   "mission": "OneWeb 21",
+   "vehicle": "Falcon 9",
+   "categories": [
+    "other"
+   ],
+   "status": "TBD",
+   "statusName": "To Be Determined",
+   "net": "2026-12-31T00:00:00Z",
+   "precision": "vague",
+   "precisionName": "Month",
+   "windowStart": "2026-12-31T00:00:00Z",
+   "windowEnd": "2026-12-31T00:00:00Z",
+   "pad": "Space Launch Complex 4E",
+   "padShort": "SLC-4E",
+   "location": "Vandenberg SFB, CA, USA",
+   "site": "Vandenberg",
+   "landing": null,
+   "orbit": "Polar Orbit",
+   "description": "A batch of 32 satellites for the OneWeb satellite constellation, which is intended to provide global Internet broadband service for individual consumers. The constellation is planned to have around 648 microsatellites (of which 60 are spares), around 150 kg each, operating in Ku-band from low Earth orbit.",
+   "probability": null,
+   "webcast": null,
+   "webcastLive": false,
+   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_thumbnail_20241020164114.jpeg",
+   "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20241020164113.jpeg",
+   "updated": "2026-11-20T18:32:42Z"
+  },
+  {
    "id": "71df1dd0-d658-4762-b0bc-0fca6886aea7",
    "name": "Falcon 9 Block 5 | SDA Tranche 2 Transport Layer D",
    "mission": "SDA Tranche 2 Transport Layer D",
@@ -471,6 +442,39 @@
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305193628.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
    "updated": "2026-10-17T08:28:47Z"
+  },
+  {
+   "id": "3cdb9dee-b5cb-406c-bbd1-06a219930fb7",
+   "name": "Falcon 9 Block 5 | Starlink Group 15-21",
+   "mission": "Starlink Group 15-21",
+   "vehicle": "Falcon 9",
+   "categories": [
+    "starlink"
+   ],
+   "status": "TBD",
+   "statusName": "To Be Determined",
+   "net": "2026-12-31T00:00:00Z",
+   "precision": "vague",
+   "precisionName": "Month",
+   "windowStart": "2026-12-31T00:00:00Z",
+   "windowEnd": "2026-12-31T00:00:00Z",
+   "pad": "Space Launch Complex 4E",
+   "padShort": "SLC-4E",
+   "location": "Vandenberg SFB, CA, USA",
+   "site": "Vandenberg",
+   "landing": {
+    "label": "OCISLY",
+    "name": "Of Course I Still Love You",
+    "type": "ASDS"
+   },
+   "orbit": "Low Earth Orbit",
+   "description": "A batch of 27 satellites for the Starlink mega-constellation - SpaceX's project for space-based Internet communication system.",
+   "probability": null,
+   "webcast": "https://x.com/i/broadcasts/1aJbdEgvmWaKX",
+   "webcastLive": false,
+   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305192320.png",
+   "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon2520925_image_20221009234147.png",
+   "updated": "2026-11-20T18:33:02Z"
   },
   {
    "id": "11b218b1-5e40-4b9d-854e-50320299239d",

@@ -6,14 +6,14 @@ METHOD:PUBLISH
 URL:https://benjaminowens612.github.io/spacex-launch-alerts/
 BEGIN:VEVENT
 UID:d74afbc7-0de5-491c-be05-4e9c31f736ac@spacex-launch-alerts
-DTSTAMP:20261119T123408Z
-LAST-MODIFIED:20261119T123408Z
-SEQUENCE:217254848
+DTSTAMP:20261120T174333Z
+LAST-MODIFIED:20261120T174333Z
+SEQUENCE:217359813
 SUMMARY:🚀 Falcon 9 · Cygnus CRS-2 NG-25
-DTSTART:20261129T154700Z
-DTEND:20261129T161700Z
+DTSTART:20261129T155000Z
+DTEND:20261129T162000Z
 LOCATION:Space Launch Complex 40\, Cape Canaveral SFS\, FL\, USA
-DESCRIPTION:Status: Go for Launch\nLaunch: Sun\, 29 Nov 2026 15:47:00 UTC (
+DESCRIPTION:Status: Go for Launch\nLaunch: Sun\, 29 Nov 2026 15:50:00 UTC (
  instantaneous window)\nOrbit: Low Earth Orbit\nPad: Space Launch Complex 4
  0\, Cape Canaveral SFS\, FL\, USA\n\n▶ Watch live: https://plus.nasa.gov
  /scheduled-video/nasas-northrop-grumman-commercial-resupply-services-25-la
