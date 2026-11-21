@@ -10,42 +10,6 @@ REFRESH-INTERVAL;VALUE=DURATION:PT15M
 X-PUBLISHED-TTL:PT15M
 URL:https://benjaminowens612.github.io/spacex-launch-alerts/
 BEGIN:VEVENT
-UID:0f867f0c-5422-4d44-93b8-d7faaae7019b@spacex-launch-alerts
-DTSTAMP:20261118T092537Z
-LAST-MODIFIED:20261118T092537Z
-SEQUENCE:217157137
-SUMMARY:✅ Starship · Starlink Group 31-2 (Starship Flight 15)
-DTSTART:20261113T224736Z
-DTEND:20261114T000236Z
-LOCATION:Orbital Launch Pad 2\, SpaceX Starbase\, TX\, USA
-DESCRIPTION:Status: Launch Successful\nWindow: Fri\, 13 Nov 2026 22:45:00 U
- TC – Sat\, 14 Nov 2026 00:00:00 UTC\nOrbit: Low Earth Orbit\nPad: Orbita
- l Launch Pad 2\, SpaceX Starbase\, TX\, USA\n\n▶ Watch live: https://www
- .youtube.com/watch?v=dl4O6RqbvOs\n\n15th test flight of the two-stage Star
- ship launch vehicle and 4th flight of Starship V3. Second Starship flight 
- to deploy satellites (a group of Starlink satellites known as Starlink Gro
- up 31-2) into stable Low Earth Orbit and first ever to attempt returning t
- he Starship 2nd stage back to the launch site.\n\nThe ship is expected to 
- fly at an altitude approximately 275 km above Earth and complete approxima
- tely 14 orbits around the planet for more than 22 hours\, with the ship ex
- pected to attempt returning back to Starbase\, Texas on its launch pad by 
- pad arms catching.\n\nThe booster’s primary test objective on Flight 15 
- will be executing a successful launch\, ascent\, stage separation\, boostb
- ack burn\, and landing by pad arms catching. This will also be the 1st Sta
- rship V3 booster to attempt returning to its launch site.\n\nStarship will
-  deliver 26 Starlink V3 satellites to orbit for the second time\, which ai
- m to greatly expand the network's capacity and user speeds. Each Starlink 
- V3 satellite will add 1 Tbps of capacity to the constellation. 3 of the sa
- tellites have been modified with a suite of cameras to scan Starship’s h
- eatshield and transmit imagery down to operators.\n\nCountdown & updates: 
- https://benjaminowens612.github.io/spacex-launch-alerts/#0f867f0c-5422-4d4
- 4-93b8-d7faaae7019b
-URL:https://www.youtube.com/watch?v=dl4O6RqbvOs
-CATEGORIES:starlink,starship
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:76617033-4dc0-4448-b50c-e5b0d5a18539@spacex-launch-alerts
 DTSTAMP:20261120T174131Z
 LAST-MODIFIED:20261120T174131Z
@@ -145,9 +109,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:b0d27def-0a88-44c3-a947-1fd5b8503e2c@spacex-launch-alerts
-DTSTAMP:20261120T183241Z
-LAST-MODIFIED:20261120T183241Z
-SEQUENCE:217362761
+DTSTAMP:20261120T212936Z
+LAST-MODIFIED:20261120T212936Z
+SEQUENCE:217373376
 SUMMARY:🚀 Falcon 9 · USSF-380
 DTSTART:20261129T043900Z
 DTEND:20261129T083900Z

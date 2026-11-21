@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-20T18:49:14.110Z",
+ "generatedAt": "2026-11-21T00:21:58.068Z",
  "siteUrl": "https://benjaminowens612.github.io/spacex-launch-alerts/",
  "categories": [
   {
@@ -28,25 +28,25 @@
    "id": "all",
    "name": "SpaceX Launches",
    "description": "Every SpaceX launch",
-   "count": 61
+   "count": 60
   },
   {
    "id": "no-starlink",
    "name": "SpaceX (no Starlink)",
    "description": "Everything except routine Starlink missions",
-   "count": 60
+   "count": 59
   },
   {
    "id": "notable",
    "name": "SpaceX Notable",
    "description": "Starship, crewed and Falcon Heavy only",
-   "count": 7
+   "count": 6
   },
   {
    "id": "starship",
    "name": "SpaceX Starship",
    "description": "Starship flight tests",
-   "count": 2
+   "count": 1
   },
   {
    "id": "crewed",
@@ -58,44 +58,10 @@
    "id": "starlink",
    "name": "SpaceX Starlink",
    "description": "Starlink missions only",
-   "count": 2
+   "count": 1
   }
  ],
  "launches": [
-  {
-   "id": "0f867f0c-5422-4d44-93b8-d7faaae7019b",
-   "name": "Starship | Starlink Group 31-2 (Starship Flight 15)",
-   "mission": "Starlink Group 31-2 (Starship Flight 15)",
-   "vehicle": "Starship",
-   "categories": [
-    "starlink",
-    "starship"
-   ],
-   "status": "Success",
-   "statusName": "Launch Successful",
-   "net": "2026-11-13T22:47:36Z",
-   "precision": "exact",
-   "precisionName": "Second",
-   "windowStart": "2026-11-13T22:45:00Z",
-   "windowEnd": "2026-11-14T00:00:00Z",
-   "pad": "Orbital Launch Pad 2",
-   "padShort": "OLP 2",
-   "location": "SpaceX Starbase, TX, USA",
-   "site": "Starbase",
-   "landing": {
-    "label": "OLM-B",
-    "name": "Orbital Launch Mount B",
-    "type": "RTLS"
-   },
-   "orbit": "Low Earth Orbit",
-   "description": "15th test flight of the two-stage Starship launch vehicle and 4th flight of Starship V3. Second Starship flight to deploy satellites (a group of Starlink satellites known as Starlink Group 31-2) into stable Low Earth Orbit and first ever to attempt returning the Starship 2nd stage back to the launch site.\r\n\r\nThe ship is expected to fly at an altitude approximately 275 km above Earth and complete approximately 14 orbits around the planet for more than 22 hours, with the ship expected to attempt returning back to Starbase, Texas on its launch pad by pad arms catching.\r\n\r\nThe booster’s primary test objective on Flight 15 will be executing a successful launch, ascent, stage separation, boostback burn, and landing by pad arms catching. This will also be the 1st Starship V3 booster to attempt returning to its launch site.\r\n\r\nStarship will deliver 26 Starlink V3 satellites to orbit for the second time, which aim to greatly expand the network's capacity and user speeds. Each Starlink V3 satellite will add 1 Tbps of capacity to the constellation. 3 of the satellites have been modified with a suite of cameras to scan Starship’s heatshield and transmit imagery down to operators.",
-   "probability": null,
-   "webcast": "https://www.youtube.com/watch?v=dl4O6RqbvOs",
-   "webcastLive": false,
-   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/starship_42_dur_image_thumbnail_20261118092531.jpeg",
-   "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/starship_42_dur_image_20261118092530.jpeg",
-   "updated": "2026-11-18T09:25:37Z"
-  },
   {
    "id": "76617033-4dc0-4448-b50c-e5b0d5a18539",
    "name": "Falcon 9 Block 5 | USSF-317",
@@ -226,7 +192,7 @@
    "webcastLive": false,
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_thumbnail_20260816171423.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg",
-   "updated": "2026-11-20T18:32:41Z"
+   "updated": "2026-11-20T21:29:36Z"
   },
   {
    "id": "d74afbc7-0de5-491c-be05-4e9c31f736ac",
