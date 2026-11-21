@@ -6,35 +6,25 @@ METHOD:PUBLISH
 URL:https://benjaminowens612.github.io/spacex-launch-alerts/
 BEGIN:VEVENT
 UID:76617033-4dc0-4448-b50c-e5b0d5a18539@spacex-launch-alerts
-DTSTAMP:20261120T174131Z
-LAST-MODIFIED:20261120T174131Z
-SEQUENCE:217359691
-SUMMARY:🚀 Falcon 9 · USSF-317
+DTSTAMP:20261121T062603Z
+LAST-MODIFIED:20261121T062603Z
+SEQUENCE:217405563
+SUMMARY:✅ Falcon 9 · USSF-317
 DTSTART:20261121T042035Z
 DTEND:20261121T082035Z
 LOCATION:Space Launch Complex 4E\, Vandenberg SFB\, CA\, USA
-DESCRIPTION:Status: Go for Launch\nWindow: Sat\, 21 Nov 2026 02:32:00 UTC 
- – Sat\, 21 Nov 2026 06:32:00 UTC\nOrbit: Low Earth Orbit\nPad: Space Lau
- nch Complex 4E\, Vandenberg SFB\, CA\, USA\n\n▶ Watch live: https://www.
- youtube.com/watch?v=Zi7vbfr5FPI\n\nA classified mission for the United Sta
- tes Space Force. It is possibly a batch of classified LEO satellites based
-  on SpaceX’s Starshield satellite bus\, based on locations of rocket sta
- ge drop zones being exact fits with previous Starlink Group 15 launches.\n
- \nCountdown & updates: https://benjaminowens612.github.io/spacex-launch-al
- erts/#76617033-4dc0-4448-b50c-e5b0d5a18539
-URL:https://www.youtube.com/watch?v=Zi7vbfr5FPI
+DESCRIPTION:Status: Launch Successful\nWindow: Sat\, 21 Nov 2026 02:32:00 U
+ TC – Sat\, 21 Nov 2026 06:32:00 UTC\nOrbit: Low Earth Orbit\nPad: Space 
+ Launch Complex 4E\, Vandenberg SFB\, CA\, USA\n\n▶ Watch live: https://w
+ ww.youtube.com/watch?v=NejEgXnJzBM\n\nA classified mission for the United 
+ States Space Force. It is possibly a batch of classified LEO satellites ba
+ sed on SpaceX’s Starshield satellite bus\, based on locations of rocket 
+ stage drop zones being exact fits with previous Starlink Group 15 launches
+ .\n\nCountdown & updates: https://benjaminowens612.github.io/spacex-launch
+ -alerts/#76617033-4dc0-4448-b50c-e5b0d5a18539
+URL:https://www.youtube.com/watch?v=NejEgXnJzBM
 CATEGORIES:other
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:T-1h: Falcon 9 · USSF-317
-TRIGGER:-PT60M
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:T-10m: Falcon 9 · USSF-317
-TRIGGER:-PT10M
-END:VALARM
 END:VEVENT
 END:VCALENDAR
