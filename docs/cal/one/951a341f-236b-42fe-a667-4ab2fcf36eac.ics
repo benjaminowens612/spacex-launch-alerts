@@ -6,34 +6,25 @@ METHOD:PUBLISH
 URL:https://benjaminowens612.github.io/spacex-launch-alerts/
 BEGIN:VEVENT
 UID:951a341f-236b-42fe-a667-4ab2fcf36eac@spacex-launch-alerts
-DTSTAMP:20261122T073529Z
-LAST-MODIFIED:20261122T073529Z
-SEQUENCE:217496129
-SUMMARY:🚀 Falcon 9 · NROL-136
+DTSTAMP:20261122T144124Z
+LAST-MODIFIED:20261122T144124Z
+SEQUENCE:217521684
+SUMMARY:✅ Falcon 9 · NROL-136
 DTSTART:20261122T122356Z
 DTEND:20261122T125356Z
 LOCATION:Space Launch Complex 4E\, Vandenberg SFB\, CA\, USA
-DESCRIPTION:Status: Go for Launch\nWindow: Sun\, 22 Nov 2026 12:16:00 UTC 
- – Sun\, 22 Nov 2026 12:46:00 UTC\nOrbit: Low Earth Orbit\nPad: Space Lau
- nch Complex 4E\, Vandenberg SFB\, CA\, USA\n\n▶ Watch live: https://www.
- youtube.com/watch?v=CjN4lPx7mD8\n\nFifteenth batch of satellites for a rec
- onnaissance satellite constellation built by SpaceX and Northrop Grumman f
- or the National Reconnaissance Office to provide imaging and other reconna
- issance capabilities.\n\nCountdown & updates: https://benjaminowens612.git
- hub.io/spacex-launch-alerts/#951a341f-236b-42fe-a667-4ab2fcf36eac
-URL:https://www.youtube.com/watch?v=CjN4lPx7mD8
+DESCRIPTION:Status: Launch Successful\nWindow: Sun\, 22 Nov 2026 12:16:00 U
+ TC – Sun\, 22 Nov 2026 12:46:00 UTC\nWeather: 100% GO\nOrbit: Low Earth 
+ Orbit\nPad: Space Launch Complex 4E\, Vandenberg SFB\, CA\, USA\n\n▶ Wat
+ ch live: https://www.youtube.com/watch?v=NFIjyRFTPao\n\nFifteenth batch of
+  satellites for a reconnaissance satellite constellation built by SpaceX a
+ nd Northrop Grumman for the National Reconnaissance Office to provide imag
+ ing and other reconnaissance capabilities.\n\nCountdown & updates: https:/
+ /benjaminowens612.github.io/spacex-launch-alerts/#951a341f-236b-42fe-a667-
+ 4ab2fcf36eac
+URL:https://www.youtube.com/watch?v=NFIjyRFTPao
 CATEGORIES:other
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:T-1h: Falcon 9 · NROL-136
-TRIGGER:-PT60M
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:T-10m: Falcon 9 · NROL-136
-TRIGGER:-PT10M
-END:VALARM
 END:VEVENT
 END:VCALENDAR

@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-22T08:10:53.476Z",
+ "generatedAt": "2026-11-22T16:26:03.912Z",
  "siteUrl": "https://benjaminowens612.github.io/spacex-launch-alerts/",
  "categories": [
   {
@@ -91,9 +91,9 @@
    "probability": null,
    "webcast": "https://www.youtube.com/watch?v=NejEgXnJzBM",
    "webcastLive": false,
-   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_thumbnail_20260816171423.jpeg",
-   "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg",
-   "updated": "2026-11-22T02:11:32Z"
+   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_thumbnail_20261122120903.jpeg",
+   "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20261122120902.jpg",
+   "updated": "2026-11-22T12:09:09Z"
   },
   {
    "id": "951a341f-236b-42fe-a667-4ab2fcf36eac",
@@ -103,8 +103,8 @@
    "categories": [
     "other"
    ],
-   "status": "Go",
-   "statusName": "Go for Launch",
+   "status": "Success",
+   "statusName": "Launch Successful",
    "net": "2026-11-22T12:23:56Z",
    "precision": "exact",
    "precisionName": "Second",
@@ -121,12 +121,12 @@
    },
    "orbit": "Low Earth Orbit",
    "description": "Fifteenth batch of satellites for a reconnaissance satellite constellation built by SpaceX and Northrop Grumman for the National Reconnaissance Office to provide imaging and other reconnaissance capabilities.",
-   "probability": null,
-   "webcast": "https://www.youtube.com/watch?v=CjN4lPx7mD8",
+   "probability": 100,
+   "webcast": "https://www.youtube.com/watch?v=NFIjyRFTPao",
    "webcastLive": false,
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_on_slc_image_thumbnail_20241024165957.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_on_slc_image_20241024165956.jpg",
-   "updated": "2026-11-22T07:35:29Z"
+   "updated": "2026-11-22T14:41:24Z"
   },
   {
    "id": "460d9db7-eaf6-4cd9-b095-cff433534c09",
