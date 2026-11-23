@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-22T16:26:03.912Z",
+ "generatedAt": "2026-11-23T02:34:08.778Z",
  "siteUrl": "https://benjaminowens612.github.io/spacex-launch-alerts/",
  "categories": [
   {
@@ -126,7 +126,7 @@
    "webcastLive": false,
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_on_slc_image_thumbnail_20241024165957.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_on_slc_image_20241024165956.jpg",
-   "updated": "2026-11-22T14:41:24Z"
+   "updated": "2026-11-23T01:22:16Z"
   },
   {
    "id": "460d9db7-eaf6-4cd9-b095-cff433534c09",
@@ -155,11 +155,11 @@
    "orbit": "Polar Orbit",
    "description": "A classified mission for the United States Space Force. It is possibly a batch of classified LEO satellites based on SpaceX’s Starshield satellite bus, based on locations of ascent rocket stage drop zones being fits with previous SDA Transport Layer launches.",
    "probability": null,
-   "webcast": "https://x.com/i/broadcasts/2JQXBjLyYOQrpX",
+   "webcast": "https://www.youtube.com/watch?v=oELkxR9uY8Q",
    "webcastLive": false,
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_thumbnail_20260816171423.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg",
-   "updated": "2026-11-21T20:29:25Z"
+   "updated": "2026-11-23T00:27:48Z"
   },
   {
    "id": "b0d27def-0a88-44c3-a947-1fd5b8503e2c",
