@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-23T22:45:01.105Z",
+ "generatedAt": "2026-11-24T06:31:10.410Z",
  "siteUrl": "https://benjaminowens612.github.io/spacex-launch-alerts/",
  "categories": [
   {
@@ -138,9 +138,9 @@
    ],
    "status": "Go",
    "statusName": "Go for Launch",
-   "net": "2026-11-24T15:55:00Z",
+   "net": "2026-11-24T16:08:59Z",
    "precision": "exact",
-   "precisionName": "Minute",
+   "precisionName": "Second",
    "windowStart": "2026-11-24T15:55:00Z",
    "windowEnd": "2026-11-24T19:55:00Z",
    "pad": "Space Launch Complex 4E",
@@ -159,7 +159,7 @@
    "webcastLive": false,
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_thumbnail_20260816171423.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg",
-   "updated": "2026-11-23T00:27:48Z"
+   "updated": "2026-11-24T03:56:24Z"
   },
   {
    "id": "b0d27def-0a88-44c3-a947-1fd5b8503e2c",
