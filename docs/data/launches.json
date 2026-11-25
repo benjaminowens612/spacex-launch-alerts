@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-24T18:14:11.697Z",
+ "generatedAt": "2026-11-25T02:36:31.134Z",
  "siteUrl": "https://benjaminowens612.github.io/spacex-launch-alerts/",
  "categories": [
   {
@@ -204,11 +204,11 @@
    ],
    "status": "Go",
    "statusName": "Go for Launch",
-   "net": "2026-11-29T15:50:00Z",
+   "net": "2026-11-29T15:47:00Z",
    "precision": "exact",
    "precisionName": "Minute",
-   "windowStart": "2026-11-29T15:50:00Z",
-   "windowEnd": "2026-11-29T15:50:00Z",
+   "windowStart": "2026-11-29T15:47:00Z",
+   "windowEnd": "2026-11-29T15:47:00Z",
    "pad": "Space Launch Complex 40",
    "padShort": "SLC-40",
    "location": "Cape Canaveral SFS, FL, USA",
@@ -225,7 +225,7 @@
    "webcastLive": false,
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305193628.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
-   "updated": "2026-11-20T17:43:33Z"
+   "updated": "2026-11-24T19:47:23Z"
   },
   {
    "id": "5591cfa3-6336-41ab-a37a-7c57aa28ab5f",
@@ -259,6 +259,35 @@
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_on_slc_image_thumbnail_20241024165957.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_on_slc_image_20241024165956.jpg",
    "updated": "2026-11-23T16:43:43Z"
+  },
+  {
+   "id": "9b9db235-8ffb-4569-b09b-0e852ad231a0",
+   "name": "Falcon 9 Block 5 | Amazon Leo (LF-04)",
+   "mission": "Amazon Leo (LF-04)",
+   "vehicle": "Falcon 9",
+   "categories": [
+    "other"
+   ],
+   "status": "TBD",
+   "statusName": "To Be Determined",
+   "net": "2026-12-31T00:00:00Z",
+   "precision": "vague",
+   "precisionName": "Month",
+   "windowStart": "2026-12-31T00:00:00Z",
+   "windowEnd": "2026-12-31T00:00:00Z",
+   "pad": "Unknown Pad",
+   "padShort": null,
+   "location": "Cape Canaveral SFS, FL, USA",
+   "site": "Cape Canaveral",
+   "landing": null,
+   "orbit": "Low Earth Orbit",
+   "description": "Amazon Leo, formerly known as Project Kuiper, is a mega constellation of satellites in Low Earth Orbit designed to offer broadband internet access managed by Kuiper Systems LLC, a subsidiary of Amazon. This constellation is planned to be composed of 3,276 satellites. The satellites are projected to be placed in 98 orbital planes in three orbital layers, one at 590 km, 610 km and 630 km altitude.",
+   "probability": null,
+   "webcast": null,
+   "webcastLive": false,
+   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305193628.jpeg",
+   "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
+   "updated": "2026-11-24T19:21:29Z"
   },
   {
    "id": "8bf5f61e-a7e1-41e6-aede-7b87e4beebab",
@@ -1657,6 +1686,39 @@
    "updated": "2025-10-04T17:46:23Z"
   },
   {
+   "id": "f3a1a032-5cca-4733-9ca8-04a5a1dba222",
+   "name": "Falcon 9 Block 5 | Vast-PAM-1 (Vast ISS Mission 1)",
+   "mission": "Vast-PAM-1 (Vast ISS Mission 1)",
+   "vehicle": "Falcon 9",
+   "categories": [
+    "crewed"
+   ],
+   "status": "TBD",
+   "statusName": "To Be Determined",
+   "net": "2027-07-13T00:00:00Z",
+   "precision": "day",
+   "precisionName": "Day",
+   "windowStart": "2027-07-13T00:00:00Z",
+   "windowEnd": "2027-07-13T00:00:00Z",
+   "pad": "Space Launch Complex 40",
+   "padShort": "SLC-40",
+   "location": "Cape Canaveral SFS, FL, USA",
+   "site": "Cape Canaveral",
+   "landing": {
+    "label": "LZ-40",
+    "name": "Landing Zone 40",
+    "type": "RTLS"
+   },
+   "orbit": "Low Earth Orbit",
+   "description": "Vast’s first private crew rotation to the International Space Station aboard a SpaceX Crew Dragon spacecraft, and NASA's 6th Private Astronaut Mission to the ISS.\r\n\r\nThe crew includes ESA/CNES astronaut Thomas Pesquet, who will serve as Commander for the mission, Czech astronaut Aleš Svoboda, and Greek astronaut Adrianos Golemis. The mission will carry 4 astronauts to and from the International Space Station for up to 2 weeks.",
+   "probability": null,
+   "webcast": null,
+   "webcastLive": false,
+   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305193628.jpeg",
+   "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
+   "updated": "2026-11-24T19:49:08Z"
+  },
+  {
    "id": "99875c7b-400c-40e2-b16c-bb9b2a02a0d8",
    "name": "Falcon 9 Block 5 | Haven-1 Crew-1",
    "mission": "Haven-1 Crew-1",
@@ -1742,39 +1804,6 @@
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305193628.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
    "updated": "2026-10-29T21:54:01Z"
-  },
-  {
-   "id": "f3a1a032-5cca-4733-9ca8-04a5a1dba222",
-   "name": "Falcon 9 Block 5 | Vast-PAM-1 (Vast ISS Mission 1)",
-   "mission": "Vast-PAM-1 (Vast ISS Mission 1)",
-   "vehicle": "Falcon 9",
-   "categories": [
-    "crewed"
-   ],
-   "status": "TBD",
-   "statusName": "To Be Determined",
-   "net": "2027-09-30T00:00:00Z",
-   "precision": "vague",
-   "precisionName": "Quarter 3",
-   "windowStart": "2027-09-30T00:00:00Z",
-   "windowEnd": "2027-09-30T00:00:00Z",
-   "pad": "Space Launch Complex 40",
-   "padShort": "SLC-40",
-   "location": "Cape Canaveral SFS, FL, USA",
-   "site": "Cape Canaveral",
-   "landing": {
-    "label": "LZ-40",
-    "name": "Landing Zone 40",
-    "type": "RTLS"
-   },
-   "orbit": "Low Earth Orbit",
-   "description": "Vast’s first private crew rotation to the International Space Station aboard a SpaceX Crew Dragon spacecraft, and NASA's 6th Private Astronaut Mission to the ISS.\r\n\r\nThe crew includes ESA/CNES astronaut Thomas Pesquet, who will serve as Commander for the mission, Czech astronaut Aleš Svoboda, and Greek astronaut Adrianos Golemis. The mission will carry 4 astronauts to and from the International Space Station for up to 2 weeks.",
-   "probability": null,
-   "webcast": null,
-   "webcastLive": false,
-   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305193628.jpeg",
-   "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
-   "updated": "2026-09-09T22:21:51Z"
   },
   {
    "id": "c07cac30-849b-4e24-91e2-c064e6db456e",
@@ -1891,35 +1920,6 @@
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305193628.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
    "updated": "2024-07-23T07:00:38Z"
-  },
-  {
-   "id": "37908d2e-fb37-4cb1-80ca-35f1ca949b76",
-   "name": "Falcon 9 Block 5 | Exolaunch Exo-1",
-   "mission": "Exolaunch Exo-1",
-   "vehicle": "Falcon 9",
-   "categories": [
-    "other"
-   ],
-   "status": "TBD",
-   "statusName": "To Be Determined",
-   "net": "2027-12-31T00:00:00Z",
-   "precision": "vague",
-   "precisionName": "Quarter 4",
-   "windowStart": "2027-12-31T00:00:00Z",
-   "windowEnd": "2027-12-31T00:00:00Z",
-   "pad": "Space Launch Complex 4E",
-   "padShort": "SLC-4E",
-   "location": "Vandenberg SFB, CA, USA",
-   "site": "Vandenberg",
-   "landing": null,
-   "orbit": "Low Earth Orbit",
-   "description": "Dedicated ride-share mission to be offered by the small satellite launch integrator Exolaunch to low Earth orbit.",
-   "probability": null,
-   "webcast": null,
-   "webcastLive": false,
-   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305193628.jpeg",
-   "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
-   "updated": "2026-05-27T15:50:10Z"
   }
  ]
 }

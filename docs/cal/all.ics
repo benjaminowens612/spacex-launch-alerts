@@ -113,14 +113,14 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:d74afbc7-0de5-491c-be05-4e9c31f736ac@spacex-launch-alerts
-DTSTAMP:20261120T174333Z
-LAST-MODIFIED:20261120T174333Z
-SEQUENCE:217359813
+DTSTAMP:20261124T194723Z
+LAST-MODIFIED:20261124T194723Z
+SEQUENCE:217712843
 SUMMARY:🚀 Falcon 9 · Cygnus CRS-2 NG-25
-DTSTART:20261129T155000Z
-DTEND:20261129T162000Z
+DTSTART:20261129T154700Z
+DTEND:20261129T161700Z
 LOCATION:Space Launch Complex 40\, Cape Canaveral SFS\, FL\, USA
-DESCRIPTION:Status: Go for Launch\nLaunch: Sun\, 29 Nov 2026 15:50:00 UTC (
+DESCRIPTION:Status: Go for Launch\nLaunch: Sun\, 29 Nov 2026 15:47:00 UTC (
  instantaneous window)\nOrbit: Low Earth Orbit\nPad: Space Launch Complex 4
  0\, Cape Canaveral SFS\, FL\, USA\n\n▶ Watch live: https://plus.nasa.gov
  /scheduled-video/nasas-northrop-grumman-commercial-resupply-services-25-la
@@ -198,6 +198,31 @@ DESCRIPTION:Status: To Be Determined\nTime precision: Day (exact time not y
 URL:https://benjaminowens612.github.io/spacex-launch-alerts/#d3bd7fb2-fac6-
  49fc-ae52-cee07d2fde67
 CATEGORIES:falcon-heavy
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:f3a1a032-5cca-4733-9ca8-04a5a1dba222@spacex-launch-alerts
+DTSTAMP:20261124T194908Z
+LAST-MODIFIED:20261124T194908Z
+SEQUENCE:217712948
+SUMMARY:🚀 [TBD] Falcon 9 · Vast-PAM-1 (Vast ISS Mission 1)
+DTSTART;VALUE=DATE:20270713
+DTEND;VALUE=DATE:20270714
+LOCATION:Space Launch Complex 40\, Cape Canaveral SFS\, FL\, USA
+DESCRIPTION:Status: To Be Determined\nTime precision: Day (exact time not y
+ et announced)\nOrbit: Low Earth Orbit\nPad: Space Launch Complex 40\, Cape
+  Canaveral SFS\, FL\, USA\n\nVast’s first private crew rotation to the I
+ nternational Space Station aboard a SpaceX Crew Dragon spacecraft\, and NA
+ SA's 6th Private Astronaut Mission to the ISS.\n\nThe crew includes ESA/CN
+ ES astronaut Thomas Pesquet\, who will serve as Commander for the mission\
+ , Czech astronaut Aleš Svoboda\, and Greek astronaut Adrianos Golemis. Th
+ e mission will carry 4 astronauts to and from the International Space Stat
+ ion for up to 2 weeks.\n\nCountdown & updates: https://benjaminowens612.gi
+ thub.io/spacex-launch-alerts/#f3a1a032-5cca-4733-9ca8-04a5a1dba222
+URL:https://benjaminowens612.github.io/spacex-launch-alerts/#f3a1a032-5cca-
+ 4733-9ca8-04a5a1dba222
+CATEGORIES:crewed
 STATUS:TENTATIVE
 TRANSP:TRANSPARENT
 END:VEVENT
