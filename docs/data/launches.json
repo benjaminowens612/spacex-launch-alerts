@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-25T11:41:56.054Z",
+ "generatedAt": "2026-11-25T20:42:36.426Z",
  "siteUrl": "https://benjaminowens612.github.io/spacex-launch-alerts/",
  "categories": [
   {
@@ -28,13 +28,13 @@
    "id": "all",
    "name": "SpaceX Launches",
    "description": "Every SpaceX launch",
-   "count": 62
+   "count": 63
   },
   {
    "id": "no-starlink",
    "name": "SpaceX (no Starlink)",
    "description": "Everything except routine Starlink missions",
-   "count": 61
+   "count": 62
   },
   {
    "id": "notable",
@@ -221,11 +221,11 @@
    "orbit": "Low Earth Orbit",
    "description": "This is the 25th flight of the Orbital ATK's uncrewed resupply spacecraft Cygnus and its 24th flight to the International Space Station under the Commercial Resupply Services contract with NASA.",
    "probability": null,
-   "webcast": "https://plus.nasa.gov/scheduled-video/nasas-northrop-grumman-commercial-resupply-services-25-launch/",
+   "webcast": "https://www.youtube.com/watch?v=YLrybIli73I",
    "webcastLive": false,
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305193628.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
-   "updated": "2026-11-24T19:47:23Z"
+   "updated": "2026-11-25T17:21:30Z"
   },
   {
    "id": "5591cfa3-6336-41ab-a37a-7c57aa28ab5f",
@@ -261,6 +261,39 @@
    "updated": "2026-11-23T16:43:43Z"
   },
   {
+   "id": "8bf5f61e-a7e1-41e6-aede-7b87e4beebab",
+   "name": "Falcon 9 Block 5 | CHORUS",
+   "mission": "CHORUS",
+   "vehicle": "Falcon 9",
+   "categories": [
+    "other"
+   ],
+   "status": "Go",
+   "statusName": "Go for Launch",
+   "net": "2026-12-04T12:55:00Z",
+   "precision": "exact",
+   "precisionName": "Minute",
+   "windowStart": "2026-12-04T12:55:00Z",
+   "windowEnd": "2026-12-04T13:24:00Z",
+   "pad": "Space Launch Complex 40",
+   "padShort": "SLC-40",
+   "location": "Cape Canaveral SFS, FL, USA",
+   "site": "Cape Canaveral",
+   "landing": {
+    "label": "LZ-40",
+    "name": "Landing Zone 40",
+    "type": "RTLS"
+   },
+   "orbit": "Low Earth Orbit",
+   "description": "CHORUS is MDA's next generation Earth observation constellation, consisting of 2 radar satellites (C-band SAR and X-band SAR), in a 53.5 degree 600 km altitude LEO, with the X-band trailing the C-band by 60 minutes. A collaborative multi-sensor constellation, CHORUS will bring together diverse and unique imagery and data sources and provide a new level of near real-time insight and innovative Earth observation services. Operating in a unique mid-inclination orbit, CHORUS will be able to image day or night, regardless of weather conditions, with daily access of up to 95% of the coverage area. From an industry-leading 700km-wide imaging swath down to sub-metre high resolution, CHORUS will provide the most extensive and unrivalled Earth observation radar imaging capacity available on the market in a single mission.\r\n\r\nAlso on board this mission are 2 satellites from ICEYE and PECCY.",
+   "probability": null,
+   "webcast": "https://x.com/i/broadcasts/2VNlrbYvYNmMgM",
+   "webcastLive": false,
+   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305193628.jpeg",
+   "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
+   "updated": "2026-11-25T18:22:04Z"
+  },
+  {
    "id": "9b9db235-8ffb-4569-b09b-0e852ad231a0",
    "name": "Falcon 9 Block 5 | Amazon Leo (LF-04)",
    "mission": "Amazon Leo (LF-04)",
@@ -288,35 +321,6 @@
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305193628.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
    "updated": "2026-11-24T19:21:29Z"
-  },
-  {
-   "id": "8bf5f61e-a7e1-41e6-aede-7b87e4beebab",
-   "name": "Falcon 9 Block 5 | CHORUS",
-   "mission": "CHORUS",
-   "vehicle": "Falcon 9",
-   "categories": [
-    "other"
-   ],
-   "status": "TBD",
-   "statusName": "To Be Determined",
-   "net": "2026-12-31T00:00:00Z",
-   "precision": "vague",
-   "precisionName": "Month",
-   "windowStart": "2026-12-31T00:00:00Z",
-   "windowEnd": "2026-12-31T00:00:00Z",
-   "pad": "Unknown Pad",
-   "padShort": null,
-   "location": "Cape Canaveral SFS, FL, USA",
-   "site": "Cape Canaveral",
-   "landing": null,
-   "orbit": "Low Earth Orbit",
-   "description": "CHORUS is MDA's next generation Earth observation constellation, consisting of 2 radar satellites (C-band SAR and X-band SAR), in a 53.5 degree 600 km altitude LEO, with the X-band trailing the C-band by 60 minutes. A collaborative multi-sensor constellation, CHORUS will bring together diverse and unique imagery and data sources and provide a new level of near real-time insight and innovative Earth observation services. Operating in a unique mid-inclination orbit, CHORUS will be able to image day or night, regardless of weather conditions, with daily access of up to 95% of the coverage area. From an industry-leading 700km-wide imaging swath down to sub-metre high resolution, CHORUS will provide the most extensive and unrivalled Earth observation radar imaging capacity available on the market in a single mission.",
-   "probability": null,
-   "webcast": null,
-   "webcastLive": false,
-   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305193628.jpeg",
-   "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
-   "updated": "2026-11-24T16:23:22Z"
   },
   {
    "id": "e61d353c-db55-4a57-8184-0fab187231e6",
@@ -1920,6 +1924,35 @@
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305193628.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
    "updated": "2024-07-23T07:00:38Z"
+  },
+  {
+   "id": "37908d2e-fb37-4cb1-80ca-35f1ca949b76",
+   "name": "Falcon 9 Block 5 | Exolaunch Exo-1",
+   "mission": "Exolaunch Exo-1",
+   "vehicle": "Falcon 9",
+   "categories": [
+    "other"
+   ],
+   "status": "TBD",
+   "statusName": "To Be Determined",
+   "net": "2027-12-31T00:00:00Z",
+   "precision": "vague",
+   "precisionName": "Quarter 4",
+   "windowStart": "2027-12-31T00:00:00Z",
+   "windowEnd": "2027-12-31T00:00:00Z",
+   "pad": "Space Launch Complex 4E",
+   "padShort": "SLC-4E",
+   "location": "Vandenberg SFB, CA, USA",
+   "site": "Vandenberg",
+   "landing": null,
+   "orbit": "Low Earth Orbit",
+   "description": "Dedicated ride-share mission to be offered by the small satellite launch integrator Exolaunch to low Earth orbit.",
+   "probability": null,
+   "webcast": null,
+   "webcastLive": false,
+   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305193628.jpeg",
+   "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
+   "updated": "2026-05-27T15:50:10Z"
   }
  ]
 }

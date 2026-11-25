@@ -113,24 +113,22 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:d74afbc7-0de5-491c-be05-4e9c31f736ac@spacex-launch-alerts
-DTSTAMP:20261124T194723Z
-LAST-MODIFIED:20261124T194723Z
-SEQUENCE:217712843
+DTSTAMP:20261125T172130Z
+LAST-MODIFIED:20261125T172130Z
+SEQUENCE:217790490
 SUMMARY:🚀 Falcon 9 · Cygnus CRS-2 NG-25
 DTSTART:20261129T154700Z
 DTEND:20261129T161700Z
 LOCATION:Space Launch Complex 40\, Cape Canaveral SFS\, FL\, USA
 DESCRIPTION:Status: Go for Launch\nLaunch: Sun\, 29 Nov 2026 15:47:00 UTC (
  instantaneous window)\nOrbit: Low Earth Orbit\nPad: Space Launch Complex 4
- 0\, Cape Canaveral SFS\, FL\, USA\n\n▶ Watch live: https://plus.nasa.gov
- /scheduled-video/nasas-northrop-grumman-commercial-resupply-services-25-la
- unch/\n\nThis is the 25th flight of the Orbital ATK's uncrewed resupply sp
- acecraft Cygnus and its 24th flight to the International Space Station und
- er the Commercial Resupply Services contract with NASA.\n\nCountdown & upd
- ates: https://benjaminowens612.github.io/spacex-launch-alerts/#d74afbc7-0d
- e5-491c-be05-4e9c31f736ac
-URL:https://plus.nasa.gov/scheduled-video/nasas-northrop-grumman-commercial
- -resupply-services-25-launch/
+ 0\, Cape Canaveral SFS\, FL\, USA\n\n▶ Watch live: https://www.youtube.c
+ om/watch?v=YLrybIli73I\n\nThis is the 25th flight of the Orbital ATK's unc
+ rewed resupply spacecraft Cygnus and its 24th flight to the International 
+ Space Station under the Commercial Resupply Services contract with NASA.\n
+ \nCountdown & updates: https://benjaminowens612.github.io/spacex-launch-al
+ erts/#d74afbc7-0de5-491c-be05-4e9c31f736ac
+URL:https://www.youtube.com/watch?v=YLrybIli73I
 CATEGORIES:other
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -175,6 +173,48 @@ END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:T-10m: Falcon 9 · NROL-132
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:8bf5f61e-a7e1-41e6-aede-7b87e4beebab@spacex-launch-alerts
+DTSTAMP:20261125T182204Z
+LAST-MODIFIED:20261125T182204Z
+SEQUENCE:217794124
+SUMMARY:🚀 Falcon 9 · CHORUS
+DTSTART:20261204T125500Z
+DTEND:20261204T132400Z
+LOCATION:Space Launch Complex 40\, Cape Canaveral SFS\, FL\, USA
+DESCRIPTION:Status: Go for Launch\nWindow: Fri\, 04 Dec 2026 12:55:00 UTC 
+ – Fri\, 04 Dec 2026 13:24:00 UTC\nOrbit: Low Earth Orbit\nPad: Space Lau
+ nch Complex 40\, Cape Canaveral SFS\, FL\, USA\n\n▶ Watch live: https://
+ x.com/i/broadcasts/2VNlrbYvYNmMgM\n\nCHORUS is MDA's next generation Earth
+  observation constellation\, consisting of 2 radar satellites (C-band SAR 
+ and X-band SAR)\, in a 53.5 degree 600 km altitude LEO\, with the X-band t
+ railing the C-band by 60 minutes. A collaborative multi-sensor constellati
+ on\, CHORUS will bring together diverse and unique imagery and data source
+ s and provide a new level of near real-time insight and innovative Earth o
+ bservation services. Operating in a unique mid-inclination orbit\, CHORUS 
+ will be able to image day or night\, regardless of weather conditions\, wi
+ th daily access of up to 95% of the coverage area. From an industry-leadin
+ g 700km-wide imaging swath down to sub-metre high resolution\, CHORUS will
+  provide the most extensive and unrivalled Earth observation radar imaging
+  capacity available on the market in a single mission.\n\nAlso on board th
+ is mission are 2 satellites from ICEYE and PECCY.\n\nCountdown & updates: 
+ https://benjaminowens612.github.io/spacex-launch-alerts/#8bf5f61e-a7e1-41e
+ 6-aede-7b87e4beebab
+URL:https://x.com/i/broadcasts/2VNlrbYvYNmMgM
+CATEGORIES:other
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:T-1h: Falcon 9 · CHORUS
+TRIGGER:-PT60M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:T-10m: Falcon 9 · CHORUS
 TRIGGER:-PT10M
 END:VALARM
 END:VEVENT
