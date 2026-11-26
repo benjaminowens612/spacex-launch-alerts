@@ -80,23 +80,23 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:b0d27def-0a88-44c3-a947-1fd5b8503e2c@spacex-launch-alerts
-DTSTAMP:20261120T212936Z
-LAST-MODIFIED:20261120T212936Z
-SEQUENCE:217373376
+DTSTAMP:20261126T114538Z
+LAST-MODIFIED:20261126T114538Z
+SEQUENCE:217856738
 SUMMARY:🚀 Falcon 9 · USSF-380
 DTSTART:20261129T043900Z
 DTEND:20261129T083900Z
 LOCATION:Space Launch Complex 4E\, Vandenberg SFB\, CA\, USA
 DESCRIPTION:Status: Go for Launch\nWindow: Sun\, 29 Nov 2026 04:39:00 UTC 
  – Sun\, 29 Nov 2026 08:39:00 UTC\nOrbit: Low Earth Orbit\nPad: Space Lau
- nch Complex 4E\, Vandenberg SFB\, CA\, USA\n\n▶ Watch live: https://x.co
- m/i/broadcasts/2ybQqgpAAEJmBB\n\nA classified mission for the United State
- s Space Force. It is possibly a batch of classified LEO satellites based o
- n SpaceX’s Starshield satellite bus\, based on locations of rocket stage
-  drop zones being exact fits with previous Starlink Group 15 launches.\n\n
- Countdown & updates: https://benjaminowens612.github.io/spacex-launch-aler
- ts/#b0d27def-0a88-44c3-a947-1fd5b8503e2c
-URL:https://x.com/i/broadcasts/2ybQqgpAAEJmBB
+ nch Complex 4E\, Vandenberg SFB\, CA\, USA\n\n▶ Watch live: https://www.
+ youtube.com/watch?v=xpfmP-4EGIw\n\nA classified mission for the United Sta
+ tes Space Force. It is possibly a batch of classified LEO satellites based
+  on SpaceX’s Starshield satellite bus\, based on locations of rocket sta
+ ge drop zones being exact fits with previous Starlink Group 15 launches.\n
+ \nCountdown & updates: https://benjaminowens612.github.io/spacex-launch-al
+ erts/#b0d27def-0a88-44c3-a947-1fd5b8503e2c
+URL:https://www.youtube.com/watch?v=xpfmP-4EGIw
 CATEGORIES:other
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
@@ -113,9 +113,9 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:d74afbc7-0de5-491c-be05-4e9c31f736ac@spacex-launch-alerts
-DTSTAMP:20261125T172130Z
-LAST-MODIFIED:20261125T172130Z
-SEQUENCE:217790490
+DTSTAMP:20261126T114454Z
+LAST-MODIFIED:20261126T114454Z
+SEQUENCE:217856694
 SUMMARY:🚀 Falcon 9 · Cygnus CRS-2 NG-25
 DTSTART:20261129T154700Z
 DTEND:20261129T161700Z
