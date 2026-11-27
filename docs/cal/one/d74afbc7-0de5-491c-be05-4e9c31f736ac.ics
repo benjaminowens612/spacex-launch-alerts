@@ -6,21 +6,21 @@ METHOD:PUBLISH
 URL:https://benjaminowens612.github.io/spacex-launch-alerts/
 BEGIN:VEVENT
 UID:d74afbc7-0de5-491c-be05-4e9c31f736ac@spacex-launch-alerts
-DTSTAMP:20261126T114454Z
-LAST-MODIFIED:20261126T114454Z
-SEQUENCE:217856694
+DTSTAMP:20261127T215409Z
+LAST-MODIFIED:20261127T215409Z
+SEQUENCE:217979649
 SUMMARY:🚀 Falcon 9 · Cygnus CRS-2 NG-25
 DTSTART:20261129T154700Z
 DTEND:20261129T161700Z
 LOCATION:Space Launch Complex 40\, Cape Canaveral SFS\, FL\, USA
 DESCRIPTION:Status: Go for Launch\nLaunch: Sun\, 29 Nov 2026 15:47:00 UTC (
- instantaneous window)\nOrbit: Low Earth Orbit\nPad: Space Launch Complex 4
- 0\, Cape Canaveral SFS\, FL\, USA\n\n▶ Watch live: https://www.youtube.c
- om/watch?v=YLrybIli73I\n\nThis is the 25th flight of the Orbital ATK's unc
- rewed resupply spacecraft Cygnus and its 24th flight to the International 
- Space Station under the Commercial Resupply Services contract with NASA.\n
- \nCountdown & updates: https://benjaminowens612.github.io/spacex-launch-al
- erts/#d74afbc7-0de5-491c-be05-4e9c31f736ac
+ instantaneous window)\nWeather: 60% GO\nOrbit: Low Earth Orbit\nPad: Space
+  Launch Complex 40\, Cape Canaveral SFS\, FL\, USA\n\n▶ Watch live: http
+ s://www.youtube.com/watch?v=YLrybIli73I\n\nThis is the 25th flight of the 
+ Orbital ATK's uncrewed resupply spacecraft Cygnus and its 24th flight to t
+ he International Space Station under the Commercial Resupply Services cont
+ ract with NASA.\n\nCountdown & updates: https://benjaminowens612.github.io
+ /spacex-launch-alerts/#d74afbc7-0de5-491c-be05-4e9c31f736ac
 URL:https://www.youtube.com/watch?v=YLrybIli73I
 CATEGORIES:other
 STATUS:CONFIRMED

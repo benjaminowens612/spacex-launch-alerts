@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-26T12:51:55.070Z",
+ "generatedAt": "2026-11-27T22:38:19.417Z",
  "siteUrl": "https://benjaminowens612.github.io/spacex-launch-alerts/",
  "categories": [
   {
@@ -192,7 +192,7 @@
    "webcastLive": false,
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_thumbnail_20260816171423.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg",
-   "updated": "2026-11-26T11:45:38Z"
+   "updated": "2026-11-27T18:31:10Z"
   },
   {
    "id": "d74afbc7-0de5-491c-be05-4e9c31f736ac",
@@ -220,12 +220,12 @@
    },
    "orbit": "Low Earth Orbit",
    "description": "This is the 25th flight of the Orbital ATK's uncrewed resupply spacecraft Cygnus and its 24th flight to the International Space Station under the Commercial Resupply Services contract with NASA.",
-   "probability": null,
+   "probability": 60,
    "webcast": "https://www.youtube.com/watch?v=YLrybIli73I",
    "webcastLive": false,
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305193628.jpeg",
    "imageLarge": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg",
-   "updated": "2026-11-26T11:44:54Z"
+   "updated": "2026-11-27T21:54:09Z"
   },
   {
    "id": "5591cfa3-6336-41ab-a37a-7c57aa28ab5f",
